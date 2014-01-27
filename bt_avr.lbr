@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -715,6 +715,28 @@
 <text x="-10.16" y="11.43" size="1.778" layer="95">USI</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="95">SPI/I2C/Serial</text>
 </symbol>
+<symbol name="ATTINY441/841">
+<pin name="(PCINT0/ADC0/AREF/MISO)PA0" x="35.56" y="2.54" length="middle" rot="R180"/>
+<pin name="(PCINT1/ADC1/AIN00/TOCC0/TXD0/MOSI)PA1" x="35.56" y="0" length="middle" rot="R180"/>
+<pin name="(PCINT2/ADC2/AIN01/TOCC1/RXD0/SS)PA2" x="35.56" y="-2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="-35.56" y="7.62" length="middle"/>
+<pin name="GND" x="-35.56" y="2.54" length="middle"/>
+<pin name="(PCINT3/ADC3/AIN10/TOCC2/T0/XCK0/SCK)PA3" x="35.56" y="-5.08" length="middle" rot="R180"/>
+<pin name="(PCINT4/ADC4/AIN11/TOCC3/T1/RXD1/SCL/SCK)PA4" x="35.56" y="-7.62" length="middle" rot="R180"/>
+<pin name="(PCINT5/ADC5/ACO0/TOCC4/T2/TXD1/MISO)PA5" x="35.56" y="-10.16" length="middle" rot="R180"/>
+<pin name="(PCINT6/ADC6/ACO1/TOCC5/XCK1/SDA/MOSI)PA6" x="35.56" y="-12.7" length="middle" rot="R180"/>
+<pin name="(PCINT7/ADC7/TOCC6/ICP1/TXD0/SS)PA7" x="35.56" y="-15.24" length="middle" rot="R180"/>
+<pin name="(PCINT11/ADC9/RESET/DW)PB3" x="35.56" y="15.24" length="middle" rot="R180"/>
+<pin name="(PCINT10/ADC8/CLKO/TOCC7/ICP2/RXD0)PB2" x="35.56" y="12.7" length="middle" rot="R180"/>
+<pin name="(PCINT9/ADC10/XTAL2/INT0)PB1" x="35.56" y="10.16" length="middle" rot="R180"/>
+<pin name="(PCINT8/ADC11/XTAL1/CLKI)PB0" x="35.56" y="7.62" length="middle" rot="R180"/>
+<wire x1="-30.48" y1="-17.78" x2="-30.48" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="17.78" x2="30.48" y2="17.78" width="0.254" layer="94"/>
+<wire x1="30.48" y1="17.78" x2="30.48" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-17.78" x2="-30.48" y2="-17.78" width="0.254" layer="94"/>
+<text x="-27.94" y="18.542" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-27.94" y="-20.32" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATMEGA168-PU" prefix="IC">
@@ -1012,6 +1034,66 @@ Bytes In-System Programmable Flash&lt;/p&gt;
 <connect gate="G$1" pin="SDA/MOSI/RX" pad="SDA/MOSI/RX"/>
 <connect gate="G$1" pin="SS" pad="SS"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATTINY441/841" prefix="IC">
+<description>&lt;b&gt;ATtiny441, ATtiny841 AVR Microcontroller&lt;/b&gt;
+&lt;p&gt;The high-performance Atmel picoPower 8-bit AVR RISC-based microcontroller combines 4KB ISP
+flash memory, 512-Byte EEPROM, 128B SRAM, 12 general purpose I/O lines, 32 general purpose
+working registers, an 8-bit timer/counter with two PWM channels, two 16-bit timer/counters with
+two PWM channels, internal and external interrupts, an 12-channel 10-bit A/D converter, 2 On-chip
+analog comparators, 2 full duplex USARTs with Start Frame wake up from power down, master/slave
+SPI serial interface, slave I2C serial interface, programmable gain stage (1x, 20x, and 100x) for 
+12 differential ADC channel pairs, programmable watchdog timer with internal oscillator, internal
+calibrated oscillator, and four software selectable power saving modes. The device operates
+between 1.7-5.5 volts.&lt;/p&gt;
+&lt;a href="http://www.atmel.com/Images/Atmel-8495-8-bit-AVR-Microcontrollers-ATtiny441-ATtiny841_Datasheet.pdf"&gt;datasheet.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="IC1" symbol="ATTINY441/841" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SSU" package="SOIC14">
+<connects>
+<connect gate="IC1" pin="(PCINT0/ADC0/AREF/MISO)PA0" pad="13"/>
+<connect gate="IC1" pin="(PCINT1/ADC1/AIN00/TOCC0/TXD0/MOSI)PA1" pad="12"/>
+<connect gate="IC1" pin="(PCINT10/ADC8/CLKO/TOCC7/ICP2/RXD0)PB2" pad="5"/>
+<connect gate="IC1" pin="(PCINT11/ADC9/RESET/DW)PB3" pad="4"/>
+<connect gate="IC1" pin="(PCINT2/ADC2/AIN01/TOCC1/RXD0/SS)PA2" pad="11"/>
+<connect gate="IC1" pin="(PCINT3/ADC3/AIN10/TOCC2/T0/XCK0/SCK)PA3" pad="10"/>
+<connect gate="IC1" pin="(PCINT4/ADC4/AIN11/TOCC3/T1/RXD1/SCL/SCK)PA4" pad="9"/>
+<connect gate="IC1" pin="(PCINT5/ADC5/ACO0/TOCC4/T2/TXD1/MISO)PA5" pad="8"/>
+<connect gate="IC1" pin="(PCINT6/ADC6/ACO1/TOCC5/XCK1/SDA/MOSI)PA6" pad="7"/>
+<connect gate="IC1" pin="(PCINT7/ADC7/TOCC6/ICP1/TXD0/SS)PA7" pad="6"/>
+<connect gate="IC1" pin="(PCINT8/ADC11/XTAL1/CLKI)PB0" pad="2"/>
+<connect gate="IC1" pin="(PCINT9/ADC10/XTAL2/INT0)PB1" pad="3"/>
+<connect gate="IC1" pin="GND" pad="14"/>
+<connect gate="IC1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MU" package="20MLF_0.5">
+<connects>
+<connect gate="IC1" pin="(PCINT0/ADC0/AREF/MISO)PA0" pad="5"/>
+<connect gate="IC1" pin="(PCINT1/ADC1/AIN00/TOCC0/TXD0/MOSI)PA1" pad="4"/>
+<connect gate="IC1" pin="(PCINT10/ADC8/CLKO/TOCC7/ICP2/RXD0)PB2" pad="14"/>
+<connect gate="IC1" pin="(PCINT11/ADC9/RESET/DW)PB3" pad="13"/>
+<connect gate="IC1" pin="(PCINT2/ADC2/AIN01/TOCC1/RXD0/SS)PA2" pad="3"/>
+<connect gate="IC1" pin="(PCINT3/ADC3/AIN10/TOCC2/T0/XCK0/SCK)PA3" pad="2"/>
+<connect gate="IC1" pin="(PCINT4/ADC4/AIN11/TOCC3/T1/RXD1/SCL/SCK)PA4" pad="1"/>
+<connect gate="IC1" pin="(PCINT5/ADC5/ACO0/TOCC4/T2/TXD1/MISO)PA5" pad="20"/>
+<connect gate="IC1" pin="(PCINT6/ADC6/ACO1/TOCC5/XCK1/SDA/MOSI)PA6" pad="16"/>
+<connect gate="IC1" pin="(PCINT7/ADC7/TOCC6/ICP1/TXD0/SS)PA7" pad="15"/>
+<connect gate="IC1" pin="(PCINT8/ADC11/XTAL1/CLKI)PB0" pad="11"/>
+<connect gate="IC1" pin="(PCINT9/ADC10/XTAL2/INT0)PB1" pad="12"/>
+<connect gate="IC1" pin="GND" pad="8"/>
+<connect gate="IC1" pin="VCC" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
