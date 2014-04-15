@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -661,16 +661,36 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <smd name="4" x="-2.5" y="2.75" dx="1.2" dy="2.5" layer="1" rot="R180"/>
 </package>
 <package name="PAD_12GA">
-<pad name="P$1" x="0" y="0" drill="2.055621875" diameter="5.08"/>
+<pad name="P$1" x="0" y="0" drill="3.048"/>
+<text x="2.286" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="PAD_14GA">
-<pad name="P$1" x="0" y="0" drill="1.639721875" diameter="4.064"/>
+<pad name="P$1" x="0" y="0" drill="1.639721875"/>
+<text x="1.905" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="PAD_16GA">
-<pad name="P$1" x="0" y="0" drill="1.30136875" diameter="3.175"/>
+<pad name="P$1" x="0" y="0" drill="1.30136875"/>
+<text x="1.27" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="PAD_18GA">
-<pad name="P$1" x="0" y="0" drill="1.02390625" diameter="2.54"/>
+<pad name="P$1" x="0" y="0" drill="1.02390625"/>
+<text x="1.27" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="3X4X2TACT">
+<description>&lt;b&gt;3mm x 4mm x 2mm Tactile Switch&lt;/b&gt;</description>
+<smd name="P$1" x="-2.1" y="0" dx="1.7" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$2" x="2.1" y="0" dx="1.7" dy="0.9" layer="1" rot="R90"/>
+<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="1" x2="2" y2="-1" width="0.127" layer="51"/>
+<wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.9" width="0.127" layer="21"/>
+<text x="-2.032" y="2.032" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.032" y="-3.302" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.127" layer="51"/>
+<wire x1="2" y1="1.5" x2="2" y2="1" width="0.127" layer="21"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="1" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="-1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="-1" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -877,7 +897,7 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <text x="-6.604" y="-4.572" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="PINPAD">
-<pin name="P$1" x="-5.08" y="0" visible="off" length="middle"/>
+<pin name="P" x="-5.08" y="0" visible="off" length="middle"/>
 <wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
 <wire x1="1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.254" layer="94"/>
 <text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
@@ -1115,6 +1135,15 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <technology name=""/>
 </technologies>
 </device>
+<device name="_3X4X2" package="3X4X2TACT">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="TRIM_US-" prefix="R" uservalue="yes">
@@ -1279,7 +1308,7 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINPAD" prefix="X">
+<deviceset name="WIREPAD" prefix="X">
 <description>&lt;b&gt;PIN PAD (PINPAD)&lt;/b&gt;
 
 &lt;p&gt;Generic pin pad connector&lt;/p&gt;</description>
@@ -1289,7 +1318,7 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <devices>
 <device name="_SMD_0.07X0.15" package="PAD0.07X0.15">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1297,7 +1326,7 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 <device name="_12GA" package="PAD_12GA">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1305,7 +1334,7 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 <device name="_14GA" package="PAD_14GA">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1313,7 +1342,7 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 <device name="_16GA" package="PAD_16GA">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
