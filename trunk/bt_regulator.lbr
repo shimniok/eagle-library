@@ -431,6 +431,20 @@ Source: INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <rectangle x1="1.8288" y1="-6.731" x2="3.2512" y2="-4.2418" layer="21"/>
 <rectangle x1="-0.7112" y1="-6.731" x2="0.7112" y2="-4.2418" layer="21"/>
 </package>
+<package name="D2PACK-3">
+<wire x1="-5.1308" y1="-4.0894" x2="5.1308" y2="-4.0894" width="0.254" layer="21"/>
+<wire x1="-5.1308" y1="-4.0894" x2="-5.1308" y2="-2.3114" width="0.254" layer="21"/>
+<wire x1="5.1308" y1="-4.0894" x2="5.1308" y2="-2.3114" width="0.254" layer="21"/>
+<smd name="1" x="-2.54" y="-8.89" dx="2.0828" dy="3.81" layer="1"/>
+<smd name="2" x="0" y="-8.89" dx="2.0828" dy="3.81" layer="1"/>
+<smd name="4" x="0" y="2.54" dx="11.43" dy="8.89" layer="1"/>
+<text x="-5.588" y="7.239" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.2512" y1="-6.731" x2="-1.8288" y2="-4.2418" layer="21"/>
+<rectangle x1="1.8288" y1="-6.731" x2="3.2512" y2="-4.2418" layer="21"/>
+<rectangle x1="-0.7112" y1="-6.731" x2="0.7112" y2="-4.2418" layer="21"/>
+<smd name="3" x="2.54" y="-8.89" dx="2.0828" dy="3.81" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MIC5320">
@@ -938,6 +952,59 @@ circuit protection. Dropout is 230 mV at 500 mA&lt;/p&gt;</description>
 <device name="" package="DPAK">
 <connects>
 <connect gate="U1" pin="GND" pad="4"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TC1262" prefix="U">
+<description>&lt;b&gt;Microchip TC1262 LDO Regulator&lt;/b&gt;
+&lt;p&gt;
+The TC1262 is a fixed output, high accuracy (typically
+±0.5%) CMOS low dropout regulator. Designed specif-
+ically for battery-operated systems, the TC1262’s
+CMOS construction eliminates wasted ground current,
+significantly extending battery life. Total supply current
+is typically 80A at full load (20 to 60 times lower than
+in bipolar regulators).&lt;/p&gt;
+&lt;p&gt;TC1262 key features include ultra low noise operation,
+very low dropout voltage (typically 350mV at full load),
+and fast response to step changes in load.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21373C.pdf"&gt;Datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="V-REG-3-FIX-TAB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_VDB" package="SOT-223-3">
+<connects>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="TAB" pad="4"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_VAB" package="TO220L1">
+<connects>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="TAB" pad="4"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_VEB" package="D2PACK-3">
+<connects>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="TAB" pad="4"/>
 <connect gate="U1" pin="VIN" pad="1"/>
 <connect gate="U1" pin="VOUT" pad="3"/>
 </connects>
