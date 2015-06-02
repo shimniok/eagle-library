@@ -115,9 +115,9 @@
 <pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
-<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
-<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.254" y="0.127" size="0.8128" layer="21" font="vector" ratio="10">B</text>
+<text x="-1.651" y="1.016" size="0.8128" layer="21" font="vector" ratio="10">E</text>
+<text x="1.016" y="1.016" size="0.8128" layer="21" font="vector" ratio="10">C</text>
 </package>
 <package name="SOT-23">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
