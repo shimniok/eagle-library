@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -275,6 +275,17 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="-3.302" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.302" y="-4.826" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="DO-214AA">
+<smd name="P$1" x="-2.2098" y="0" dx="2.7432" dy="2.159" layer="1" rot="R90"/>
+<smd name="P$2" x="2.2098" y="0" dx="2.7432" dy="2.159" layer="1" rot="R90"/>
+<wire x1="-2.286" y1="1.905" x2="2.286" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-1.905" x2="2.286" y2="-1.905" width="0.127" layer="21"/>
+<rectangle x1="-1.016" y1="-1.905" x2="0" y2="1.905" layer="21"/>
+<wire x1="-2.286" y1="1.905" x2="-2.286" y2="-1.905" width="0.127" layer="51"/>
+<wire x1="2.286" y1="1.905" x2="2.286" y2="-1.905" width="0.127" layer="51"/>
+<text x="-3.048" y="2.286" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.048" y="-3.556" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SCHOTTKY">
@@ -380,13 +391,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
 <wire x1="1.905" y1="1.905" x2="1.27" y2="1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.905" width="0.254" layer="94"/>
 <text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-3.81" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="3.81" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -544,7 +558,7 @@ TJ = 185 °C capability suitable for high reliability and automotive requirement
 </device>
 </devices>
 </deviceset>
-<deviceset name="5KASMC" prefix="D">
+<deviceset name="5KA" prefix="D">
 <description>&lt;b&gt;5KASMC TVS Diode&lt;/b&gt;
 &lt;p&gt;Surface mount PAR® Transient Voltage Suppressors with high temperature stability and
 high reliability conditions. Junction passivation optimized design passivated anisotropic rectifier technology.
@@ -557,10 +571,39 @@ TJ = 185 °C capability suitable for high reliability and automotive requirement
 <gate name="D1" symbol="TVS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DO-214AB">
+<device name="SMC" package="DO-214AB">
 <connects>
 <connect gate="D1" pin="A" pad="A"/>
 <connect gate="D1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P6SMBXXAT3G" prefix="D">
+<description>&lt;b&gt;SMBxxAT3G TVS Diode&lt;/b&gt;
+
+&lt;p&gt;The SMB series is designed to protect voltage sensitive
+components from high voltage, high energy transients. They have
+excellent clamping capability, high surge capability, low zener
+impedance and fast response time. The SMB series is supplied in
+ON Semiconductor’s exclusive, cost-effective, highly reliable
+SURMETIC® package and is ideally suited for use in
+communication systems, automotive, numerical controls, process
+controls, medical equipment, business machines, power supplies and
+many other industrial/consumer applications.&lt;p&gt;
+
+&lt;p&gt;&lt;a href="datasheet.pdf"&gt;http://www.onsemi.com/pub_link/Collateral/P6SMB6.8AT3-D.PDF&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TVS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMA" package="DO-214AA">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
