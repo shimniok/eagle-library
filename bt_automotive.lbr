@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -93,6 +93,14 @@ Source: http://www.mew-europe.com/..  en_ds_61202_0000.pdf</description>
 <package name="2">
 <pad name="P$1" x="-5.08" y="0" drill="3.2"/>
 <pad name="P$2" x="5.08" y="0" drill="3.2"/>
+</package>
+<package name="6">
+<pad name="P$1" x="-5.08" y="0" drill="3.2"/>
+<pad name="P$2" x="5.08" y="0" drill="3.2"/>
+<pad name="P$3" x="5.08" y="-10.16" drill="3.2"/>
+<pad name="P$4" x="-5.08" y="-10.16" drill="3.2"/>
+<pad name="P$5" x="-5.08" y="10.16" drill="3.2"/>
+<pad name="P$6" x="5.08" y="10.16" drill="3.2"/>
 </package>
 </packages>
 <symbols>
@@ -188,7 +196,7 @@ Source: http://www.mew-europe.com/..  en_ds_61202_0000.pdf</description>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="-7.62" y="8.128" size="1.27" layer="95">DIMMER SW</text>
 </symbol>
-<symbol name="SPDT">
+<symbol name="DPST">
 <pin name="P$1" x="-10.16" y="0" visible="off" length="middle"/>
 <pin name="P$2" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
 <pin name="P$3" x="10.16" y="10.16" visible="off" length="middle" rot="R180"/>
@@ -230,6 +238,90 @@ Source: http://www.mew-europe.com/..  en_ds_61202_0000.pdf</description>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="-90"/>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94" curve="-90"/>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="CON-2">
+<pin name="P$1" x="-7.62" y="2.54" visible="off"/>
+<pin name="P$2" x="-7.62" y="-2.54" visible="off"/>
+<pin name="P$3" x="7.62" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$4" x="7.62" y="-2.54" visible="off" length="middle" rot="R180"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="3.81" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="3.81" y1="5.08" x2="3.81" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="-3.81" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="MOTOR">
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<text x="-3.048" y="-2.54" size="5.08" layer="94">M</text>
+<pin name="P$1" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="P$2" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+<wire x1="5.08" y1="2.54" x2="4.318" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="4.318" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="SPDT">
+<pin name="P$2" x="10.16" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$3" x="10.16" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$4" x="-10.16" y="0" visible="off" length="middle"/>
+<circle x="-5.08" y="0" radius="0.254" width="0.6096" layer="94"/>
+<circle x="5.08" y="2.54" radius="0.254" width="0.6096" layer="94"/>
+<circle x="5.08" y="-2.54" radius="0.254" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.842" size="1.27" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="ON-OFF-ON">
+<pin name="P$2" x="10.16" y="-5.08" visible="off" rot="R180"/>
+<pin name="P$3" x="10.16" y="5.08" visible="off" rot="R180"/>
+<pin name="P$4" x="-10.16" y="0" visible="off" length="middle"/>
+<circle x="-5.08" y="0" radius="0.254" width="0.6096" layer="94"/>
+<circle x="2.54" y="5.08" radius="0.254" width="0.6096" layer="94"/>
+<circle x="2.54" y="-5.08" radius="0.254" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.366" y="8.128" size="1.27" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="MOM-DPDT">
+<pin name="P$2" x="10.16" y="2.54" visible="off" rot="R180"/>
+<pin name="P$3" x="10.16" y="12.7" visible="off" rot="R180"/>
+<pin name="P$4" x="-10.16" y="7.62" visible="off" length="middle"/>
+<circle x="-5.08" y="7.62" radius="0.254" width="0.6096" layer="94"/>
+<circle x="2.54" y="12.7" radius="0.254" width="0.6096" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.254" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<text x="-7.366" y="15.748" size="1.27" layer="95">&gt;VALUE</text>
+<pin name="P$1" x="10.16" y="-12.7" visible="off" rot="R180"/>
+<pin name="P$5" x="10.16" y="-2.54" visible="off" rot="R180"/>
+<pin name="P$6" x="-10.16" y="-7.62" visible="off" length="middle"/>
+<circle x="-5.08" y="-7.62" radius="0.254" width="0.6096" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.254" width="0.6096" layer="94"/>
+<circle x="2.54" y="-12.7" radius="0.254" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="7.62" width="0.254" layer="94" style="shortdash"/>
+<circle x="2.54" y="7.62" radius="0.254" width="0.6096" layer="94"/>
+<circle x="2.54" y="-7.62" radius="0.254" width="0.6096" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -331,9 +423,9 @@ Source: http://www.mew-europe.com/..  en_ds_61202_0000.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPDT" prefix="SWITCH">
+<deviceset name="DPST" prefix="SWITCH">
 <gates>
-<gate name="G$1" symbol="SPDT" x="0" y="-5.08"/>
+<gate name="G$1" symbol="DPST" x="0" y="-5.08"/>
 </gates>
 <devices>
 <device name="" package="4">
@@ -375,6 +467,98 @@ Source: http://www.mew-europe.com/..  en_ds_61202_0000.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="GND" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONN-2WAY">
+<description>Generic 2-WAY Connector, Jeep TSM style</description>
+<gates>
+<gate name="G$1" symbol="CON-2" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="4">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOTOR">
+<description>generic motor</description>
+<gates>
+<gate name="G$1" symbol="MOTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPDT">
+<gates>
+<gate name="G$1" symbol="SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3">
+<connects>
+<connect gate="G$1" pin="P$2" pad="P$1"/>
+<connect gate="G$1" pin="P$3" pad="P$2"/>
+<connect gate="G$1" pin="P$4" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ON-OFF-ON">
+<description>Generic ON-OFF-ON SPDT</description>
+<gates>
+<gate name="G$1" symbol="ON-OFF-ON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3">
+<connects>
+<connect gate="G$1" pin="P$2" pad="P$1"/>
+<connect gate="G$1" pin="P$3" pad="P$2"/>
+<connect gate="G$1" pin="P$4" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOM-ON-MOM-DP">
+<description>Momentary DPDT switch</description>
+<gates>
+<gate name="G$1" symbol="MOM-DPDT" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="6">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
