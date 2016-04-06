@@ -379,44 +379,40 @@
 <pin name="A14" x="15.24" y="-15.24" length="middle" rot="R180"/>
 </symbol>
 <symbol name="27SF512">
-<pin name="A11" x="-17.78" y="20.32" length="middle"/>
-<pin name="A9" x="-17.78" y="17.78" length="middle"/>
-<pin name="A8" x="-17.78" y="15.24" length="middle"/>
+<pin name="A11" x="-17.78" y="7.62" length="middle"/>
+<pin name="A9" x="-17.78" y="2.54" length="middle"/>
+<pin name="A8" x="-17.78" y="0" length="middle"/>
 <pin name="A13" x="-17.78" y="12.7" length="middle"/>
-<pin name="A14" x="-17.78" y="10.16" length="middle"/>
-<pin name="NC1" x="-17.78" y="7.62" length="middle"/>
-<pin name="NC2" x="-17.78" y="5.08" length="middle"/>
-<pin name="VDD" x="-17.78" y="2.54" length="middle"/>
-<pin name="NC3" x="-17.78" y="0" length="middle"/>
-<pin name="NC4" x="-17.78" y="-2.54" length="middle"/>
-<pin name="A15" x="-17.78" y="-5.08" length="middle"/>
-<pin name="A12" x="-17.78" y="-7.62" length="middle"/>
-<pin name="A7" x="-17.78" y="-10.16" length="middle"/>
-<pin name="A6" x="-17.78" y="-12.7" length="middle"/>
-<pin name="A5" x="-17.78" y="-15.24" length="middle"/>
-<pin name="A4" x="-17.78" y="-17.78" length="middle"/>
-<pin name="A3" x="17.78" y="-17.78" length="middle" rot="R180"/>
-<pin name="A2" x="17.78" y="-15.24" length="middle" rot="R180"/>
-<pin name="A1" x="17.78" y="-12.7" length="middle" rot="R180"/>
-<pin name="A0" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="DQ0" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="DQ1" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="DQ2" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="VSS" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="DQ3" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="DQ4" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="DQ5" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="DQ6" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="DQ7" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="!CE" x="17.78" y="15.24" length="middle" rot="R180"/>
-<pin name="A10" x="17.78" y="17.78" length="middle" rot="R180"/>
-<pin name="!OE" x="17.78" y="20.32" length="middle" rot="R180"/>
-<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
-<text x="-12.446" y="23.622" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A14" x="-17.78" y="15.24" length="middle"/>
+<pin name="A15" x="-17.78" y="17.78" length="middle"/>
+<pin name="A12" x="-17.78" y="10.16" length="middle"/>
+<pin name="A7" x="-17.78" y="-2.54" length="middle"/>
+<pin name="A6" x="-17.78" y="-5.08" length="middle"/>
+<pin name="A5" x="-17.78" y="-7.62" length="middle"/>
+<pin name="A4" x="-17.78" y="-10.16" length="middle"/>
+<pin name="A3" x="-17.78" y="-12.7" length="middle"/>
+<pin name="A2" x="-17.78" y="-15.24" length="middle"/>
+<pin name="A1" x="-17.78" y="-17.78" length="middle"/>
+<pin name="A0" x="-17.78" y="-20.32" length="middle"/>
+<pin name="DQ0" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="DQ1" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="DQ2" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="DQ3" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="DQ4" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="DQ5" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="DQ6" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="DQ7" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="!CE" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="A10" x="-17.78" y="5.08" length="middle"/>
+<pin name="!OE" x="17.78" y="7.62" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<text x="-12.446" y="21.082" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VDD" x="17.78" y="17.78" length="middle" rot="R180"/>
+<pin name="VSS" x="17.78" y="15.24" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -560,40 +556,36 @@ with a 12V power supply. They have to be erased prior to programming.&lt;/p&gt;
 <gate name="27SF512" symbol="27SF512" x="5.08" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL32-6">
+<device name="" package="DIL28-6">
 <connects>
-<connect gate="27SF512" pin="!CE" pad="30"/>
-<connect gate="27SF512" pin="!OE" pad="32"/>
-<connect gate="27SF512" pin="A0" pad="20"/>
-<connect gate="27SF512" pin="A1" pad="19"/>
-<connect gate="27SF512" pin="A10" pad="31"/>
-<connect gate="27SF512" pin="A11" pad="1"/>
-<connect gate="27SF512" pin="A12" pad="12"/>
-<connect gate="27SF512" pin="A13" pad="4"/>
-<connect gate="27SF512" pin="A14" pad="5"/>
-<connect gate="27SF512" pin="A15" pad="11"/>
-<connect gate="27SF512" pin="A2" pad="18"/>
-<connect gate="27SF512" pin="A3" pad="17"/>
-<connect gate="27SF512" pin="A4" pad="16"/>
-<connect gate="27SF512" pin="A5" pad="15"/>
-<connect gate="27SF512" pin="A6" pad="14"/>
-<connect gate="27SF512" pin="A7" pad="13"/>
-<connect gate="27SF512" pin="A8" pad="3"/>
-<connect gate="27SF512" pin="A9" pad="2"/>
-<connect gate="27SF512" pin="DQ0" pad="21"/>
-<connect gate="27SF512" pin="DQ1" pad="22"/>
-<connect gate="27SF512" pin="DQ2" pad="23"/>
-<connect gate="27SF512" pin="DQ3" pad="25"/>
-<connect gate="27SF512" pin="DQ4" pad="26"/>
-<connect gate="27SF512" pin="DQ5" pad="27"/>
-<connect gate="27SF512" pin="DQ6" pad="28"/>
-<connect gate="27SF512" pin="DQ7" pad="29"/>
-<connect gate="27SF512" pin="NC1" pad="6"/>
-<connect gate="27SF512" pin="NC2" pad="7"/>
-<connect gate="27SF512" pin="NC3" pad="9"/>
-<connect gate="27SF512" pin="NC4" pad="10"/>
-<connect gate="27SF512" pin="VDD" pad="8"/>
-<connect gate="27SF512" pin="VSS" pad="24"/>
+<connect gate="27SF512" pin="!CE" pad="20"/>
+<connect gate="27SF512" pin="!OE" pad="22"/>
+<connect gate="27SF512" pin="A0" pad="10"/>
+<connect gate="27SF512" pin="A1" pad="9"/>
+<connect gate="27SF512" pin="A10" pad="21"/>
+<connect gate="27SF512" pin="A11" pad="23"/>
+<connect gate="27SF512" pin="A12" pad="2"/>
+<connect gate="27SF512" pin="A13" pad="26"/>
+<connect gate="27SF512" pin="A14" pad="27"/>
+<connect gate="27SF512" pin="A15" pad="1"/>
+<connect gate="27SF512" pin="A2" pad="8"/>
+<connect gate="27SF512" pin="A3" pad="7"/>
+<connect gate="27SF512" pin="A4" pad="6"/>
+<connect gate="27SF512" pin="A5" pad="5"/>
+<connect gate="27SF512" pin="A6" pad="4"/>
+<connect gate="27SF512" pin="A7" pad="3"/>
+<connect gate="27SF512" pin="A8" pad="25"/>
+<connect gate="27SF512" pin="A9" pad="24"/>
+<connect gate="27SF512" pin="DQ0" pad="11"/>
+<connect gate="27SF512" pin="DQ1" pad="12"/>
+<connect gate="27SF512" pin="DQ2" pad="13"/>
+<connect gate="27SF512" pin="DQ3" pad="15"/>
+<connect gate="27SF512" pin="DQ4" pad="16"/>
+<connect gate="27SF512" pin="DQ5" pad="17"/>
+<connect gate="27SF512" pin="DQ6" pad="18"/>
+<connect gate="27SF512" pin="DQ7" pad="19"/>
+<connect gate="27SF512" pin="VDD" pad="28"/>
+<connect gate="27SF512" pin="VSS" pad="14"/>
 </connects>
 <technologies>
 <technology name=""/>
