@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -519,6 +519,56 @@ From transistor-power.lbr</description>
 <rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
 <hole x="0" y="11.176" drill="3.302"/>
 </package>
+<package name="TO-PMOD">
+<smd name="1" x="-3.81" y="0" dx="3.048" dy="0.889" layer="1" rot="R90"/>
+<smd name="PAD" x="0" y="7.035" dx="8.54" dy="5.35" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="0" dx="3.048" dy="0.889" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="0" dx="3.048" dy="0.889" layer="1" rot="R90"/>
+<smd name="4" x="0" y="0" dx="3.048" dy="0.889" layer="1" rot="R90"/>
+<smd name="5" x="1.27" y="0" dx="3.048" dy="0.889" layer="1" rot="R90"/>
+<smd name="6" x="2.54" y="0" dx="3.048" dy="0.889" layer="1" rot="R90"/>
+<smd name="7" x="3.81" y="0" dx="3.048" dy="0.889" layer="1" rot="R90"/>
+<wire x1="-5.5" y1="2.4" x2="5.5" y2="2.4" width="0.127" layer="21"/>
+<wire x1="5.5" y1="2.4" x2="5.5" y2="12.2" width="0.127" layer="21"/>
+<wire x1="5.5" y1="12.2" x2="-5.5" y2="12.2" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="12.2" x2="-5.5" y2="2.4" width="0.127" layer="21"/>
+<rectangle x1="0.92" y1="-0.554" x2="1.62" y2="2.454" layer="21"/>
+<rectangle x1="2.19" y1="-0.554" x2="2.89" y2="2.454" layer="21"/>
+<rectangle x1="3.46" y1="-0.554" x2="4.16" y2="2.454" layer="21"/>
+<rectangle x1="-0.35" y1="-0.554" x2="0.35" y2="2.454" layer="21"/>
+<rectangle x1="-1.62" y1="-0.554" x2="-0.92" y2="2.454" layer="21"/>
+<rectangle x1="-2.89" y1="-0.554" x2="-2.19" y2="2.454" layer="21"/>
+<rectangle x1="-4.16" y1="-0.554" x2="-3.46" y2="2.454" layer="21"/>
+<text x="-5.334" y="12.573" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="5.461" y="12.573" size="1.016" layer="27" font="vector" ratio="12" align="bottom-right">&gt;VALUE</text>
+</package>
+<package name="SO-8EP">
+<wire x1="2.4" y1="1.95" x2="2.4" y2="-1.95" width="0.1778" layer="21"/>
+<wire x1="2.4" y1="-1.95" x2="-2.4" y2="-1.95" width="0.1778" layer="51"/>
+<wire x1="-2.4" y1="-1.95" x2="-2.4" y2="1.95" width="0.1778" layer="21"/>
+<wire x1="-2.4" y1="1.95" x2="2.4" y2="1.95" width="0.1778" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.0508" layer="51"/>
+<circle x="-1.905" y="-0.9525" radius="0.2245" width="0" layer="21"/>
+<smd name="2" x="-0.635" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="7" x="-0.635" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="1" x="-1.905" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="0.635" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="1.905" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="8" x="-1.905" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="6" x="0.635" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="1.905" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<smd name="PAD" x="0" y="0" dx="3.6" dy="2.7" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MIC5320">
@@ -682,6 +732,40 @@ From transistor-power.lbr</description>
 <pin name="IN" x="-7.62" y="2.54" visible="off" length="short" direction="in"/>
 <pin name="GND" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 <pin name="OUT" x="7.62" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="LMZ14202">
+<pin name="VIN" x="0" y="0" length="middle" rot="R90"/>
+<pin name="RON" x="2.54" y="0" length="middle" rot="R90"/>
+<pin name="EN" x="5.08" y="0" length="middle" rot="R90"/>
+<pin name="GND" x="7.62" y="0" length="middle" rot="R90"/>
+<pin name="SS" x="10.16" y="0" length="middle" rot="R90"/>
+<pin name="FB" x="12.7" y="0" length="middle" rot="R90"/>
+<pin name="VOUT" x="15.24" y="0" length="middle" rot="R90"/>
+<pin name="THERMAL" x="17.78" y="0" length="middle" rot="R90"/>
+<wire x1="-2.54" y1="5.08" x2="20.32" y2="5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="-2.54" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="20.32" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="-1.27" y="23.114" size="1.6764" layer="104" ratio="12">&gt;NAME</text>
+<text x="-1.27" y="20.828" size="1.6764" layer="104" ratio="12">&gt;VALUE</text>
+<text x="-1.778" y="17.78" size="1.6764" layer="97" ratio="12">LMZ1420x</text>
+</symbol>
+<symbol name="SWREG1">
+<pin name="VIN" x="-15.24" y="2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
+<pin name="FB" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="COMP" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="EN" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="SW" x="-15.24" y="0" length="middle"/>
+<pin name="BS" x="-15.24" y="5.08" length="middle"/>
+<pin name="SS" x="15.24" y="5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-9.906" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="HEATSINK" x="-15.24" y="-5.08" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1218,6 +1302,141 @@ temperature. This series contains nine fixed output voltages of 1.5 V, 1.8 V, 1.
 <connect gate="G$1" pin="HEATSINK" pad="4"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMZ14202" prefix="U">
+<description>&lt;b&gt;LMZ14202/LMZ14203 2A/3A Switching Regulator&lt;/b&gt;
+
+&lt;p&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/lmz14203h.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Texas Instruments LMZ14203H SIMPLE SWITCHER® power
+module is an easy-to-use step-down DC-DC solution
+that can drive up to 3-A load with exceptional power
+conversion efficiency, line and load regulation, and
+output accuracy. The LMZ14203H is available in an
+innovative package that enhances thermal performance 
+and allows for hand or machine soldering.&lt;/p&gt;
+
+&lt;p&gt;The LMZ14203H can accept an input voltage rail
+between 6 V and 42 V and deliver an adjustable and
+highly accurate output voltage as low as 5 V. The
+LMZ14203H only requires three external resistors
+and four external capacitors to complete the power
+solution. The LMZ14203H is a reliable and robust
+design with the following protection features: thermal
+shutdown, input undervoltage lockout, output
+overvoltage protection, short-circuit protection, output
+current limit, and allows start-up into a prebiased
+output. A single resistor adjusts the switching
+frequency up to 1 MHz.&lt;/p&gt;
+
+&lt;p&gt;Features&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrated Shielded Inductor&lt;/li&gt;
+&lt;li&gt;Simple PCB Layout&lt;/li&gt;
+&lt;li&gt;Flexible Start-Up Sequencing Using External Soft-Start and Precision Enable Protection Against Inrush Currents&lt;/li&gt;
+&lt;li&gt;Input UVLO and Output Short-Circuit Protection&lt;/li&gt;
+&lt;li&gt;–40°C to 125°C Junction Temperature Range&lt;/li&gt;
+&lt;li&gt;Single Exposed Pad and Standard Pinout for Easy Mounting and Manufacturing&lt;/li&gt;
+&lt;li&gt;Low Output Voltage Ripple&lt;/li&gt;
+&lt;li&gt;Pin-to-Pin Compatible Family:&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;LMZ14203H/2H/1H (42 V Maximum, 3-A, 2-A, 1-A)&lt;/li&gt;
+&lt;li&gt;LMZ14203/2/1 (4 2V Maximum, 3-A, 2-A, 1-A)&lt;/li&gt;
+&lt;li&gt;LMZ12003/2/1 (20 V Maximum, 3-A, 2-A, 1-A)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Fully Enabled for WEBENCH® Power Designer&lt;/li&gt;
+&lt;li&gt;Electrical Specifications&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Up to 3-A Output Current&lt;/li&gt;
+&lt;li&gt;Input Voltage Range 6 V to 42 V&lt;/li&gt;
+&lt;li&gt;Output Voltage as Low as 5 V&lt;/li&gt;
+&lt;li&gt;Efficiency up to 97%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Performance Benefits&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High Efficiency Reduces System Heat Generation&lt;/li&gt;
+&lt;li&gt;Low Radiated EMI (EN 55022 Class B Tested)&lt;/li&gt;
+&lt;li&gt;No Compensation Required&lt;/li&gt;
+&lt;li&gt;Low Package Thermal Resistance&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="&gt;NAME" symbol="LMZ14202" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-PMOD">
+<connects>
+<connect gate="&gt;NAME" pin="EN" pad="3"/>
+<connect gate="&gt;NAME" pin="FB" pad="6"/>
+<connect gate="&gt;NAME" pin="GND" pad="4"/>
+<connect gate="&gt;NAME" pin="RON" pad="2"/>
+<connect gate="&gt;NAME" pin="SS" pad="5"/>
+<connect gate="&gt;NAME" pin="THERMAL" pad="PAD"/>
+<connect gate="&gt;NAME" pin="VIN" pad="1"/>
+<connect gate="&gt;NAME" pin="VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP3513E" prefix="U">
+<description>&lt;b&gt;AP3513E switching regulator&lt;/b&gt;
+
+&lt;p&gt;The Diodes, Inc. AP3513E is a 500kHz fixed frequency, current mode, PWM
+synchronous buck (step-down) DC-DC converter, capable of driving a
+3A load with high efficiency, excellent line and load regulation. The
+AP3513E exhibits high efficiency at light load. The device integrates
+N-channel power MOSFET switch with low on-resistance. Current
+mode control provides fast transient response and cycle-by-cycle
+current limit.&lt;/p&gt;
+
+&lt;p&gt;The AP3513E employs complete protection to ensure system
+security, including output Over Voltage Protection, input Under
+Voltage Lock Out, programmable Soft-start, Over Temperature
+Protection and hiccup mode Short Circuit Protection.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.diodes.com/_files/datasheets/AP3513E.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Input Voltage Range: 4.5V to 18V&lt;/li&gt;
+&lt;li&gt;Fixed 500kHz Frequency&lt;/li&gt;
+&lt;li&gt;High Efficiency at Light Load&lt;/li&gt;
+&lt;li&gt;Output Current: 3A&lt;/li&gt;
+&lt;li&gt;Current Mode Control&lt;/li&gt;
+&lt;li&gt;Built-in Over Current Protection&lt;/li&gt;
+&lt;li&gt;Built-in Thermal Shutdown Function&lt;/li&gt;
+&lt;li&gt;Built-in UVLO Function&lt;/li&gt;
+&lt;li&gt;Built-in Over Voltage Protection&lt;/li&gt;
+&lt;li&gt;Programmable Soft-start&lt;/li&gt;
+&lt;li&gt;Hiccup Mode SCP&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="AP3513E" symbol="SWREG1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO-8EP">
+<connects>
+<connect gate="AP3513E" pin="BS" pad="1"/>
+<connect gate="AP3513E" pin="COMP" pad="6"/>
+<connect gate="AP3513E" pin="EN" pad="7"/>
+<connect gate="AP3513E" pin="FB" pad="5"/>
+<connect gate="AP3513E" pin="GND" pad="4"/>
+<connect gate="AP3513E" pin="HEATSINK" pad="PAD"/>
+<connect gate="AP3513E" pin="SS" pad="8"/>
+<connect gate="AP3513E" pin="SW" pad="3"/>
+<connect gate="AP3513E" pin="VIN" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
