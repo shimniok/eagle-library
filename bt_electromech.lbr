@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -954,6 +954,36 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <text x="-1.27" y="-5.08" size="0.4064" layer="27">&gt;Value</text>
 <text x="-6.35" y="-3.81" size="1.016" layer="48" rot="R90">Card edge</text>
 </package>
+<package name="302_5">
+<pad name="P$1" x="-5.08" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="-2.54" y="0" drill="0.8" shape="square"/>
+<pad name="P$3" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="P$4" x="2.54" y="0" drill="0.8" shape="square"/>
+<pad name="P$5" x="5.08" y="0" drill="0.8" shape="square"/>
+</package>
+<package name="302_2">
+<pad name="P$1" x="-1.27" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="1.27" y="0" drill="0.8" shape="square"/>
+</package>
+<package name="302_4">
+<pad name="P$1" x="-3.81" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.8" shape="square"/>
+<pad name="P$3" x="1.27" y="0" drill="0.8" shape="square"/>
+<pad name="P$4" x="3.81" y="0" drill="0.8" shape="square"/>
+</package>
+<package name="302_3">
+<pad name="P$1" x="-2.54" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="P$3" x="2.54" y="0" drill="0.8" shape="square"/>
+</package>
+<package name="302_6">
+<pad name="P$1" x="-1.27" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="1.27" y="0" drill="0.8" shape="square"/>
+<pad name="P$3" x="3.81" y="0" drill="0.8" shape="square"/>
+<pad name="P$4" x="-3.81" y="0" drill="0.8" shape="square"/>
+<pad name="P$5" x="-6.35" y="0" drill="0.8" shape="square"/>
+<pad name="P$6" x="6.35" y="0" drill="0.8" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DEANS">
@@ -1249,6 +1279,221 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pin name="SHIELD3" x="-2.54" y="-7.62" visible="pad" length="short"/>
 <pin name="SHIELD4" x="-2.54" y="-10.16" visible="pad" length="short"/>
 <wire x1="0" y1="-11.176" x2="5.08" y2="-11.176" width="0.254" layer="94"/>
+</symbol>
+<symbol name="302_DIAL">
+<pin name="W" x="12.7" y="-7.62" visible="off" length="middle" rot="R180"/>
+<pin name="BB" x="12.7" y="-5.08" visible="off" length="middle" rot="R180"/>
+<pin name="R" x="12.7" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="BK" x="12.7" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="Y" x="12.7" y="5.08" visible="off" length="middle" rot="R180"/>
+<wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-12.7" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-5.334" y1="-2.54" x2="-6.35" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-6.35" y1="-2.54" x2="-6.35" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-6.35" y1="-5.08" x2="-5.334" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.334" y1="-5.08" x2="-5.334" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="-5.334" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-2.54" y="-1.778"/>
+<vertex x="-2.032" y="-0.254"/>
+<vertex x="-3.048" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-2.54" y="-5.08"/>
+<vertex x="-3.048" y="-6.604"/>
+<vertex x="-2.032" y="-6.604"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-2.54" y="2.54"/>
+<vertex x="-2.032" y="4.064"/>
+<vertex x="-3.048" y="4.064"/>
+</polygon>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="-5.334" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-5.334" y2="-5.08" width="0.1524" layer="94"/>
+<text x="8.89" y="5.334" size="1.778" layer="94">Y</text>
+<text x="8.382" y="2.794" size="1.778" layer="94">BK</text>
+<text x="9.144" y="-2.286" size="1.778" layer="94">R</text>
+<text x="8.382" y="-4.826" size="1.778" layer="94">BB</text>
+<text x="8.89" y="-7.366" size="1.778" layer="94">W</text>
+<text x="-3.556" y="-0.762" size="1.27" layer="97" rot="R180">CLOSED WHILE DIALING</text>
+<text x="-3.556" y="4.318" size="1.27" layer="97" rot="R180">PULSE GENERATION</text>
+<text x="-3.556" y="-5.842" size="1.27" layer="97" rot="R180">OPEN WHILE DIALING</text>
+<text x="2.54" y="7.62" size="1.778" layer="95" align="center">DIAL</text>
+<circle x="12.7" y="2.54" radius="0.508" width="0.254" layer="94"/>
+<circle x="12.7" y="5.08" radius="0.508" width="0.254" layer="94"/>
+<circle x="12.7" y="-2.54" radius="0.508" width="0.254" layer="94"/>
+<circle x="12.7" y="-5.08" radius="0.508" width="0.254" layer="94"/>
+<circle x="12.7" y="-7.62" radius="0.508" width="0.254" layer="94"/>
+</symbol>
+<symbol name="302_COILS">
+<wire x1="-2.54" y1="0" x2="-2.54" y2="5.08" width="0.1524" layer="94" curve="270"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="0" width="0.1524" layer="94" curve="180"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="10.16" width="0.1524" layer="94" curve="270"/>
+<wire x1="-2.54" y1="10.16" x2="2.54" y2="15.24" width="0.1524" layer="94" curve="180"/>
+<pin name="P$2" x="15.24" y="15.24" visible="off" length="middle" rot="R180"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="5.08" width="0.1524" layer="94" curve="270"/>
+<wire x1="7.62" y1="15.24" x2="12.7" y2="10.16" width="0.1524" layer="94" curve="180"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="0" width="0.1524" layer="94" curve="270"/>
+<wire x1="12.7" y1="0" x2="7.62" y2="-5.08" width="0.1524" layer="94" curve="180"/>
+<wire x1="-12.7" y1="0" x2="-12.7" y2="5.08" width="0.1524" layer="94" curve="270"/>
+<wire x1="-7.62" y1="-5.08" x2="-12.7" y2="0" width="0.1524" layer="94" curve="180"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="10.16" width="0.1524" layer="94" curve="270"/>
+<wire x1="-12.7" y1="10.16" x2="-7.62" y2="15.24" width="0.1524" layer="94" curve="180"/>
+<pin name="P$1" x="-15.24" y="15.24" visible="off" length="middle"/>
+<pin name="P$3" x="-15.24" y="-5.08" visible="off" length="middle"/>
+<pin name="P$4" x="15.24" y="-5.08" visible="off" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="15.24" x2="-10.16" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="7.62" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="-5.08" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="15.24" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
+<text x="13.716" y="-4.572" size="1.778" layer="94">R</text>
+<text x="-15.24" y="-4.318" size="1.778" layer="94">GN</text>
+<text x="-15.24" y="12.7" size="1.778" layer="94">C</text>
+<wire x1="10.16" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
+<text x="12.954" y="12.7" size="1.778" layer="94">L1</text>
+<pin name="P$5" x="0" y="17.78" visible="off" length="point" rot="R180"/>
+<circle x="0" y="17.78" radius="0.508" width="0.254" layer="94"/>
+<text x="-4.064" y="17.018" size="1.778" layer="94">L2</text>
+<text x="1.27" y="17.018" size="1.778" layer="94">Y</text>
+<text x="14.478" y="5.08" size="1.27" layer="95" rot="R90" align="center">22R</text>
+<text x="-13.97" y="5.08" size="1.27" layer="95" rot="R90" align="center">20R</text>
+<text x="-3.81" y="5.08" size="1.27" layer="95" rot="R90" align="center">82R</text>
+<text x="0" y="-7.62" size="2.54" layer="95" align="center">101A</text>
+<text x="0" y="-10.16" size="1.778" layer="95" align="center">INDUCTION COILS</text>
+<circle x="-15.24" y="15.24" radius="0.508" width="0.254" layer="94"/>
+<circle x="-15.24" y="-5.08" radius="0.508" width="0.254" layer="94"/>
+<circle x="15.24" y="-5.08" radius="0.508" width="0.254" layer="94"/>
+<circle x="15.24" y="15.24" radius="0.508" width="0.254" layer="94"/>
+</symbol>
+<symbol name="302_BELL">
+<circle x="-6.35" y="0" radius="3.81" width="0.1524" layer="94"/>
+<circle x="6.35" y="0" radius="3.81" width="0.1524" layer="94"/>
+<pin name="P$1" x="-15.24" y="0" visible="off" length="point"/>
+<pin name="P$2" x="17.78" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="-3.81" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.08" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<text x="0" y="-5.08" size="1.778" layer="95" align="center">B1A RINGER</text>
+<text x="-14.478" y="-1.524" size="1.27" layer="94" align="center">GND</text>
+<text x="17.018" y="-1.524" size="1.27" layer="94" align="center">K</text>
+<wire x1="-15.24" y1="0" x2="-10.16" y2="0" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="0" x2="17.78" y2="0" width="0.1524" layer="91"/>
+<text x="-12.7" y="1.016" size="1.27" layer="97" align="center">RED</text>
+<text x="13.462" y="1.016" size="1.27" layer="97" align="center">BLACK</text>
+<circle x="-15.24" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="17.78" y="0" radius="0.508" width="0.254" layer="94"/>
+</symbol>
+<symbol name="302_OFFHOOK">
+<pin name="P$1" x="7.62" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$2" x="7.62" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$3" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="P$4" x="7.62" y="-2.54" visible="off" length="middle" rot="R180"/>
+<wire x1="2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<rectangle x1="-10.16" y1="-2.54" x2="-9.144" y2="2.54" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-5.08" y="2.54"/>
+<vertex x="-4.572" y="4.318"/>
+<vertex x="-5.588" y="4.318"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-5.08" y="-2.54"/>
+<vertex x="-4.572" y="-0.762"/>
+<vertex x="-5.588" y="-0.762"/>
+</polygon>
+<text x="-9.144" y="3.556" size="1.016" layer="95" align="bottom-right">MAKES
+LAST</text>
+<wire x1="-8.89" y1="4.064" x2="-6.858" y2="4.064" width="0.1524" layer="95"/>
+<wire x1="-6.858" y1="4.064" x2="-6.858" y2="3.81" width="0.1524" layer="95"/>
+<wire x1="-6.35" y1="4.064" x2="-6.858" y2="4.318" width="0.1524" layer="95"/>
+<wire x1="-6.858" y1="4.318" x2="-6.858" y2="4.064" width="0.1524" layer="95"/>
+<wire x1="-6.858" y1="3.81" x2="-6.35" y2="4.064" width="0.1524" layer="95"/>
+<text x="0" y="7.62" size="1.778" layer="95" align="center">HOOK SWITCH</text>
+<text x="0.254" y="-4.064" size="1.27" layer="97" align="center">shown off-hook</text>
+</symbol>
+<symbol name="302_HANDSET">
+<wire x1="-29.464" y1="2.54" x2="28.956" y2="2.54" width="0.1524" layer="97" curve="-50"/>
+<wire x1="-17.018" y1="0" x2="16.51" y2="0" width="0.1524" layer="97"/>
+<wire x1="-35.814" y1="-12.446" x2="-17.272" y2="-6.096" width="0.1524" layer="97" curve="-204"/>
+<wire x1="-35.814" y1="-12.446" x2="-17.272" y2="-6.096" width="0.1524" layer="97"/>
+<wire x1="-17.018" y1="0" x2="-18.796" y2="-1.778" width="0.1524" layer="97" curve="90"/>
+<wire x1="16.51" y1="0" x2="18.288" y2="-1.778" width="0.1524" layer="97" curve="-90"/>
+<wire x1="-35.814" y1="-12.446" x2="-35.13985" y2="-13.569584375" width="0.1524" layer="97"/>
+<wire x1="-35.13985" y1="-13.569584375" x2="-32.72986875" y2="-14.443346875" width="0.1524" layer="97" curve="78.215272"/>
+<wire x1="-32.72986875" y1="-14.443346875" x2="-18.406815625" y2="-9.461415625" width="0.1524" layer="97"/>
+<wire x1="-18.406815625" y1="-9.461415625" x2="-17.07514375" y2="-7.178709375" width="0.1524" layer="97" curve="81.125708"/>
+<wire x1="-17.07514375" y1="-7.178709375" x2="-17.272" y2="-6.096" width="0.1524" layer="97"/>
+<wire x1="16.764" y1="-6.604" x2="36.322" y2="-9.144" width="0.1524" layer="97" curve="-190"/>
+<wire x1="16.764" y1="-6.604" x2="36.322" y2="-9.144" width="0.1524" layer="97"/>
+<wire x1="16.764" y1="-6.604" x2="16.984771875" y2="-7.707859375" width="0.1524" layer="97"/>
+<wire x1="16.984771875" y1="-7.707859375" x2="18.725271875" y2="-9.325659375" width="0.1524" layer="97" curve="71.564962"/>
+<wire x1="18.725271875" y1="-9.325659375" x2="33.907021875" y2="-11.223378125" width="0.1524" layer="97"/>
+<wire x1="33.907021875" y1="-11.223378125" x2="36.086784375" y2="-9.849646875" width="0.1524" layer="97" curve="78.690235"/>
+<wire x1="36.086784375" y1="-9.849646875" x2="36.322" y2="-9.144" width="0.1524" layer="97"/>
+<pin name="P$1" x="-33.02" y="0" visible="off" length="point"/>
+<pin name="P$2" x="-33.02" y="2.54" visible="off" length="point"/>
+<pin name="P$3" x="-33.02" y="5.08" visible="off" length="point"/>
+<wire x1="-33.02" y1="5.08" x2="20.32" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="28.448" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="2.54" x2="-22.86" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-22.86" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="2.54" x2="23.368" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="-33.02" y1="0" x2="-33.02" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-22.86" y1="-5.08" x2="-22.86" y2="2.54" width="0.1524" layer="94"/>
+<text x="-34.036" y="-6.858" size="1.27" layer="97">TRANSMITTER</text>
+<text x="21.844" y="-4.826" size="1.27" layer="97">RECEIVER</text>
+<text x="-32.004" y="-0.508" size="1.27" layer="94">BK</text>
+<text x="-32.004" y="2.794" size="1.27" layer="94">R</text>
+<text x="-32.004" y="5.334" size="1.27" layer="94">W\</text>
+<circle x="-33.02" y="5.08" radius="0.508" width="0.254" layer="94"/>
+<circle x="-33.02" y="2.54" radius="0.508" width="0.254" layer="94"/>
+<circle x="-33.02" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="-22.86" y="2.54" radius="0.127" width="0.4064" layer="94"/>
+</symbol>
+<symbol name="302_SWITCH">
+<pin name="P$1" x="7.62" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-5.08" y="0"/>
+<vertex x="-4.572" y="1.778"/>
+<vertex x="-5.588" y="1.778"/>
+</polygon>
+</symbol>
+<symbol name="303_TRANS">
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<text x="0" y="-7.62" size="1.778" layer="95" align="center">TRANSMITTER</text>
+<pin name="P$1" x="-10.16" y="0" visible="off" length="middle"/>
+<pin name="P$2" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<text x="8.636" y="1.27" size="1.27" layer="94" align="center">R</text>
+<text x="-8.89" y="1.27" size="1.27" layer="94" align="center">BK</text>
+</symbol>
+<symbol name="302_RCVR">
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<text x="0" y="-7.62" size="1.778" layer="95" align="center">RECEIVER</text>
+<pin name="P$1" x="-10.16" y="0" visible="off" length="middle"/>
+<pin name="P$2" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<text x="8.636" y="1.27" size="1.27" layer="94" align="center">W</text>
+<text x="-9.398" y="1.27" size="1.27" layer="94" align="center">R</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1873,7 +2118,145 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 </devices>
 </deviceset>
+<deviceset name="302_DIAL">
+<gates>
+<gate name="G$1" symbol="302_DIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="302_5">
+<connects>
+<connect gate="G$1" pin="BB" pad="P$1"/>
+<connect gate="G$1" pin="BK" pad="P$2"/>
+<connect gate="G$1" pin="R" pad="P$3"/>
+<connect gate="G$1" pin="W" pad="P$4"/>
+<connect gate="G$1" pin="Y" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="302_OFFHOOK">
+<gates>
+<gate name="G$1" symbol="302_OFFHOOK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="302_4">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="302_COILS">
+<gates>
+<gate name="G$1" symbol="302_COILS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="302_5">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="302_BELLS">
+<gates>
+<gate name="G$1" symbol="302_BELL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="302_2">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="302_HANDSET">
+<gates>
+<gate name="G$1" symbol="302_HANDSET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="302_3">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="302_SWITCH">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="302_TRANS">
+<gates>
+<gate name="G$1" symbol="303_TRANS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="302_2">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="302_RCVR">
+<gates>
+<gate name="G$1" symbol="302_RCVR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="302_2">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
