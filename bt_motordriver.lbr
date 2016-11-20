@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -44,8 +44,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -397,6 +397,43 @@ TS-003</description>
 <vertex x="2.5654" y="3.937"/>
 </polygon>
 </package>
+<package name="LSOP14">
+<smd name="1" x="1" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="2" x="2" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="3" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="4" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="5" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="6" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="7" x="7" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="8" x="7" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="9" x="6" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="10" x="5" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="11" x="4" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="12" x="3" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="13" x="2" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="14" x="1" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<wire x1="0" y1="1" x2="0" y2="5.4" width="0.127" layer="21"/>
+<wire x1="0" y1="5.4" x2="8" y2="5.4" width="0.127" layer="21"/>
+<wire x1="8" y1="5.4" x2="8" y2="1" width="0.127" layer="21"/>
+<wire x1="8" y1="1" x2="0" y2="1" width="0.127" layer="21"/>
+<circle x="1" y="2" radius="0.5" width="0.127" layer="21"/>
+<rectangle x1="3.825" y1="0" x2="4.175" y2="1" layer="51"/>
+<rectangle x1="4.825" y1="0" x2="5.175" y2="1" layer="51"/>
+<rectangle x1="5.825" y1="0" x2="6.175" y2="1" layer="51"/>
+<rectangle x1="6.825" y1="0" x2="7.175" y2="1" layer="51"/>
+<rectangle x1="2.825" y1="0" x2="3.175" y2="1" layer="51"/>
+<rectangle x1="1.825" y1="0" x2="2.175" y2="1" layer="51"/>
+<rectangle x1="0.825" y1="0" x2="1.175" y2="1" layer="51"/>
+<rectangle x1="0.825" y1="5.4" x2="1.175" y2="6.4" layer="51"/>
+<rectangle x1="1.825" y1="5.4" x2="2.175" y2="6.4" layer="51"/>
+<rectangle x1="2.825" y1="5.4" x2="3.175" y2="6.4" layer="51"/>
+<rectangle x1="3.825" y1="5.4" x2="4.175" y2="6.4" layer="51"/>
+<rectangle x1="4.825" y1="5.4" x2="5.175" y2="6.4" layer="51"/>
+<rectangle x1="5.825" y1="5.4" x2="6.175" y2="6.4" layer="51"/>
+<rectangle x1="6.825" y1="5.4" x2="7.175" y2="6.4" layer="51"/>
+<text x="-0.3" y="1" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="9.6" y="0.9" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DRV8835">
@@ -555,6 +592,31 @@ other devices like solenoids. &lt;/p&gt;
 <pin name="S" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="D" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="LB1836M">
+<pin name="VCC" x="-15.24" y="10.16" length="middle"/>
+<pin name="VS1" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VS2" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="IN1" x="-15.24" y="0" length="middle"/>
+<pin name="IN2" x="-15.24" y="-2.54" length="middle"/>
+<pin name="IN3" x="-15.24" y="-10.16" length="middle"/>
+<pin name="IN4" x="-15.24" y="-12.7" length="middle"/>
+<pin name="VCONT" x="-15.24" y="7.62" length="middle"/>
+<pin name="GND2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="OUT4" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="OUT3" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="OUT2" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="OUT1" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="GND1" x="15.24" y="10.16" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="12.7" size="1.778" layer="95" align="bottom-center">LB1836M</text>
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="95" style="shortdash"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="95" style="shortdash"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DRV8835">
@@ -656,6 +718,50 @@ loss and fast switching are required.&lt;/P&gt;
 <connect gate="Q2" pin="D" pad="5 6"/>
 <connect gate="Q2" pin="G" pad="4"/>
 <connect gate="Q2" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LB1836M" prefix="U">
+<description>&lt;B&gt;LB1836 Motor Driver/Controller&lt;/B&gt;
+&lt;p&gt;The LB1836M is a low-saturation two-channel bidirectional motor driver IC for use in low-voltage applications.
+The LB1836M is a bipolar stepper-motor driver IC that is ideal for use in printers, FDDs, cameras and other portable
+devices.&lt;p&gt;
+&lt;p&gt;Features&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Low voltage operation (2.5V min)&lt;/li&gt;
+&lt;li&gt;Low saturation voltage (upper transistor + lower transistor residual voltage ; 0.40V typ at 400mA).&lt;/li&gt;
+&lt;li&gt;Parallel connection (Upper transistor + lower transistor residual voltage ; 0.5V typ at 800mA).&lt;/li&gt;
+&lt;li&gt;Separate logic power supply and motor power supply&lt;/li&gt;
+&lt;li&gt;Brake function&lt;/li&gt;
+&lt;li&gt;Spark killer diodes built in&lt;/li&gt;
+&lt;li&gt;Thermal shutdown circuit built in&lt;/li&gt;
+&lt;li&gt;Compact package (14-pin MFP)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://www.onsemi.com/pub_link/Collateral/ANDLB1836M-D.PDF"&gt;Datasheet.pdf&lt;/a&gt;&lt;/P&gt;</description>
+<gates>
+<gate name="U1" symbol="LB1836M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LSOP14">
+<connects>
+<connect gate="U1" pin="GND1" pad="7"/>
+<connect gate="U1" pin="GND2" pad="14"/>
+<connect gate="U1" pin="IN1" pad="2"/>
+<connect gate="U1" pin="IN2" pad="6"/>
+<connect gate="U1" pin="IN3" pad="13"/>
+<connect gate="U1" pin="IN4" pad="9"/>
+<connect gate="U1" pin="OUT1" pad="3"/>
+<connect gate="U1" pin="OUT2" pad="5"/>
+<connect gate="U1" pin="OUT3" pad="12"/>
+<connect gate="U1" pin="OUT4" pad="10"/>
+<connect gate="U1" pin="VCC" pad="1"/>
+<connect gate="U1" pin="VCONT" pad="8"/>
+<connect gate="U1" pin="VS1" pad="4"/>
+<connect gate="U1" pin="VS2" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
