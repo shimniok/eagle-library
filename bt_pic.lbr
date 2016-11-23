@@ -971,32 +971,32 @@ package type P</description>
 <text x="-10.16" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="PICAXE-20M2">
-<pin name="TX" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="RX" x="-15.24" y="10.16" length="middle"/>
-<pin name="GND" x="15.24" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="C.0" x="-15.24" y="-10.16" length="middle"/>
-<pin name="C.1" x="-15.24" y="-7.62" length="middle"/>
-<pin name="C.2" x="-15.24" y="-5.08" length="middle"/>
-<pin name="C.3" x="-15.24" y="-2.54" length="middle"/>
-<pin name="C.4" x="-15.24" y="0" length="middle"/>
-<pin name="C.5" x="-15.24" y="2.54" length="middle"/>
-<pin name="C.6" x="-15.24" y="5.08" length="middle"/>
-<pin name="C.7" x="-15.24" y="7.62" length="middle"/>
-<pin name="VDD" x="-15.24" y="12.7" length="middle" direction="pwr"/>
-<pin name="B.0" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="B.1" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="B.2" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="B.3" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="B.4" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="B.5" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="B.6" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="B.7" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
-<text x="-10.16" y="16.002" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="TX" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="RX" x="-17.78" y="10.16" length="middle"/>
+<pin name="GND" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="C.0|HTX" x="-17.78" y="-10.16" length="middle"/>
+<pin name="C.1|KDA" x="-17.78" y="-7.62" length="middle"/>
+<pin name="C.2*|KCL" x="-17.78" y="-5.08" length="middle"/>
+<pin name="C.3*" x="-17.78" y="-2.54" length="middle"/>
+<pin name="C.4*" x="-17.78" y="0" length="middle"/>
+<pin name="C.5*" x="-17.78" y="2.54" length="middle"/>
+<pin name="C.6" x="-17.78" y="5.08" length="middle"/>
+<pin name="C.7" x="-17.78" y="7.62" length="middle"/>
+<pin name="VDD" x="-17.78" y="12.7" length="middle" direction="pwr"/>
+<pin name="B.0" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="*B.1" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="B.2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="B.3" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="*B.4" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA|B.5" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="HRX|B.6" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="SCL|B.7" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<text x="-12.7" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="PICAXE-18M2">
 <pin name="C.3|TX" x="-17.78" y="7.62" length="middle" direction="out"/>
@@ -1603,24 +1603,24 @@ Source: dsPIC33FJ128GP710.bsd</description>
 <devices>
 <device name="" package="DIL20">
 <connects>
+<connect gate="U1" pin="*B.1" pad="17"/>
+<connect gate="U1" pin="*B.4" pad="14"/>
 <connect gate="U1" pin="B.0" pad="18"/>
-<connect gate="U1" pin="B.1" pad="17"/>
 <connect gate="U1" pin="B.2" pad="16"/>
 <connect gate="U1" pin="B.3" pad="15"/>
-<connect gate="U1" pin="B.4" pad="14"/>
-<connect gate="U1" pin="B.5" pad="13"/>
-<connect gate="U1" pin="B.6" pad="12"/>
-<connect gate="U1" pin="B.7" pad="11"/>
-<connect gate="U1" pin="C.0" pad="10"/>
-<connect gate="U1" pin="C.1" pad="9"/>
-<connect gate="U1" pin="C.2" pad="8"/>
-<connect gate="U1" pin="C.3" pad="7"/>
-<connect gate="U1" pin="C.4" pad="6"/>
-<connect gate="U1" pin="C.5" pad="5"/>
+<connect gate="U1" pin="C.0|HTX" pad="10"/>
+<connect gate="U1" pin="C.1|KDA" pad="9"/>
+<connect gate="U1" pin="C.2*|KCL" pad="8"/>
+<connect gate="U1" pin="C.3*" pad="7"/>
+<connect gate="U1" pin="C.4*" pad="6"/>
+<connect gate="U1" pin="C.5*" pad="5"/>
 <connect gate="U1" pin="C.6" pad="4"/>
 <connect gate="U1" pin="C.7" pad="3"/>
 <connect gate="U1" pin="GND" pad="20"/>
+<connect gate="U1" pin="HRX|B.6" pad="12"/>
 <connect gate="U1" pin="RX" pad="2"/>
+<connect gate="U1" pin="SCL|B.7" pad="11"/>
+<connect gate="U1" pin="SDA|B.5" pad="13"/>
 <connect gate="U1" pin="TX" pad="19"/>
 <connect gate="U1" pin="VDD" pad="1"/>
 </connects>
