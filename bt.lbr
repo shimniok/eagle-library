@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -46,8 +46,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -2222,6 +2222,40 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <text x="2.54" y="-22.86" size="1.016" layer="21" font="vector" align="center-left">G20</text>
 <text x="2.54" y="-25.4" size="1.016" layer="21" font="vector" align="center-left">G21</text>
 </package>
+<package name="FSJ_CC">
+<smd name="1" x="-3.81" y="2.38125" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="2" x="-3.81" y="6.35" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="3" x="-3.81" y="10.31875" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="4" x="-3.81" y="14.2875" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="5" x="-3.81" y="18.25625" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="6" x="-3.81" y="22.225" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="7" x="-3.81" y="26.19375" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="11" x="-3.81" y="42.06875" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="12" x="-3.81" y="46.0375" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="13" x="-3.81" y="50.00625" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<smd name="14" x="-3.81" y="53.975" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<wire x1="-8.255" y1="0" x2="0" y2="0" width="0.127" layer="52"/>
+<wire x1="0" y1="0" x2="0" y2="30.95625" width="0.127" layer="52"/>
+<wire x1="0" y1="33.3375" x2="0" y2="56.35625" width="0.127" layer="52"/>
+<wire x1="0" y1="56.35625" x2="-9.525" y2="56.35625" width="0.127" layer="52"/>
+<wire x1="0" y1="30.95625" x2="-18.89125" y2="30.95625" width="0.254" layer="22"/>
+<wire x1="-18.89125" y1="30.95625" x2="-18.89125" y2="33.3375" width="0.254" layer="22"/>
+<wire x1="-18.89125" y1="33.3375" x2="0" y2="33.3375" width="0.254" layer="22"/>
+<smd name="10" x="-3.81" y="38.1" dx="3.048" dy="7.62" layer="16" rot="R90"/>
+<text x="-14.2875" y="1.80975" size="1.27" layer="26" font="vector" rot="MR90">1</text>
+<text x="-1.905" y="2.38125" size="1.27" layer="51" font="vector" align="center-right">LT GREEN | SERVO</text>
+<text x="-1.905" y="6.35" size="1.27" layer="51" font="vector" align="center-right">GREY | SPEED SENS</text>
+<text x="-1.905" y="10.31875" size="1.27" layer="51" font="vector" align="center-right">DK BLUE | SPEED SENS</text>
+<text x="-1.905" y="14.2875" size="1.27" layer="51" font="vector" align="center-right">RED | SERVO</text>
+<text x="-1.905" y="18.25625" size="1.27" layer="51" font="vector" align="center-right">BROWN | CTRL SW</text>
+<text x="-1.905" y="22.225" size="1.27" layer="51" font="vector" align="center-right">WHITE | SERVO</text>
+<text x="-1.905" y="26.19375" size="1.27" layer="51" font="vector" align="center-right">BROWN / TR</text>
+<text x="-1.905" y="38.1" size="1.27" layer="51" font="vector" align="center-right">YELLOW | CTRL SW</text>
+<text x="-1.905" y="42.06875" size="1.27" layer="51" font="vector" align="center-right">TAN | SERVO</text>
+<text x="-1.905" y="46.0375" size="1.27" layer="51" font="vector" align="center-right">ORANGE | SERVO</text>
+<text x="-1.905" y="50.00625" size="1.27" layer="51" font="vector" align="center-right">RED / TR | BRAKE SW</text>
+<text x="-1.905" y="53.975" size="1.27" layer="51" font="vector" align="center-right">DK GREEN | CTRL SW</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POWER2">
@@ -3765,6 +3799,49 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <text x="0" y="-38.1" size="1.4224" layer="95" align="bottom-center">RPi A+, B+, Zero, 2, 3</text>
 <text x="15.24" y="10.16" size="1.4224" layer="95" rot="R180" align="center-left">GND</text>
 </symbol>
+<symbol name="FSJ_CC">
+<pin name="1" x="0" y="33.02" length="middle"/>
+<pin name="2" x="0" y="30.48" length="middle"/>
+<pin name="3" x="0" y="27.94" length="middle"/>
+<pin name="4" x="0" y="25.4" length="middle"/>
+<pin name="5" x="0" y="22.86" length="middle"/>
+<pin name="6" x="0" y="20.32" length="middle"/>
+<pin name="7" x="0" y="17.78" length="middle"/>
+<pin name="10" x="0" y="10.16" length="middle"/>
+<pin name="11" x="0" y="7.62" length="middle"/>
+<pin name="12" x="0" y="5.08" length="middle"/>
+<pin name="13" x="0" y="2.54" length="middle"/>
+<pin name="14" x="0" y="0" length="middle"/>
+<text x="22.86" y="17.78" size="1.524" layer="95" rot="R180" align="center-right">BROWN/TR</text>
+<text x="22.86" y="20.32" size="1.524" layer="95" rot="R180" align="center-right">WHITE</text>
+<text x="22.86" y="22.86" size="1.524" layer="95" rot="R180" align="center-right">BROWN</text>
+<text x="22.86" y="25.4" size="1.524" layer="95" rot="R180" align="center-right">RED</text>
+<text x="22.86" y="27.94" size="1.524" layer="95" rot="R180" align="center-right">DK BLUE</text>
+<text x="22.86" y="30.48" size="1.524" layer="95" rot="R180" align="center-right">GREY</text>
+<text x="22.86" y="10.16" size="1.524" layer="95" rot="R180" align="center-right">YELLOW</text>
+<text x="22.86" y="7.62" size="1.524" layer="95" rot="R180" align="center-right">TAN</text>
+<text x="22.86" y="5.08" size="1.524" layer="95" rot="R180" align="center-right">ORANGE</text>
+<text x="22.86" y="2.54" size="1.524" layer="95" rot="R180" align="center-right">RED/TR</text>
+<text x="22.86" y="0" size="1.524" layer="95" rot="R180" align="center-right">DK GREEN</text>
+<text x="22.86" y="33.02" size="1.524" layer="95" rot="R180" align="center-right">LT GREEN</text>
+<text x="12.7" y="33.02" size="1.524" layer="95" rot="R180" align="center-right">SERVO</text>
+<text x="12.7" y="25.4" size="1.524" layer="95" rot="R180" align="center-right">SERVO</text>
+<text x="12.7" y="20.32" size="1.524" layer="95" rot="R180" align="center-right">SERVO</text>
+<text x="12.7" y="7.62" size="1.524" layer="95" rot="R180" align="center-right">SERVO</text>
+<text x="12.7" y="5.08" size="1.524" layer="95" rot="R180" align="center-right">SERVO</text>
+<text x="12.7" y="2.54" size="1.524" layer="95" rot="R180" align="center-right">BRAKE</text>
+<text x="12.7" y="0" size="1.524" layer="95" rot="R180" align="center-right">CTRL</text>
+<text x="12.7" y="10.16" size="1.524" layer="95" rot="R180" align="center-right">CTRL</text>
+<text x="12.7" y="22.86" size="1.524" layer="95" rot="R180" align="center-right">CTRL</text>
+<text x="12.7" y="30.48" size="1.524" layer="95" rot="R180" align="center-right">SPEED</text>
+<text x="12.7" y="27.94" size="1.524" layer="95" rot="R180" align="center-right">SPEED</text>
+<text x="12.7" y="17.78" size="1.524" layer="95" rot="R180" align="center-right">ACCY</text>
+<wire x1="5.08" y1="35.56" x2="35.56" y2="35.56" width="0.254" layer="94"/>
+<wire x1="35.56" y1="35.56" x2="35.56" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="35.56" width="0.254" layer="94"/>
+<text x="5.08" y="36.068" size="1.524" layer="95">CRUISE COMMAND CARD</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TSOP348" prefix="IC">
@@ -4844,6 +4921,37 @@ external world through a digital interface (I2C/SPI).&lt;/p&gt;
 <connect gate="G$1" pin="RXD/GPIO15" pad="P$10"/>
 <connect gate="G$1" pin="SCK/GPIO21" pad="P$40"/>
 <connect gate="G$1" pin="TXD/GPIO14" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FSJ_CC_CARD">
+<description>&lt;B&gt;FSJ Cruise Command Card&lt;/B&gt;
+&lt;P&gt;Card edge pads for Cruise Command (cruise control) module found in Full Size Jeeps and
+some AMC cars. The card edge connector is single-sided with 14 pins, of which two are not used,
+with a locator slot / terminal release between pins 8 and 9. The pads are spaced on a 5/32" pitch
+and are approximately 0.080 in. wide.&lt;/P&gt;</description>
+<gates>
+<gate name="G$1" symbol="FSJ_CC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FSJ_CC">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
