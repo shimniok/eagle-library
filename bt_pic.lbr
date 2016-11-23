@@ -1138,6 +1138,34 @@ package type P</description>
 <text x="-12.7" y="8.636" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
+<symbol name="PICAXE-20M">
+<pin name="I0|IRI" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="VDD" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="GND" x="12.7" y="12.7" length="middle" direction="in" rot="R180"/>
+<pin name="IRO|O0" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="O1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="O2" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="O3" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="O4" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="O5" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="O6" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="O7" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="I1" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="I2" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="I3" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="I4" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="I5" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="I6" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="I7" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="RX" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="TX" x="12.7" y="10.16" length="middle" direction="in" rot="R180"/>
+<text x="-7.62" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="95">&gt;VALUE</text>
+<wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DSPIC33FJ128GP710" prefix="IC">
@@ -1910,6 +1938,56 @@ Source: dsPIC33FJ128GP710.bsd</description>
 <connect gate="G$1" pin="HTX|C.0" pad="7"/>
 <connect gate="G$1" pin="SDA|*C.2" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICAXE-18X">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICAXE-20M">
+<description>&lt;b&gt;PICAXE 20 pin BASIC microcontroller chip&lt;/b&gt;
+
+&lt;p&gt;PICAXE is a neat entry-level microcontroller system that is relatively cheap to get started with. The chip is programmed with a simple serial connection and the BASIC development environment is free! PICAXE has some excellent educational applications and support, and is a great entryway into more complicated embedded systems. If you’re look for a place to start with microcontrollers, PICAXE is a great way to go!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.rev-ed.co.uk/docs/picaxe_manual1.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="PICAXE-20M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL20">
+<connects>
+<connect gate="U1" pin="GND" pad="20"/>
+<connect gate="U1" pin="I0|IRI" pad="10"/>
+<connect gate="U1" pin="I1" pad="9"/>
+<connect gate="U1" pin="I2" pad="8"/>
+<connect gate="U1" pin="I3" pad="7"/>
+<connect gate="U1" pin="I4" pad="6"/>
+<connect gate="U1" pin="I5" pad="5"/>
+<connect gate="U1" pin="I6" pad="4"/>
+<connect gate="U1" pin="I7" pad="3"/>
+<connect gate="U1" pin="IRO|O0" pad="18"/>
+<connect gate="U1" pin="O1" pad="17"/>
+<connect gate="U1" pin="O2" pad="16"/>
+<connect gate="U1" pin="O3" pad="15"/>
+<connect gate="U1" pin="O4" pad="14"/>
+<connect gate="U1" pin="O5" pad="13"/>
+<connect gate="U1" pin="O6" pad="12"/>
+<connect gate="U1" pin="O7" pad="11"/>
+<connect gate="U1" pin="RX" pad="2"/>
+<connect gate="U1" pin="TX" pad="19"/>
+<connect gate="U1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
