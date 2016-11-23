@@ -1444,6 +1444,48 @@ Protection and hiccup mode Short Circuit Protection.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
+<deviceset name="NCV4264" prefix="U">
+<description>&lt;b&gt;NCV4264-2 LDO Regulator&lt;/b&gt;
+&lt;p&gt;The NCV4264−2 is a low drop out (LDO) regulator in 3.3V and
+5.0V fixed output and is AEC-Q100 Grade 1 qualified. The output
+stage supplies 100 mA with +/- 2.0% output voltage accuracy.&lt;/p&gt;
+&lt;p&gt;Maximum dropout voltage is 500 mV at 100 mA load current.
+It is internally protected against 45 V input transients, input supply
+reversal, output overcurrent faults, and excess die temperature. No
+external components are required to enable these features.&lt;/p&gt;
+&lt;p&gt;The heatsink tab is connected to GND.&lt;/p&gt;
+&lt;p&gt;Features&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3.3 V and 5.0 V Fixed Output&lt;/li&gt;
+&lt;li&gt;+/- 2.0% Output Accuracy, Over Full Temperature Range&lt;/li&gt;
+&lt;li&gt;60 mA Maximum Quiescent Current at IOUT = 100 mA&lt;/li&gt;
+&lt;li&gt;500 mV Maximum Dropout Voltage at 100 mA Load Current&lt;/li&gt;
+&lt;li&gt;Wide Input Voltage Operating Range of 4.5 V to 45 V&lt;/li&gt;
+&lt;li&gt;AEC−Q100 Grade 1 Qualified and PPAP Capable&lt;/li&gt;
+&lt;li&gt;Internal Fault Protection&lt;/li&gt;
+&lt;li&gt;−42 V Reverse Voltage&lt;/li&gt;
+&lt;li&gt;Short Circuit/Overcurrent&lt;/li&gt;
+&lt;li&gt;Thermal Overload&lt;/li&gt;
+&lt;li&gt;This is a Pb−Free Device&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://www.onsemi.com/pub_link/Collateral/NCV4264-2-D.PDF"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="V-REG-3-FIX-TAB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223-3">
+<connects>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="TAB" pad="4"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
