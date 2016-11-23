@@ -1122,6 +1122,22 @@ package type P</description>
 <pin name="VDD2" x="17.78" y="2.54" length="short" direction="pwr" rot="R180"/>
 <pin name="D.2" x="17.78" y="-25.4" length="short" direction="in" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="PICAXE-08M2">
+<pin name="VDD" x="-17.78" y="5.08" length="middle"/>
+<pin name="C.5|RX" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="C.4" x="-17.78" y="0" length="middle"/>
+<pin name="C.3" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="GND" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="HTX|C.0" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="HRX|SCL|C.1" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SDA|*C.2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="8.636" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DSPIC33FJ128GP710" prefix="IC">
@@ -1867,6 +1883,33 @@ Source: dsPIC33FJ128GP710.bsd</description>
 <connect gate="U1" pin="SDA|*B.4" pad="9"/>
 <connect gate="U1" pin="VDD" pad="1"/>
 <connect gate="U1" pin="VSS" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICAXE-08M2">
+<description>&lt;b&gt;PICAXE 8 pin BASIC microcontroller chip&lt;/b&gt;
+
+&lt;p&gt;PICAXE is a neat entry-level microcontroller system that is relatively cheap to get started with. The chip is programmed with a simple serial connection and the BASIC development environment is free! PICAXE has some excellent educational applications and support, and is a great entryway into more complicated embedded systems. If you’re look for a place to start with microcontrollers, PICAXE is a great way to go!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.rev-ed.co.uk/docs/picaxe_manual1.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="PICAXE-08M2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL8">
+<connects>
+<connect gate="G$1" pin="C.3" pad="4"/>
+<connect gate="G$1" pin="C.4" pad="3"/>
+<connect gate="G$1" pin="C.5|RX" pad="2"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="HRX|SCL|C.1" pad="6"/>
+<connect gate="G$1" pin="HTX|C.0" pad="7"/>
+<connect gate="G$1" pin="SDA|*C.2" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
