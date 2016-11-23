@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -32,20 +32,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -54,13 +54,13 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="NonViaHole" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="101" name="PlacementGuide" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="254" name="OrgLBR" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="NonViaHole" color="14" fill="1" visible="no" active="yes"/>
+<layer number="101" name="PlacementGuide" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="OrgLBR" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
 <description>Motor driver ICs</description>
@@ -398,41 +398,41 @@ TS-003</description>
 </polygon>
 </package>
 <package name="LSOP14">
-<smd name="1" x="1" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="2" x="2" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="3" x="3" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="4" x="4" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="5" x="5" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="6" x="6" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="7" x="7" y="0.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="8" x="7" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="9" x="6" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="10" x="5" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="11" x="4" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="12" x="3" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="13" x="2" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<smd name="14" x="1" y="6.1" dx="1.1" dy="0.45" layer="1" rot="R90"/>
-<wire x1="0" y1="1" x2="0" y2="5.4" width="0.127" layer="21"/>
-<wire x1="0" y1="5.4" x2="8" y2="5.4" width="0.127" layer="21"/>
-<wire x1="8" y1="5.4" x2="8" y2="1" width="0.127" layer="21"/>
-<wire x1="8" y1="1" x2="0" y2="1" width="0.127" layer="21"/>
-<circle x="1" y="2" radius="0.5" width="0.127" layer="21"/>
-<rectangle x1="3.825" y1="0" x2="4.175" y2="1" layer="51"/>
-<rectangle x1="4.825" y1="0" x2="5.175" y2="1" layer="51"/>
-<rectangle x1="5.825" y1="0" x2="6.175" y2="1" layer="51"/>
-<rectangle x1="6.825" y1="0" x2="7.175" y2="1" layer="51"/>
-<rectangle x1="2.825" y1="0" x2="3.175" y2="1" layer="51"/>
-<rectangle x1="1.825" y1="0" x2="2.175" y2="1" layer="51"/>
-<rectangle x1="0.825" y1="0" x2="1.175" y2="1" layer="51"/>
-<rectangle x1="0.825" y1="5.4" x2="1.175" y2="6.4" layer="51"/>
-<rectangle x1="1.825" y1="5.4" x2="2.175" y2="6.4" layer="51"/>
-<rectangle x1="2.825" y1="5.4" x2="3.175" y2="6.4" layer="51"/>
-<rectangle x1="3.825" y1="5.4" x2="4.175" y2="6.4" layer="51"/>
-<rectangle x1="4.825" y1="5.4" x2="5.175" y2="6.4" layer="51"/>
-<rectangle x1="5.825" y1="5.4" x2="6.175" y2="6.4" layer="51"/>
-<rectangle x1="6.825" y1="5.4" x2="7.175" y2="6.4" layer="51"/>
-<text x="-0.3" y="1" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="9.6" y="0.9" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<smd name="1" x="-3" y="-2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="2" x="-2" y="-2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="3" x="-1" y="-2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="4" x="0" y="-2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="5" x="1" y="-2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="6" x="2" y="-2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="7" x="3" y="-2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="8" x="3" y="2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="9" x="2" y="2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="10" x="1" y="2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="11" x="0" y="2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="12" x="-1" y="2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="13" x="-2" y="2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<smd name="14" x="-3" y="2.9" dx="1.2" dy="0.64" layer="1" rot="R90"/>
+<wire x1="-4" y1="-2.2" x2="-4" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-4" y1="2.2" x2="4" y2="2.2" width="0.127" layer="21"/>
+<wire x1="4" y1="2.2" x2="4" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="4" y1="-2.2" x2="-4" y2="-2.2" width="0.127" layer="21"/>
+<circle x="-3" y="-1.2" radius="0.5" width="0.127" layer="21"/>
+<rectangle x1="-0.175" y1="-3.3" x2="0.175" y2="-2.3" layer="51"/>
+<rectangle x1="0.825" y1="-3.3" x2="1.175" y2="-2.3" layer="51"/>
+<rectangle x1="1.825" y1="-3.3" x2="2.175" y2="-2.3" layer="51"/>
+<rectangle x1="2.825" y1="-3.3" x2="3.175" y2="-2.3" layer="51"/>
+<rectangle x1="-1.175" y1="-3.3" x2="-0.825" y2="-2.3" layer="51"/>
+<rectangle x1="-2.175" y1="-3.3" x2="-1.825" y2="-2.3" layer="51"/>
+<rectangle x1="-3.175" y1="-3.3" x2="-2.825" y2="-2.3" layer="51"/>
+<rectangle x1="-3.175" y1="2.3" x2="-2.825" y2="3.3" layer="51"/>
+<rectangle x1="-2.175" y1="2.3" x2="-1.825" y2="3.3" layer="51"/>
+<rectangle x1="-1.175" y1="2.3" x2="-0.825" y2="3.3" layer="51"/>
+<rectangle x1="-0.175" y1="2.3" x2="0.175" y2="3.3" layer="51"/>
+<rectangle x1="0.825" y1="2.3" x2="1.175" y2="3.3" layer="51"/>
+<rectangle x1="1.825" y1="2.3" x2="2.175" y2="3.3" layer="51"/>
+<rectangle x1="2.825" y1="2.3" x2="3.175" y2="3.3" layer="51"/>
+<text x="-4.3" y="-2.2" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.6" y="-2.3" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
