@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1046,6 +1046,34 @@ package type P</description>
 <pin name="C.4" x="-12.7" y="2.54" length="short" direction="in"/>
 <pin name="*B.5" x="12.7" y="-7.62" length="short" rot="R180"/>
 </symbol>
+<symbol name="PICAXE-20X2">
+<pin name="TX|A.0" x="20.32" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="RX" x="-20.32" y="10.16" length="middle"/>
+<pin name="GND" x="20.32" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="C.0|HTX" x="-20.32" y="-10.16" length="middle"/>
+<pin name="C.1|KDA|DO" x="-20.32" y="-7.62" length="middle"/>
+<pin name="C.2*|KCL" x="-20.32" y="-5.08" length="middle"/>
+<pin name="C.3*" x="-20.32" y="-2.54" length="middle"/>
+<pin name="C.4*" x="-20.32" y="0" length="middle"/>
+<pin name="C.5*" x="-20.32" y="2.54" length="middle"/>
+<pin name="C.6" x="-20.32" y="5.08" length="middle" direction="in"/>
+<pin name="C.7" x="-20.32" y="7.62" length="middle"/>
+<pin name="VDD" x="-20.32" y="12.7" length="middle" direction="pwr"/>
+<pin name="INT1|B.0" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="INT2|*B.1" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="C2+|B.2" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="C2-|B.3" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="C1-|*B.4" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="DI|SDA|B.5" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="HRX|B.6" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="SCK|SCL|B.7" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<text x="-15.24" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DSPIC33FJ128GP710" prefix="IC">
@@ -1630,16 +1658,39 @@ Source: dsPIC33FJ128GP710.bsd</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PICAXE-20X2">
+<deviceset name="PICAXE-20X2" prefix="U">
 <description>&lt;b&gt;PICAXE 20 pin BASIC microcontroller chip&lt;/b&gt;
 
 &lt;p&gt;PICAXE is a neat entry-level microcontroller system that is relatively cheap to get started with. The chip is programmed with a simple serial connection and the BASIC development environment is free! PICAXE has some excellent educational applications and support, and is a great entryway into more complicated embedded systems. If you’re look for a place to start with microcontrollers, PICAXE is a great way to go!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://www.rev-ed.co.uk/docs/picaxe_manual1.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
+<gate name="U1" symbol="PICAXE-20X2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="DIL20">
+<connects>
+<connect gate="U1" pin="C.0|HTX" pad="10"/>
+<connect gate="U1" pin="C.1|KDA|DO" pad="9"/>
+<connect gate="U1" pin="C.2*|KCL" pad="8"/>
+<connect gate="U1" pin="C.3*" pad="7"/>
+<connect gate="U1" pin="C.4*" pad="6"/>
+<connect gate="U1" pin="C.5*" pad="5"/>
+<connect gate="U1" pin="C.6" pad="4"/>
+<connect gate="U1" pin="C.7" pad="3"/>
+<connect gate="U1" pin="C1-|*B.4" pad="14"/>
+<connect gate="U1" pin="C2+|B.2" pad="16"/>
+<connect gate="U1" pin="C2-|B.3" pad="15"/>
+<connect gate="U1" pin="DI|SDA|B.5" pad="13"/>
+<connect gate="U1" pin="GND" pad="20"/>
+<connect gate="U1" pin="HRX|B.6" pad="12"/>
+<connect gate="U1" pin="INT1|B.0" pad="18"/>
+<connect gate="U1" pin="INT2|*B.1" pad="17"/>
+<connect gate="U1" pin="RX" pad="2"/>
+<connect gate="U1" pin="SCK|SCL|B.7" pad="11"/>
+<connect gate="U1" pin="TX|A.0" pad="19"/>
+<connect gate="U1" pin="VDD" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
