@@ -1597,7 +1597,7 @@ DC/DC converter, and own the ability of driving a
 <description>&lt;b&gt;3A, 23V, 1.2MHz Synchronous Step-Down Converter&lt;/b&gt;
 
 &lt;p&gt;The RT8293B is a high efficiency, monolithic synchronous
-step-down DC/DC converter that can deliver up to 3A
+step-down DC/DC converter (regulator) that can deliver up to 3A
 output current from a 4.5V to 23V input supply. The
 RT8293B's current mode architecture and external
 compensation allow the transient response to be
