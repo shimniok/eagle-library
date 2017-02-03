@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -718,7 +718,7 @@
 <smd name="19" x="-4.445" y="4.6355" dx="0.6096" dy="2.2098" layer="1"/>
 <smd name="20" x="-5.715" y="4.6355" dx="0.6096" dy="2.2098" layer="1"/>
 <text x="-6.6929" y="-3.302" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-5.08" y="-1.1811" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.08" y="-0.5461" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="5.5118" y1="3.6957" x2="5.9182" y2="5.0165" layer="51"/>
 <rectangle x1="4.2418" y1="3.6957" x2="4.6482" y2="5.0165" layer="51"/>
 <rectangle x1="2.9718" y1="3.6957" x2="3.3782" y2="5.0165" layer="51"/>
@@ -902,32 +902,32 @@
 <text x="-27.94" y="-20.32" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 <symbol name="ATTINY1634">
-<pin name="(PCINT8/TXD0/ADC5)PB0" x="30.48" y="5.08" length="middle" rot="R180"/>
-<pin name="(PCINT7/RXD0/ADC4)PA7" x="30.48" y="-7.62" length="middle" rot="R180"/>
-<pin name="(PCINT6/OC1B/ADC3)PA6" x="30.48" y="-10.16" length="middle" rot="R180"/>
-<pin name="(PCINT5/OC0B/ADC2)PA5" x="30.48" y="-12.7" length="middle" rot="R180"/>
-<pin name="(PCINT4/T0/ADC1)PA4" x="30.48" y="-15.24" length="middle" rot="R180"/>
-<pin name="(PCINT3/T1/SNS/ADC0)PA3" x="30.48" y="-17.78" length="middle" rot="R180"/>
-<pin name="(PCINT2/AIN1)PA2" x="30.48" y="-20.32" length="middle" rot="R180"/>
-<pin name="(PCINT1/AIN0)PA1" x="30.48" y="-22.86" length="middle" rot="R180"/>
-<pin name="GND" x="-30.48" y="-25.4" length="middle" direction="pwr"/>
-<pin name="(PCINT0/AREF)PA0" x="30.48" y="-25.4" length="middle" rot="R180"/>
-<pin name="PC5(XTAL1/CLKI/PCINT17)" x="-30.48" y="0" length="middle"/>
-<pin name="(ADC6/DI/SDA/RXD1/PCINT9)PB1" x="30.48" y="7.62" length="middle" rot="R180"/>
-<pin name="(ADC7/DO/TXD1/PCINT10)PB2" x="30.48" y="10.16" length="middle" rot="R180"/>
-<pin name="(ADC8/OC1A/PCINT11)PB3" x="30.48" y="12.7" length="middle" rot="R180"/>
-<pin name="(ADC9/OC0A/XCK0/PCINT12)PC0" x="30.48" y="17.78" length="middle" rot="R180"/>
-<pin name="(ADC10/ICP1/SCL/USCK/XCK1/PCINT13)PC1" x="30.48" y="20.32" length="middle" rot="R180"/>
-<pin name="(ADC11/CLKO/INT0/PCINT14)PC2" x="30.48" y="22.86" length="middle" rot="R180"/>
-<pin name="(RESET/DW/PCINT15)PC3" x="30.48" y="25.4" length="middle" rot="R180"/>
-<pin name="VCC" x="-30.48" y="25.4" length="middle" direction="pwr"/>
-<pin name="PC4(XTAL2/PCINT16)" x="-30.48" y="-2.54" length="middle"/>
-<wire x1="-25.4" y1="27.94" x2="25.4" y2="27.94" width="0.254" layer="94"/>
-<wire x1="25.4" y1="27.94" x2="25.4" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-27.94" x2="-25.4" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-27.94" x2="-25.4" y2="27.94" width="0.254" layer="94"/>
-<text x="-25.4" y="28.702" size="1.9304" layer="95">&gt;NAME</text>
-<text x="-25.4" y="-30.48" size="1.9304" layer="96">&gt;VALUE</text>
+<pin name="(PCINT8/TXD0/ADC5)PB0" x="33.02" y="5.08" length="middle" rot="R180"/>
+<pin name="(PCINT7/RXD0/ADC4)PA7" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="(PCINT6/OC1B/ADC3)PA6" x="33.02" y="-10.16" length="middle" rot="R180"/>
+<pin name="(PCINT5/OC0B/ADC2)PA5" x="33.02" y="-12.7" length="middle" rot="R180"/>
+<pin name="(PCINT4/T0/ADC1)PA4" x="33.02" y="-15.24" length="middle" rot="R180"/>
+<pin name="(PCINT3/T1/SNS/ADC0)PA3" x="33.02" y="-17.78" length="middle" rot="R180"/>
+<pin name="(PCINT2/AIN1)PA2" x="33.02" y="-20.32" length="middle" rot="R180"/>
+<pin name="(PCINT1/AIN0)PA1" x="33.02" y="-22.86" length="middle" rot="R180"/>
+<pin name="GND" x="-33.02" y="-25.4" length="middle" direction="pwr"/>
+<pin name="(PCINT0/AREF)PA0" x="33.02" y="-25.4" length="middle" rot="R180"/>
+<pin name="PC5(XTAL1/CLKI/PCINT17)" x="-33.02" y="0" length="middle"/>
+<pin name="(ADC6/DI/SDA/RXD1/PCINT9)PB1" x="33.02" y="7.62" length="middle" rot="R180"/>
+<pin name="(ADC7/DO/TXD1/PCINT10)PB2" x="33.02" y="10.16" length="middle" rot="R180"/>
+<pin name="(ADC8/OC1A/PCINT11)PB3" x="33.02" y="12.7" length="middle" rot="R180"/>
+<pin name="(ADC9/OC0A/XCK0/PCINT12)PC0" x="33.02" y="17.78" length="middle" rot="R180"/>
+<pin name="(ADC10/ICP1/SCL/USCK/XCK1/PCINT13)PC1" x="33.02" y="20.32" length="middle" rot="R180"/>
+<pin name="(ADC11/CLKO/INT0/PCINT14)PC2" x="33.02" y="22.86" length="middle" rot="R180"/>
+<pin name="(RESET/DW/PCINT15)PC3" x="33.02" y="25.4" length="middle" rot="R180"/>
+<pin name="VCC" x="-33.02" y="25.4" length="middle" direction="pwr"/>
+<pin name="PC4(XTAL2/PCINT16)" x="-33.02" y="-2.54" length="middle"/>
+<wire x1="-27.94" y1="27.94" x2="27.94" y2="27.94" width="0.254" layer="94"/>
+<wire x1="27.94" y1="27.94" x2="27.94" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-27.94" x2="-27.94" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="-27.94" x2="-27.94" y2="27.94" width="0.254" layer="94"/>
+<text x="-27.94" y="28.702" size="1.9304" layer="95" font="vector">&gt;NAME</text>
+<text x="-27.94" y="-30.48" size="1.9304" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1407,6 +1407,11 @@ MHz allowing the system designer to optimize power consumption versus processing
 <connect gate="G$1" pin="PC5(XTAL1/CLKI/PCINT17)" pad="12"/>
 <connect gate="G$1" pin="VCC" pad="11"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="20MLF_0.5">
 <technologies>
 <technology name=""/>
 </technologies>
