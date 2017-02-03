@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -56,6 +56,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>Inductors</description>
 <packages>
 <package name="VLF10045">
 <smd name="P$1" x="-4.5" y="0" dx="1.7" dy="3.6" layer="1"/>
@@ -79,6 +80,23 @@
 <wire x1="-4.1" y1="2" x2="4" y2="2" width="0.127" layer="27" curve="-124.602443"/>
 <wire x1="4" y1="-2" x2="-4.1" y2="-2" width="0.127" layer="27" curve="-124.602443"/>
 </package>
+<package name="VLS4045EX">
+<description>VLS4045EX type inductor</description>
+<smd name="1" x="-1.8" y="0" dx="4" dy="1.5" layer="1" rot="R90"/>
+<smd name="2" x="1.8" y="0" dx="4" dy="1.5" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="1.8" x2="-1.6" y2="2.5" width="0.127" layer="48"/>
+<wire x1="-2.5" y1="1.8" x2="-2.5" y2="-1.8" width="0.127" layer="48"/>
+<wire x1="-1.6" y1="-2.5" x2="-2.5" y2="-1.8" width="0.127" layer="48"/>
+<wire x1="1.6" y1="-2.5" x2="2.5" y2="-1.8" width="0.127" layer="48"/>
+<wire x1="2.5" y1="1.8" x2="1.6" y2="2.5" width="0.127" layer="48"/>
+<wire x1="2.5" y1="1.8" x2="2.5" y2="-1.8" width="0.127" layer="48"/>
+<wire x1="-1.6" y1="2.5" x2="1.6" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<text x="0" y="-2.8" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="2.8" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="-2.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -90,8 +108,23 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="INDUCTOR" prefix="L">
-<description>Inductor</description>
+<deviceset name="VLF10045" prefix="L">
+<description>&lt;b&gt;TDK VLF Series VLF10045 wire wound, magnetic shielded inductors for power line&lt;/b&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mount area: 9.7× 10.0mm&lt;/li&gt;
+&lt;li&gt;Low profile: 4.5mm max. height&lt;/li&gt;
+&lt;li&gt;Compare to SLF10145(TDK conventional product) type&lt;/li&gt;
+&lt;li&gt;Low loss and large current capability design&lt;/li&gt;
+&lt;li&gt;DC resistance: 0.89× SLF10145&lt;/li&gt;
+&lt;li&gt;Rated DC current: 1.47× SLF10145&lt;/li&gt;
+&lt;li&gt;Generic use for DC to DC converter line.&lt;/li&gt;
+&lt;li&gt;High magnetic shield construction should actualize high resolution for EMC protection.&lt;/li&gt;
+&lt;li&gt;Available for automatic mounting in tape and real package.&lt;/li&gt;
+&lt;li&gt;The products contain no lead and also support lead-free soldering.&lt;/li&gt;
+&lt;li&gt;It is a product conforming to RoHS directive.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://product.tdk.com/en/search/inductor/inductor/smd/info?part_no=VLF10045T-680M1R6"&gt;datasheet.pdf&lt;/a&gt;</description>
 <gates>
 <gate name="L1" symbol="L" x="0" y="0"/>
 </gates>
@@ -100,6 +133,28 @@
 <connects>
 <connect gate="L1" pin="1" pad="P$1"/>
 <connect gate="L1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VLS5045EX" prefix="L">
+<description>&lt;b&gt;TDK VLS-EX Series, VLS5045EX Type&lt;/b&gt;
+
+&lt;p&gt;Shielded Wirewound Inductor for power circuits. High magnetic shield construction achieved by a ferrite magnetic material 
+and compatible with high-density mounting. Larger current and lower Rdc have been achieved by optimizing the ferrite core figure.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_vls5045ex_en.pdf"&gt;Datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="L1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VLS4045EX">
+<connects>
+<connect gate="L1" pin="1" pad="1"/>
+<connect gate="L1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
