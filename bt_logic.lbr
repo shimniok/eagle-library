@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -180,6 +180,29 @@
 <text x="-15.24" y="20.32" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-17.78" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="4543">
+<description>4543B BCD-to-7-segment-decoder</description>
+<pin name="I0" x="-15.24" y="-2.54" length="middle"/>
+<pin name="I1" x="-15.24" y="-5.08" length="middle"/>
+<pin name="I2" x="-15.24" y="-7.62" length="middle"/>
+<pin name="I3" x="-15.24" y="-10.16" length="middle"/>
+<pin name="LD" x="-15.24" y="10.16" length="middle"/>
+<pin name="PH" x="-15.24" y="7.62" length="middle"/>
+<pin name="BL" x="-15.24" y="5.08" length="middle"/>
+<pin name="VSS" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="VDD" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="A" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="B" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="C" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="D" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="E" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="F" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="G" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="74*4245">
@@ -223,6 +246,21 @@ a 5-V environment, and vice versa.&lt;/P&gt;
 <connect gate="G$1" pin="VCCA(5V)" pad="1"/>
 <connect gate="G$1" pin="VCCB(3.3V)" pad="24"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4543B">
+<description>&lt;B&gt;4543B, BCD to 7-Segment Decoder&lt;/B&gt;
+&lt;p&gt;BCD to 7-Segment decoder for driving LCD, LED displays&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/cd4543b.pdf"&gt;Datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="4543" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
