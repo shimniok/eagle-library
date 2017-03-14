@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.1.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="NonViaHole" color="14" fill="1" visible="no" active="yes"/>
+<layer number="101" name="PlacementGuide" color="7" fill="1" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="121" name="tsilk" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="bsilk" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="14" fill="1" visible="no" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="14" fill="2" visible="no" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="14" fill="4" visible="no" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="OrgLBR" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="HAMMOND_1551P">
+<description>Hammond 1551P enclosure PCB</description>
+<text x="3.175" y="42.545" size="1.27" layer="48" font="vector" ratio="10">16.0mm inner height</text>
+<text x="4.445" y="40.513" size="1.27" layer="48" font="vector" ratio="10">4.0mm PCB boss</text>
+<text x="4.445" y="38.481" size="1.27" layer="48" font="vector" ratio="10">1.6mm PCB thickness</text>
+<text x="3.429" y="35.941" size="1.27" layer="48" font="vector" ratio="10">10.4mm component height, max</text>
+<text x="1.905" y="44.577" size="1.27" layer="48" font="vector" ratio="10">Height</text>
+<wire x1="1.905" y1="37.719" x2="9.779" y2="37.719" width="0.254" layer="48"/>
+<text x="1.895" y="46.649" size="1.27" layer="48" font="vector" ratio="12">For Hammond 1551P</text>
+<wire x1="6.25" y1="0" x2="33" y2="0" width="0" layer="21"/>
+<wire x1="33" y1="0" x2="34" y2="1" width="0" layer="21" curve="90"/>
+<wire x1="34" y1="1" x2="34" y2="27.75" width="0" layer="21"/>
+<wire x1="27.75" y1="34" x2="1" y2="34" width="0" layer="21"/>
+<wire x1="1" y1="34" x2="0" y2="33" width="0" layer="21" curve="90"/>
+<wire x1="0" y1="33" x2="0" y2="6.25" width="0" layer="21"/>
+<hole x="7" y="31.25" drill="2.5"/>
+<hole x="27" y="2.75" drill="2.5"/>
+<wire x1="27.75" y1="34" x2="27.75" y2="30.75" width="0" layer="21"/>
+<wire x1="27.75" y1="30.75" x2="30.75" y2="27.75" width="0" layer="21" curve="90"/>
+<wire x1="30.75" y1="27.75" x2="34" y2="27.75" width="0" layer="21"/>
+<wire x1="6.25" y1="0" x2="6.25" y2="3.25" width="0" layer="21"/>
+<wire x1="6.25" y1="3.25" x2="3.25" y2="6.25" width="0" layer="21" curve="90"/>
+<wire x1="3.25" y1="6.25" x2="0" y2="6.25" width="0" layer="21"/>
+</package>
+<package name="HAMMOND_1551USB1">
+<description>Hammond 1551USB1 enclosure PCB</description>
+<text x="-12.325" y="14.145" size="1.27" layer="48" font="vector" ratio="10"> 5.05mm inner height</text>
+<text x="-11.055" y="12.081" size="1.27" layer="48" font="vector" ratio="10">1.60mm PCB thickness</text>
+<text x="-11.071" y="9.541" size="1.27" layer="48" font="vector" ratio="10">3.45mm component height, max</text>
+<text x="-13.595" y="16.177" size="1.27" layer="48" font="vector" ratio="10">Height</text>
+<wire x1="-13.595" y1="11.319" x2="-5.721" y2="11.319" width="0.254" layer="48"/>
+<text x="-13.605" y="18.249" size="1.27" layer="48" font="vector" ratio="12">For Hammond 1551USB1</text>
+<wire x1="14.5" y1="-6.55" x2="14.5" y2="6.55" width="0" layer="21"/>
+<wire x1="11" y1="7.75" x2="-11.1" y2="7.75" width="0" layer="21"/>
+<wire x1="-14.5" y1="4.25" x2="-14.5" y2="-4.25" width="0" layer="21"/>
+<wire x1="-11.1" y1="-7.75" x2="11" y2="-7.75" width="0" layer="21"/>
+<wire x1="14.5" y1="6.55" x2="11" y2="6.55" width="0" layer="21"/>
+<wire x1="14.5" y1="-6.55" x2="11" y2="-6.55" width="0" layer="21"/>
+<wire x1="11" y1="6.55" x2="11" y2="7.75" width="0" layer="21"/>
+<wire x1="11" y1="-6.55" x2="11" y2="-7.75" width="0" layer="21"/>
+<hole x="-9" y="5.5" drill="2"/>
+<hole x="9" y="-5.5" drill="2"/>
+<wire x1="-14.5" y1="4.25" x2="-11.1" y2="4.25" width="0" layer="21"/>
+<wire x1="-14.5" y1="-4.25" x2="-11.1" y2="-4.25" width="0" layer="21"/>
+<wire x1="-11.1" y1="4.25" x2="-11.1" y2="7.75" width="0" layer="21"/>
+<wire x1="-11.1" y1="-4.25" x2="-11.1" y2="-7.75" width="0" layer="21"/>
+</package>
+<package name="HAMMOND_1593J">
+<description>Hammond 1593J enclosure PCB</description>
+<hole x="15.5" y="15.5" drill="3.2"/>
+<hole x="43.5" y="15.5" drill="3.2"/>
+<hole x="15.5" y="43.5" drill="3.2"/>
+<hole x="43.5" y="43.5" drill="3.2"/>
+<wire x1="0" y1="59" x2="0" y2="25.03" width="0.127" layer="48"/>
+<wire x1="0" y1="18.53" x2="0" y2="0" width="0.127" layer="48"/>
+<wire x1="0" y1="0" x2="59" y2="0" width="0.127" layer="48"/>
+<wire x1="59" y1="0" x2="59" y2="18.53" width="0.127" layer="48"/>
+<wire x1="59" y1="25.03" x2="59" y2="59" width="0.127" layer="48"/>
+<wire x1="59" y1="59" x2="0" y2="59" width="0.127" layer="48"/>
+<wire x1="0" y1="18.53" x2="4.5" y2="18.53" width="0.127" layer="48"/>
+<wire x1="54.5" y1="18.53" x2="59" y2="18.53" width="0.127" layer="48"/>
+<wire x1="0" y1="25.03" x2="4.5" y2="25.03" width="0.127" layer="48"/>
+<wire x1="54.5" y1="25.03" x2="59" y2="25.03" width="0.127" layer="48"/>
+<wire x1="4.5" y1="25.03" x2="4.5" y2="18.53" width="0.127" layer="48" curve="-180"/>
+<wire x1="54.5" y1="18.53" x2="54.5" y2="25.03" width="0.127" layer="48" curve="-180"/>
+<text x="61" y="53" size="1.27" layer="48" font="vector">Hammond 1593J
+22.00 interior height
+-9.00 boss height (4.5 x 2)
+-1.60 pcb thickness</text>
+<text x="61" y="50" size="1.27" layer="48" font="vector">11.40 max component height</text>
+<wire x1="61" y1="52" x2="66.5" y2="52" width="0.127" layer="48"/>
+<text x="25" y="0.5" size="1.27" layer="48">PANEL SIDE</text>
+<text x="24.5" y="57" size="1.27" layer="48">PANEL SIDE</text>
+</package>
+</packages>
+<symbols>
+</symbols>
+<devicesets>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>
