@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -448,10 +448,10 @@ TS-003</description>
 <smd name="11" x="-0.75" y="0.95" dx="0.5" dy="0.28" layer="1" rot="R90" stop="no"/>
 <smd name="12" x="-1.25" y="0.95" dx="0.5" dy="0.28" layer="1" rot="R90" stop="no"/>
 <smd name="PAD" x="0" y="0" dx="2" dy="0.9" layer="1" stop="no"/>
-<smd name="P$1" x="-1.35" y="0.25" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="P$2" x="-1.35" y="-0.25" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="P$3" x="1.35" y="-0.25" dx="0.7" dy="0.25" layer="1" stop="no"/>
-<smd name="P$4" x="1.35" y="0.25" dx="0.7" dy="0.25" layer="1" stop="no"/>
+<smd name="PAD1" x="-1.35" y="0.25" dx="0.7" dy="0.25" layer="1" stop="no"/>
+<smd name="PAD2" x="-1.35" y="-0.25" dx="0.7" dy="0.25" layer="1" stop="no"/>
+<smd name="PAD3" x="1.35" y="-0.25" dx="0.7" dy="0.25" layer="1" stop="no"/>
+<smd name="PAD4" x="1.35" y="0.25" dx="0.7" dy="0.25" layer="1" stop="no"/>
 <wire x1="-1.5" y1="1" x2="-1.5" y2="-1" width="0.05" layer="51"/>
 <wire x1="-1.5" y1="1" x2="1.5" y2="1" width="0.05" layer="51"/>
 <wire x1="1.5" y1="1" x2="1.5" y2="-1" width="0.05" layer="51"/>
@@ -681,7 +681,7 @@ other devices like solenoids. &lt;/p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DRV8835">
+<deviceset name="DRV8835" prefix="U">
 <description>&lt;B&gt;DRV8835 DUAL LOW VOLTAGE H-BRIDGE IC&lt;/B&gt;
 
 &lt;p&gt;The DRV8835 provides an integrated motor driver solution for cameras, consumer products, toys, and other low voltage or battery-powered motion control applications. The device has two H-bridge drivers, and can drive two DC motors or one stepper motor, as well as other devices like solenoids.&lt;/p&gt;
@@ -722,7 +722,12 @@ gate drive voltages.&lt;/p&gt;
 <connect gate="G$1" pin="BOUT1" pad="4"/>
 <connect gate="G$1" pin="BOUT2" pad="5"/>
 <connect gate="G$1" pin="GND1" pad="6"/>
+<connect gate="G$1" pin="GND2" pad="PAD"/>
 <connect gate="G$1" pin="MODE" pad="12"/>
+<connect gate="G$1" pin="PAD1" pad="PAD1"/>
+<connect gate="G$1" pin="PAD2" pad="PAD2"/>
+<connect gate="G$1" pin="PAD3" pad="PAD3"/>
+<connect gate="G$1" pin="PAD4" pad="PAD4"/>
 <connect gate="G$1" pin="VCC" pad="11"/>
 <connect gate="G$1" pin="VM" pad="1"/>
 </connects>
