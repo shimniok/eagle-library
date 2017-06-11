@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -211,6 +211,46 @@
 <wire x1="61" y1="52" x2="66.5" y2="52" width="0.127" layer="48"/>
 <text x="25" y="0.5" size="1.27" layer="48">PANEL SIDE</text>
 <text x="24.5" y="57" size="1.27" layer="48">PANEL SIDE</text>
+</package>
+<package name="HAMMOND_1553AA">
+<description>&lt;b&gt;Hammond 1553AA Enclosure&lt;/b&gt;
+&lt;p&gt;&lt;a href="http://www.hammondmfg.com/pdf/1553AA.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<hole x="0" y="15" drill="3.2"/>
+<hole x="0" y="-15" drill="3.2"/>
+<hole x="25" y="15" drill="3.2"/>
+<hole x="25" y="-15" drill="3.2"/>
+<wire x1="-22.44" y1="9.13" x2="-22.44" y2="-9.13" width="0" layer="51"/>
+<wire x1="46.8" y1="11.5" x2="46.8" y2="-11.5" width="0" layer="51"/>
+<wire x1="-4.07" y1="19.4" x2="29" y2="19.4" width="0" layer="51"/>
+<wire x1="-4.07" y1="-19.4" x2="29" y2="-19.4" width="0" layer="51"/>
+<wire x1="-22.44" y1="9.13" x2="-7.57" y2="9.13" width="0" layer="51"/>
+<wire x1="-7.57" y1="9.13" x2="-4.07" y2="12.63" width="0" layer="51" curve="90"/>
+<wire x1="-4.07" y1="12.63" x2="-4.07" y2="19.4" width="0" layer="51"/>
+<wire x1="-22.44" y1="-9.13" x2="-7.57" y2="-9.13" width="0" layer="51"/>
+<wire x1="-7.57" y1="-9.13" x2="-4.07" y2="-12.63" width="0" layer="51" curve="-90"/>
+<wire x1="-4.07" y1="-12.63" x2="-4.07" y2="-19.4" width="0" layer="51"/>
+<wire x1="29" y1="-19.4" x2="29" y2="-15" width="0" layer="51"/>
+<wire x1="29" y1="-15" x2="32.5" y2="-11.5" width="0" layer="51" curve="-90"/>
+<wire x1="32.5" y1="-11.5" x2="46.8" y2="-11.5" width="0" layer="51"/>
+<wire x1="29" y1="19.4" x2="29" y2="15" width="0" layer="51"/>
+<wire x1="29" y1="15" x2="32.5" y2="11.5" width="0" layer="51" curve="90"/>
+<wire x1="32.5" y1="11.5" x2="46.8" y2="11.5" width="0" layer="51"/>
+</package>
+<package name="HAMMOND_1551J">
+<description>&lt;b&gt;Hammond 1551J Enclosure&lt;/b&gt;
+&lt;p&gt;&lt;a href="http://www.hammondmfg.com/pdf/1551J.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<hole x="-15" y="11.75" drill="2.8"/>
+<hole x="15" y="-11.75" drill="2.8"/>
+<wire x1="-27.25" y1="14.75" x2="21" y2="14.75" width="0" layer="51"/>
+<wire x1="21" y1="14.75" x2="21" y2="12.15" width="0" layer="51"/>
+<wire x1="21" y1="12.15" x2="24" y2="9.15" width="0" layer="51" curve="90"/>
+<wire x1="24" y1="9.15" x2="27.25" y2="9.15" width="0" layer="51"/>
+<wire x1="27.25" y1="9.15" x2="27.25" y2="-14.75" width="0" layer="51"/>
+<wire x1="27.25" y1="-14.75" x2="-21" y2="-14.75" width="0" layer="51"/>
+<wire x1="-21" y1="-14.75" x2="-21" y2="-12.15" width="0" layer="51"/>
+<wire x1="-21" y1="-12.15" x2="-24" y2="-9.15" width="0" layer="51" curve="90"/>
+<wire x1="-24" y1="-9.15" x2="-27.25" y2="-9.15" width="0" layer="51"/>
+<wire x1="-27.25" y1="-9.15" x2="-27.25" y2="14.75" width="0" layer="51"/>
 </package>
 </packages>
 <symbols>
