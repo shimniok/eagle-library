@@ -433,7 +433,7 @@ Source: INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <wire x1="5.1308" y1="-4.0894" x2="5.1308" y2="-2.3114" width="0.254" layer="21"/>
 <smd name="1" x="-2.54" y="-8.89" dx="2.0828" dy="3.81" layer="1"/>
 <smd name="3" x="2.54" y="-8.89" dx="2.0828" dy="3.81" layer="1"/>
-<smd name="2" x="0" y="2.54" dx="11.43" dy="8.89" layer="1"/>
+<smd name="4" x="0" y="2.54" dx="11.43" dy="8.89" layer="1"/>
 <text x="-5.588" y="7.239" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-3.0988" y1="-9.525" x2="-1.9812" y2="-8.1026" layer="51"/>
@@ -734,7 +734,7 @@ From transistor-power.lbr</description>
 <description>Fixed, 3-pin regulator with package tab</description>
 <pin name="VIN" x="-7.62" y="0" visible="off" length="short" direction="pwr"/>
 <pin name="VOUT" x="7.62" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
-<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="sup" rot="R90"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
@@ -744,7 +744,7 @@ From transistor-power.lbr</description>
 <text x="0" y="-4.318" size="1.524" layer="95" align="bottom-center">GND</text>
 <text x="-4.064" y="0" size="1.524" layer="95" align="center-left">IN</text>
 <text x="4.064" y="0" size="1.524" layer="95" align="center-right">OUT</text>
-<pin name="TAB" x="7.62" y="-2.54" visible="off" length="short" direction="pwr" rot="R180"/>
+<pin name="TAB" x="7.62" y="-2.54" visible="off" length="short" direction="sup" rot="R180"/>
 </symbol>
 <symbol name="V-REG-5-EN-PWRGD">
 <description>Fixed, 5-pin regulator with power-good pin and enable/shutdown</description>
@@ -773,7 +773,7 @@ From transistor-power.lbr</description>
 <pin name="EN" x="-10.16" y="0" length="short" direction="in"/>
 <pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
 <pin name="OUT" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="BYP" x="10.16" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="BYP" x="10.16" y="0" length="short" rot="R180"/>
 <text x="0" y="-4.318" size="1.524" layer="95" align="bottom-center">GND</text>
 </symbol>
 <symbol name="VREG">
@@ -912,7 +912,7 @@ From transistor-power.lbr</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM2931?-ADJ" prefix="IC">
+<deviceset name="LM2931-ADJ" prefix="IC" uservalue="yes">
 <description>&lt;b&gt;LM2931 Low Dropout Adjustable Regulator, Automotive&lt;/b&gt;
 &lt;ul&gt;
 &lt;li&gt;Input voltage: 26V max&lt;/li&gt;
@@ -999,42 +999,55 @@ are also provided.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LP2980" prefix="U">
-<description>&lt;b&gt;&lt;a href=http://www.national.com&gt;National Semiconductor&lt;/a&gt; Micropower Linear Regulator&lt;/b&gt;&lt;p&gt;
-50mA regulated output, Vin 16V max., ultra-low dropout of 120mV @ 50mA, 1µA standby current</description>
+<deviceset name="LP2980" prefix="U" uservalue="yes">
+<description>&lt;b&gt;LP2980 Micropower Linear Regulator&lt;/b&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2.1 to 16V Input Voltage Range&lt;/li&gt;
+&lt;li&gt;Ensured 50-mA Output Current&lt;/li&gt;
+&lt;li&gt;Output versions: 5, 4.7, 3.3, 3, and 2.5V, and adjustable&lt;/li&gt;
+&lt;li&gt;Ultra-Low-Dropout Voltage: 120mV @ 50mA&lt;/li&gt;
+&lt;li&gt;Output Voltage Accuracy 0.5% (A Grade)&lt;/li&gt;
+&lt;li&gt;Requires Only 1-μF External Capacitance&lt;/li&gt;
+&lt;li&gt;&amp;lt; 1-μA Quiescent Current When Shutdown&lt;/li&gt;
+&lt;li&gt;Low Ground Pin Current: Typically 375 μA at 50-mA load&lt;/li&gt;
+&lt;li&gt;High Peak Current Capability (150 mA Typical)&lt;/li&gt;
+&lt;li&gt;Wide Supply Voltage Range (16 V Maximum)&lt;/li&gt;
+&lt;li&gt;Fast Dynamic Response to Line and Load&lt;/li&gt;
+&lt;li&gt;Low ZOUT Over Wide Frequency Range&lt;/li&gt;
+&lt;li&gt;Overtemperature and Overcurrent Protection&lt;/li&gt;
+&lt;li&gt;−40°C to 125°C Junction Temperature Range&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The LP2980-N is a 50-mA, fixed-output voltage
+regulator designed specifically to meet the
+requirements of battery-powered applications.&lt;/p&gt;
+
+&lt;p&gt;Using an optimized VIP (Vertically Integrated PNP)
+process, the LP2980-N delivers unequaled
+performance in all specifications critical to batterypowered
+designs:&lt;/p&gt;
+&lt;p&gt;Dropout voltage: Typically 120 mV at 50-mA load,
+and 7 mV at 1-mA load.&lt;/p&gt;
+&lt;p&gt;Ground pin current: Typically 375 μA at 50-mA load,
+and 80 μA at 1-mA load.&lt;/p&gt;
+&lt;p&gt;Sleep mode: Less than 1-μA quiescent current when
+ON/OFF pin is pulled to less than 0.18 V.&lt;/p&gt;
+&lt;p&gt;Minimum part count: Requires only a 1-μF capacitor
+on the regulator output.&lt;/p&gt;
+&lt;p&gt;Precision output: Initial output voltage tolerance of
+±0.5% (A grade).&lt;/p&gt;</description>
 <gates>
-<gate name="U1" symbol="V-REG-5-EN-FIX" x="0" y="0"/>
+<gate name="U1" symbol="V-REG-5-EN-ADJ" x="0" y="0"/>
 </gates>
 <devices>
 <device name="M5" package="SOT23-5">
 <connects>
+<connect gate="U1" pin="ADJ" pad="4"/>
 <connect gate="U1" pin="EN" pad="3"/>
 <connect gate="U1" pin="GND" pad="2"/>
 <connect gate="U1" pin="IN" pad="1"/>
-<connect gate="U1" pin="NC" pad="4"/>
 <connect gate="U1" pin="OUT" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LP2980-ADJ">
-<description>&lt;b&gt;LP2980IM5-ADJ&lt;/b&gt;
-
-&lt;p&gt;50mA adjustable, ultra low drop out regulator in SOT-23-5 package&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="LM2931-ADJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-IM5" package="SOT23-5">
-<connects>
-<connect gate="G$1" pin="ADJ" pad="4"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="ON" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1129,8 +1142,15 @@ current (typical) with input operating range from 2.0V to 10.0V.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LD29150" prefix="U">
+<deviceset name="LD29150" prefix="U" uservalue="yes">
 <description>&lt;B&gt;STM LD29150 LDO Voltage Regulator&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Very low dropout voltage (typ. 0.4 at 1.5 A)
+&lt;li&gt;Guaranteed output current up to 1.5 A
+&lt;li&gt;Output voltage accuracy: ± 1% at 25 °C
+&lt;li&gt;Adjustable and fixed voltages: 1.8V, 2.5V, 3.3V, 5.0V&lt;/li&gt;
+&lt;li&gt;Internal current and thermal limit
+&lt;/ul&gt;
 &lt;p&gt;The LD29150xx is a high current, high accuracy, 
 low-dropout voltage regulator series. These 
 regulators feature 400 mV dropout voltage and 
@@ -1180,8 +1200,24 @@ low output voltages.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LF50CDT" prefix="U">
+<deviceset name="LF50CDT" prefix="U" uservalue="yes">
 <description>&lt;b&gt;5V LDO Voltage Regulator&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Very low-dropout voltage (0.45 V)
+&lt;li&gt;Very low quiescent current (typ. 50 µA in OFF mode, 500 µA in ON mode)
+&lt;li&gt;Output current up to 500 mA
+&lt;li&gt;Logic-controlled electronic shutdown
+&lt;li&gt;Output voltages of 1.5; 1.8; 2.5; 3.3; 4.7; 5; 6; 8; 8.5; 9; 12 V
+&lt;li&gt;Automotive grade product: 1.8 V, 2.5 V, 3.3 V 5.0 V, 8.0 V, 8.5 V VOUT in DPAK and PPAK packages
+&lt;li&gt;Internal current and thermal limit
+&lt;li&gt;Only 2.2 µF for stability
+&lt;li&gt;Available in ±1% (AB), ± 1.5% (AC) or ± 2% (C) selection at 25 °C
+&lt;li&gt;Supply voltage rejection: 80 db (typ.)
+&lt;li&gt;Temperature range: from -40 to 125 °C
+&lt;/ul&gt;
+
+
+
 &lt;p&gt;The LFxxAB/LFxxC are very low drop regulators 
 available in PENTAWATT, TO-220, TO-220FP, 
 DPAK and PPAK package and in a wide range of 
@@ -1207,7 +1243,7 @@ systems&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM2940" prefix="U">
+<deviceset name="LM2940" prefix="U" uservalue="yes">
 <description>&lt;b&gt;LM2940 LDO Voltage Regulator&lt;/b&gt;
 
 &lt;ul&gt;
@@ -1268,6 +1304,22 @@ Familiar regulator features such as short circuit and thermal overload protectio
 </deviceset>
 <deviceset name="MCP1755" prefix="IC">
 <description>&lt;b&gt;Microchip MCP1755 LDO Voltage Regulator&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;High PSRR: &gt;70 dB @ 1 kHz, typical&lt;/li&gt;
+&lt;li&gt;68.0 µA Typical Quiescent Current&lt;/li&gt;
+&lt;li&gt;Input Operating Voltage Range: 3.6V to 16.0V&lt;/li&gt;
+&lt;li&gt;300 mA Output Current for all Output Voltages&lt;/li&gt;
+&lt;li&gt;Low Dropout Voltage, 300 mV typical @ 300 mA&lt;/li&gt;
+&lt;li&gt;Standard Output Voltage Options (1.8V, 2.5V, 2.8V, 3.0V, 3.3V, 4.0V, 5.0V)&lt;/li&gt;
+&lt;li&gt;Output Voltage Range 1.8V to 5.5V in 0.1V Increments (tighter increments are also possible per design)&lt;/li&gt;
+&lt;li&gt;Output Voltage Tolerances of ±2.0% over entire Temperature Range&lt;/li&gt;
+&lt;li&gt;Stable with Minimum 1.0 µF Output Capacitance&lt;/li&gt;
+&lt;li&gt;Power Good Output&lt;/li&gt;
+&lt;li&gt;Shutdown Input&lt;/li&gt;
+&lt;li&gt;True Current Foldback Protection&lt;/li&gt;
+&lt;li&gt;Short-Circuit Protection&lt;/li&gt;
+&lt;li&gt;Overtemperature Protection&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;The MCP1755/1755S is a family of CMOS low-dropout
 (LDO) voltage regulators that can deliver up to 300 mA
 of current while consuming only 68.0 μA of quiescent
@@ -1406,11 +1458,12 @@ and fast response to step changes in load.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="L4941" prefix="U">
+<deviceset name="L4941" prefix="U" uservalue="yes">
 <description>&lt;B&gt;LD4941 LDO 1A Regulator&lt;/B&gt;
 &lt;ul&gt;
 &lt;li&gt;Precise 5, 8.5, 12 V outputs&lt;/li&gt;
 &lt;li&gt;Low dropout voltage (450 mV typ. at 1 A)&lt;/li&gt;
+&lt;li&gt;17V input (30V abs. max)&lt;/li&gt;
 &lt;li&gt;Very low quiescent current&lt;/li&gt;
 &lt;li&gt;Thermal shutdown&lt;/li&gt;
 &lt;li&gt;Short-circuit protection&lt;/li&gt;
@@ -1474,14 +1527,39 @@ and safe area protection.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM1117" prefix="U">
+<deviceset name="LM1117" prefix="U" uservalue="yes">
 <description>&lt;b&gt;LDO Voltage Regulator&lt;/b&gt;
 
-&lt;p&gt;NCP1117 series are low dropout positive voltage regulators that are capable of providing an output current that is in excess of 1.0 A with a maximum dropout voltage of 1.2 V at 800 mA over
-temperature. This series contains nine fixed output voltages of 1.5 V, 1.8 V, 1.9 V, 2.0 V, 2.5 V, 2.85 V, 3.3 V, 5.0 V, and 12 V that have no minimum load requirement to maintain regulation. Also included is an adjustable output version that can be programmed from 1.25 V to 18.8 V with two external resistors. &lt;a href="http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"&gt;datasheet.pdf&lt;/a&gt;
+&lt;h3&gt;NCP1117&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Output Current in Excess of 1.0 A&lt;/li&gt;
+&lt;li&gt;1.2 V Maximum Dropout Voltage at 800 mA Over Temperature&lt;/li&gt;
+&lt;li&gt;Fixed Output Voltages of 1.5, 1.8, 1.9, 2.0, 2.5, 2.85, 3.3, 5.0, and 12 V&lt;/li&gt;
+&lt;li&gt;Adjustable Output Voltage Option&lt;/li&gt;
+&lt;li&gt;No Minimum Load Requirement for Fixed Voltage Output Devices&lt;/li&gt;
+&lt;li&gt;Reference/Output Voltage Trimmed to ±1.0%&lt;/li&gt;
+&lt;li&gt;Current Limit, Safe Operating and Thermal Shutdown Protection&lt;/li&gt;
+&lt;li&gt;Operation to 20 V Input&lt;/li&gt;
+&lt;li&gt;NCV Prefix for Automotive and Other Applications Requiring Unique Site and Control Change Requirements; AEC−Q100 Qualified and PPAP Capable&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;LM1117-N is a series of low dropout voltage regulators of 1.2V at 800mA of load current. It has the same pin-out as Texas Instruments' industry standard LM317. The LM1117-N is available in an adjustable version, available in five fixed voltages, 1.8V, 2.5V, 2.85V, 3.3V, and 5V. The LM1117-N offers current limiting and thermal shutdown. Its circuit includes a zener trimmed to within ±1%.
-&lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;datasheet.pdf&lt;/a&gt;</description>
+&lt;p&gt;&lt;a href="http://www.onsemi.com/pub/Collateral/NCP1117-D.PDF"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;LM1117&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Available in 1.8 V, 2.5 V, 3.3 V, 5 V, and adjustable versions&lt;/li&gt;
+&lt;li&gt;Output Current 800 mA&lt;/li&gt;
+&lt;li&gt;Current Limiting and Thermal Protection&lt;/li&gt;
+&lt;li&gt;Space-Saving SOT-223 and WSON Packages&lt;/li&gt;
+&lt;li&gt;Line Regulation 0.2% (Maximum)&lt;/li&gt;
+&lt;li&gt;Load Regulation 0.4% (Maximum)&lt;/li&gt;
+&lt;li&gt;Temperature: LM1117: 0°C to 125°C; LM1117I: −40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;LM1117 (Rev. N) is a series of low dropout voltage regulators of 1.2V at 800mA of load current. It has the same pin-out as Texas Instruments' industry standard LM317. The LM1117-N is available in an adjustable version, available in five fixed voltages, 1.8V, 2.5V, 2.85V, 3.3V, and 5V. The LM1117-N offers current limiting and thermal shutdown. Its circuit includes a zener trimmed to within ±1%.
+
+&lt;p&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="U1" symbol="V-REG-3-FIX-HS" x="0" y="0"/>
 </gates>
@@ -1823,7 +1901,7 @@ response &lt;/li&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="78XX" prefix="U">
+<deviceset name="78XX" prefix="U" uservalue="yes">
 <description>&lt;b&gt;78XX Linear Voltage Regulator&lt;/b&gt;
 &lt;p&gt;The venerable 7800-series Linear Voltage Regulator, including 7805, 7809, 7812, 7815, 7862 in 5 V, 6.2 V, 8.2 V, 9 V, 12 V, and 15 V, respectively&lt;/p&gt;
 
@@ -1869,6 +1947,105 @@ response &lt;/li&gt;
 <device name="-TO220H-NH" package="TO220BH-NH">
 <connects>
 <connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM2931" prefix="U" uservalue="yes">
+<description>&lt;b&gt;LM2931 Low Dropout Adjustable Regulator, Automotive&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Input voltage: 26V max&lt;/li&gt;
+&lt;li&gt;3.3V, 5V, adjustable versions&lt;/li&gt;
+&lt;li&gt;Output Current in Excess of 100 mA&lt;/li&gt;
+&lt;li&gt;Very Low Quiescent Current&lt;/li&gt;
+&lt;li&gt;Dropout Voltage &amp;lt; 0.6V&lt;/li&gt;
+&lt;li&gt;Reverse Battery Protection&lt;/li&gt;
+&lt;li&gt;60V Load Dump Protection&lt;/li&gt;
+&lt;li&gt;−50V Reverse Transient Protection&lt;/li&gt;
+&lt;li&gt;Short Circuit Protection&lt;/li&gt;
+&lt;li&gt;Internal Thermal Overload Protection&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Designed originally for automotive applications, the
+LM2931-N and all regulated circuitry are protected 
+from reverse battery installations or 2 battery jumps.
+During line transients, such as a load dump (60V)
+when the input voltage to the regulator can
+momentarily exceed the specified maximum
+operating voltage, the regulator will automatically shut
+down to protect both internal circuits and the load.
+The LM2931-N cannot be harmed by temporary
+mirror-image insertion. Familiar regulator features
+such as short circuit and thermal overload protection
+are also provided.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/lm2931-n.pdf"&gt;Datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="V-REG-3-FIX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="AD2T" package="D2PACK">
+<connects>
+<connect gate="U1" pin="GND" pad="4"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AT-V" package="TO220S">
+<connects>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AT-H" package="TO220BH">
+<connects>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AT-H-NH" package="TO220BH-NH">
+<connects>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="Z" package="TO92D-">
+<connects>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ADT" package="DPAK">
+<connects>
+<connect gate="U1" pin="GND" pad="4"/>
 <connect gate="U1" pin="VIN" pad="1"/>
 <connect gate="U1" pin="VOUT" pad="3"/>
 </connects>
