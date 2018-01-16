@@ -697,6 +697,15 @@ diameter 3.5 mm, horizontal, grid 12.7 mm</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="_DO35-7" package="DO35-7">
+<connects>
+<connect gate="D1" pin="A" pad="A"/>
+<connect gate="D1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="6KA24" prefix="D">
