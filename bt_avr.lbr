@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -929,6 +929,35 @@
 <text x="-27.94" y="28.702" size="1.9304" layer="95" font="vector">&gt;NAME</text>
 <text x="-27.94" y="-30.48" size="1.9304" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
+<symbol name="ATTINY43U">
+<description>ATTiny43U</description>
+<pin name="(ADC0/PCINT0)PA0" x="35.56" y="-2.54" length="middle" rot="R180"/>
+<pin name="(ADC1/PCINT1)PA1" x="35.56" y="-5.08" length="middle" rot="R180"/>
+<pin name="(ADC2/PCINT2)PA2" x="35.56" y="-7.62" length="middle" rot="R180"/>
+<pin name="VCC" x="-35.56" y="20.32" length="middle"/>
+<pin name="GND" x="-35.56" y="-20.32" length="middle"/>
+<pin name="(ADC3/PCINT3)PA3" x="35.56" y="-10.16" length="middle" rot="R180"/>
+<pin name="(AIN0/PCINT4)PA4" x="35.56" y="-12.7" length="middle" rot="R180"/>
+<pin name="(AIN1/PCINT5)PA5" x="35.56" y="-15.24" length="middle" rot="R180"/>
+<pin name="(CLKI/PCINT6)PA6" x="35.56" y="-17.78" length="middle" rot="R180"/>
+<pin name="(!RESET/DW/PCINT7)PA7" x="35.56" y="-20.32" length="middle" rot="R180"/>
+<pin name="(T1/CLKO/PCINT11)PB3" x="35.56" y="12.7" length="middle" rot="R180"/>
+<pin name="(OC0B/PCINT10)PB2" x="35.56" y="15.24" length="middle" rot="R180"/>
+<pin name="(OC0A/PCINT9)PB1" x="35.56" y="17.78" length="middle" rot="R180"/>
+<pin name="(T0/PCINT8)PB0" x="35.56" y="20.32" length="middle" rot="R180"/>
+<wire x1="-30.48" y1="-22.86" x2="-30.48" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="22.86" x2="30.48" y2="22.86" width="0.254" layer="94"/>
+<wire x1="30.48" y1="22.86" x2="30.48" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-22.86" x2="-30.48" y2="-22.86" width="0.254" layer="94"/>
+<text x="-27.94" y="23.622" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-27.94" y="-25.4" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="(DI/OC1A/PCINT12)PB4" x="35.56" y="10.16" length="middle" rot="R180"/>
+<pin name="(DO/OC1B/PCINT13)PB5" x="35.56" y="7.62" length="middle" rot="R180"/>
+<pin name="(USCK/SCL/PCINT14)PB6" x="35.56" y="5.08" length="middle" rot="R180"/>
+<pin name="(INT0/PCINT15)PB7" x="35.56" y="2.54" length="middle" rot="R180"/>
+<pin name="VBAT" x="-35.56" y="7.62" length="middle"/>
+<pin name="LSW" x="-35.56" y="0" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATMEGA168-PU" prefix="IC">
@@ -1412,6 +1441,47 @@ MHz allowing the system designer to optimize power consumption versus processing
 </technologies>
 </device>
 <device name="" package="20MLF_0.5">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATTINY43U" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ATtiny43U&lt;/b&gt;
+&lt;p&gt;The 20-pin, high-performance, ultra low-voltage 8-bit AVR RISC-based microcontroller combines 4KB flash memory, 64B EEPROM, 256B SRAM, 16 general purpose I/O lines,
+32 general purpose working registers, two 8-bit timer/counters with two PWM channels, internal and external interrupts, a 4-channel 10-bit A/D converter, a universal
+serial interface (USI), programmable watchdog timer with internal oscillator, internal calibrated oscillator, and three software selectable power saving modes.&lt;/p&gt;
+&lt;p&gt;Built-in boost voltage converter providing 3V to the processor while only requiring between 0.7-1.8 volts from its external power supply (1.8-5.5 volts when the voltage converter is bypassed).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/doc8048.pdf"&gt;Datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="ATTINY43U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SU" package="SOIC20">
+<connects>
+<connect gate="U1" pin="(!RESET/DW/PCINT7)PA7" pad="20"/>
+<connect gate="U1" pin="(ADC0/PCINT0)PA0" pad="13"/>
+<connect gate="U1" pin="(ADC1/PCINT1)PA1" pad="14"/>
+<connect gate="U1" pin="(ADC2/PCINT2)PA2" pad="15"/>
+<connect gate="U1" pin="(ADC3/PCINT3)PA3" pad="16"/>
+<connect gate="U1" pin="(AIN0/PCINT4)PA4" pad="17"/>
+<connect gate="U1" pin="(AIN1/PCINT5)PA5" pad="18"/>
+<connect gate="U1" pin="(CLKI/PCINT6)PA6" pad="19"/>
+<connect gate="U1" pin="(DI/OC1A/PCINT12)PB4" pad="5"/>
+<connect gate="U1" pin="(DO/OC1B/PCINT13)PB5" pad="6"/>
+<connect gate="U1" pin="(INT0/PCINT15)PB7" pad="8"/>
+<connect gate="U1" pin="(OC0A/PCINT9)PB1" pad="2"/>
+<connect gate="U1" pin="(OC0B/PCINT10)PB2" pad="3"/>
+<connect gate="U1" pin="(T0/PCINT8)PB0" pad="1"/>
+<connect gate="U1" pin="(T1/CLKO/PCINT11)PB3" pad="4"/>
+<connect gate="U1" pin="(USCK/SCL/PCINT14)PB6" pad="7"/>
+<connect gate="U1" pin="GND" pad="10"/>
+<connect gate="U1" pin="LSW" pad="11"/>
+<connect gate="U1" pin="VBAT" pad="12"/>
+<connect gate="U1" pin="VCC" pad="9"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
