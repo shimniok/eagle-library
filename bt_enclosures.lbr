@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -191,26 +191,24 @@
 <hole x="43.5" y="15.5" drill="3.2"/>
 <hole x="15.5" y="43.5" drill="3.2"/>
 <hole x="43.5" y="43.5" drill="3.2"/>
-<wire x1="0" y1="59" x2="0" y2="25.03" width="0.127" layer="48"/>
-<wire x1="0" y1="18.53" x2="0" y2="0" width="0.127" layer="48"/>
-<wire x1="0" y1="0" x2="59" y2="0" width="0.127" layer="48"/>
-<wire x1="59" y1="0" x2="59" y2="18.53" width="0.127" layer="48"/>
-<wire x1="59" y1="25.03" x2="59" y2="59" width="0.127" layer="48"/>
-<wire x1="59" y1="59" x2="0" y2="59" width="0.127" layer="48"/>
-<wire x1="0" y1="18.53" x2="4.5" y2="18.53" width="0.127" layer="48"/>
-<wire x1="54.5" y1="18.53" x2="59" y2="18.53" width="0.127" layer="48"/>
-<wire x1="0" y1="25.03" x2="4.5" y2="25.03" width="0.127" layer="48"/>
-<wire x1="54.5" y1="25.03" x2="59" y2="25.03" width="0.127" layer="48"/>
-<wire x1="4.5" y1="25.03" x2="4.5" y2="18.53" width="0.127" layer="48" curve="-180"/>
-<wire x1="54.5" y1="18.53" x2="54.5" y2="25.03" width="0.127" layer="48" curve="-180"/>
+<wire x1="0" y1="59" x2="0" y2="25.03" width="0.127" layer="51"/>
+<wire x1="0" y1="18.53" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="59" y2="0" width="0.127" layer="51"/>
+<wire x1="59" y1="0" x2="59" y2="18.53" width="0.127" layer="51"/>
+<wire x1="59" y1="25.03" x2="59" y2="59" width="0.127" layer="51"/>
+<wire x1="59" y1="59" x2="0" y2="59" width="0.127" layer="51"/>
+<wire x1="0" y1="18.53" x2="4.5" y2="18.53" width="0.127" layer="51"/>
+<wire x1="54.5" y1="18.53" x2="59" y2="18.53" width="0.127" layer="51"/>
+<wire x1="0" y1="25.03" x2="4.5" y2="25.03" width="0.127" layer="51"/>
+<wire x1="54.5" y1="25.03" x2="59" y2="25.03" width="0.127" layer="51"/>
+<wire x1="4.5" y1="25.03" x2="4.5" y2="18.53" width="0.127" layer="51" curve="-180"/>
+<wire x1="54.5" y1="18.53" x2="54.5" y2="25.03" width="0.127" layer="51" curve="-180"/>
 <text x="61" y="53" size="1.27" layer="48" font="vector">Hammond 1593J
 22.00 interior height
 -9.00 boss height (4.5 x 2)
 -1.60 pcb thickness</text>
 <text x="61" y="50" size="1.27" layer="48" font="vector">11.40 max component height</text>
 <wire x1="61" y1="52" x2="66.5" y2="52" width="0.127" layer="48"/>
-<text x="25" y="0.5" size="1.27" layer="48">PANEL SIDE</text>
-<text x="24.5" y="57" size="1.27" layer="48">PANEL SIDE</text>
 </package>
 <package name="HAMMOND_1553AA">
 <description>&lt;b&gt;Hammond 1553AA Enclosure&lt;/b&gt;
@@ -251,6 +249,74 @@
 <wire x1="-21" y1="-12.15" x2="-24" y2="-9.15" width="0" layer="51" curve="90"/>
 <wire x1="-24" y1="-9.15" x2="-27.25" y2="-9.15" width="0" layer="51"/>
 <wire x1="-27.25" y1="-9.15" x2="-27.25" y2="14.75" width="0" layer="51"/>
+</package>
+<package name="HAMMOND_1593L">
+<description>Hammond 1593L enclosure</description>
+<hole x="14.31" y="14.33" drill="3.2"/>
+<hole x="42.31" y="14.33" drill="3.2"/>
+<hole x="14.31" y="68.33" drill="3.2"/>
+<hole x="42.31" y="68.33" drill="3.2"/>
+<wire x1="0" y1="17.75" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="56.61" y2="0" width="0.127" layer="51"/>
+<wire x1="56.61" y1="0" x2="56.61" y2="17.75" width="0.127" layer="51"/>
+<wire x1="56.61" y1="24.05" x2="56.61" y2="58.61" width="0.127" layer="51"/>
+<wire x1="56.61" y1="64.91" x2="56.61" y2="82.66" width="0.127" layer="51"/>
+<wire x1="56.61" y1="82.66" x2="0" y2="82.66" width="0.127" layer="51"/>
+<wire x1="0" y1="17.75" x2="3.45" y2="17.75" width="0.127" layer="51"/>
+<wire x1="53.15" y1="17.75" x2="56.61" y2="17.75" width="0.127" layer="51"/>
+<wire x1="0" y1="24.05" x2="3.45" y2="24.05" width="0.127" layer="51"/>
+<wire x1="53.15" y1="24.05" x2="56.61" y2="24.05" width="0.127" layer="51"/>
+<wire x1="3.45" y1="24.05" x2="3.45" y2="17.75" width="0.127" layer="51" curve="-180"/>
+<wire x1="53.15" y1="17.75" x2="53.15" y2="24.05" width="0.127" layer="51" curve="-180"/>
+<text x="61" y="75.5" size="1.27" layer="48" font="vector">Hammond 1593L
+22.00 interior height
+-9.00 boss height (4.5 x 2)
+-1.60 pcb thickness</text>
+<text x="61" y="72.5" size="1.27" layer="48" font="vector">11.40 max component height</text>
+<wire x1="61" y1="74.5" x2="66.5" y2="74.5" width="0.127" layer="48"/>
+<text x="25" y="0.5" size="1.27" layer="51">PANEL SIDE</text>
+<text x="24" y="81" size="1.27" layer="48">PANEL SIDE</text>
+<wire x1="0" y1="58.61" x2="3.45" y2="58.61" width="0.127" layer="51"/>
+<wire x1="0" y1="64.91" x2="3.45" y2="64.91" width="0.127" layer="51"/>
+<wire x1="3.45" y1="64.91" x2="3.45" y2="58.61" width="0.127" layer="51" curve="-180"/>
+<wire x1="0" y1="82.66" x2="0" y2="64.91" width="0.127" layer="51"/>
+<wire x1="0" y1="58.61" x2="0" y2="24.05" width="0.127" layer="51"/>
+<wire x1="56.61" y1="64.91" x2="53.15" y2="64.91" width="0.127" layer="51"/>
+<wire x1="56.61" y1="58.61" x2="53.15" y2="58.61" width="0.127" layer="51"/>
+<wire x1="53.15" y1="58.61" x2="53.15" y2="64.91" width="0.127" layer="51" curve="-180"/>
+</package>
+<package name="HAMMOND_1593L_HALF">
+<description>Hammond 1593L Enclosure (half)</description>
+<hole x="14.31" y="14.33" drill="3.2"/>
+<hole x="42.31" y="14.33" drill="3.2"/>
+<wire x1="0" y1="17.75" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="56.61" y2="0" width="0.127" layer="51"/>
+<wire x1="56.61" y1="0" x2="56.61" y2="17.75" width="0.127" layer="51"/>
+<wire x1="56.61" y1="24.05" x2="56.61" y2="58.61" width="0.127" layer="51"/>
+<wire x1="56.61" y1="64.91" x2="56.61" y2="82.66" width="0.127" layer="51"/>
+<wire x1="56.61" y1="82.66" x2="0" y2="82.66" width="0.127" layer="51"/>
+<wire x1="0" y1="17.75" x2="3.45" y2="17.75" width="0.127" layer="51"/>
+<wire x1="53.15" y1="17.75" x2="56.61" y2="17.75" width="0.127" layer="51"/>
+<wire x1="0" y1="24.05" x2="3.45" y2="24.05" width="0.127" layer="51"/>
+<wire x1="53.15" y1="24.05" x2="56.61" y2="24.05" width="0.127" layer="51"/>
+<wire x1="3.45" y1="24.05" x2="3.45" y2="17.75" width="0.127" layer="51" curve="-180"/>
+<wire x1="53.15" y1="17.75" x2="53.15" y2="24.05" width="0.127" layer="51" curve="-180"/>
+<text x="61" y="75.5" size="1.27" layer="48" font="vector">Hammond 1593L
+22.00 interior height
+-9.00 boss height (4.5 x 2)
+-1.60 pcb thickness</text>
+<text x="61" y="72.5" size="1.27" layer="48" font="vector">11.40 max component height</text>
+<wire x1="61" y1="74.5" x2="66.5" y2="74.5" width="0.127" layer="48"/>
+<text x="25" y="0.5" size="1.27" layer="51">PANEL SIDE</text>
+<text x="24" y="81" size="1.27" layer="48">PANEL SIDE</text>
+<wire x1="0" y1="58.61" x2="3.45" y2="58.61" width="0.127" layer="51"/>
+<wire x1="0" y1="64.91" x2="3.45" y2="64.91" width="0.127" layer="51"/>
+<wire x1="3.45" y1="64.91" x2="3.45" y2="58.61" width="0.127" layer="51" curve="-180"/>
+<wire x1="0" y1="82.66" x2="0" y2="64.91" width="0.127" layer="51"/>
+<wire x1="0" y1="58.61" x2="0" y2="24.05" width="0.127" layer="51"/>
+<wire x1="56.61" y1="64.91" x2="53.15" y2="64.91" width="0.127" layer="51"/>
+<wire x1="56.61" y1="58.61" x2="53.15" y2="58.61" width="0.127" layer="51"/>
+<wire x1="53.15" y1="58.61" x2="53.15" y2="64.91" width="0.127" layer="51" curve="-180"/>
 </package>
 </packages>
 <symbols>
