@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -130,25 +130,25 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <package name="CHIPLED_1206">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
 Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
-<wire x1="-0.4" y1="1.6" x2="0.4" y2="1.6" width="0.1016" layer="51" curve="172.619069"/>
-<wire x1="-0.8" y1="-0.95" x2="-0.8" y2="0.95" width="0.1016" layer="51"/>
-<wire x1="0.8" y1="0.95" x2="0.8" y2="-0.95" width="0.1016" layer="51"/>
-<circle x="-0.55" y="1.425" radius="0.1" width="0.1016" layer="51"/>
-<smd name="C" x="0" y="1.75" dx="1.5" dy="1.5" layer="1"/>
-<smd name="A" x="0" y="-1.75" dx="1.5" dy="1.5" layer="1"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.85" y1="1.525" x2="-0.35" y2="1.65" layer="51"/>
-<rectangle x1="-0.85" y1="1.225" x2="-0.625" y2="1.55" layer="51"/>
-<rectangle x1="-0.45" y1="1.225" x2="-0.325" y2="1.45" layer="51"/>
-<rectangle x1="-0.65" y1="1.225" x2="-0.225" y2="1.35" layer="51"/>
-<rectangle x1="0.35" y1="1.3" x2="0.85" y2="1.65" layer="51"/>
-<rectangle x1="0.25" y1="1.225" x2="0.85" y2="1.35" layer="51"/>
-<rectangle x1="-0.85" y1="0.95" x2="0.85" y2="1.25" layer="51"/>
-<rectangle x1="-0.85" y1="-1.65" x2="0.85" y2="-0.95" layer="51"/>
-<rectangle x1="-0.85" y1="0.35" x2="-0.525" y2="0.775" layer="21"/>
-<rectangle x1="0.525" y1="0.35" x2="0.85" y2="0.775" layer="21"/>
-<rectangle x1="-0.175" y1="0" x2="0.175" y2="0.35" layer="21"/>
+<wire x1="1.6" y1="0.4" x2="1.6" y2="-0.4" width="0.1016" layer="51" curve="172.619069"/>
+<wire x1="-0.95" y1="0.8" x2="0.95" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="0.95" y1="-0.8" x2="-0.95" y2="-0.8" width="0.1016" layer="51"/>
+<circle x="1.425" y="0.55" radius="0.1" width="0.1016" layer="51"/>
+<smd name="C" x="1.75" y="0" dx="1.5" dy="1.5" layer="1" rot="R270"/>
+<smd name="A" x="-1.75" y="0" dx="1.5" dy="1.5" layer="1" rot="R270"/>
+<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.016" layer="27" font="vector" ratio="10" rot="R180" align="bottom-center">&gt;VALUE</text>
+<rectangle x1="1.3375" y1="0.5375" x2="1.8375" y2="0.6625" layer="51" rot="R270"/>
+<rectangle x1="1.275" y1="0.575" x2="1.5" y2="0.9" layer="51" rot="R270"/>
+<rectangle x1="1.275" y1="0.275" x2="1.4" y2="0.5" layer="51" rot="R270"/>
+<rectangle x1="1.075" y1="0.375" x2="1.5" y2="0.5" layer="51" rot="R270"/>
+<rectangle x1="1.225" y1="-0.775" x2="1.725" y2="-0.425" layer="51" rot="R270"/>
+<rectangle x1="0.9875" y1="-0.6125" x2="1.5875" y2="-0.4875" layer="51" rot="R270"/>
+<rectangle x1="0.25" y1="-0.15" x2="1.95" y2="0.15" layer="51" rot="R270"/>
+<rectangle x1="-2.15" y1="-0.35" x2="-0.45" y2="0.35" layer="51" rot="R270"/>
+<rectangle x1="0.4" y1="0.475" x2="0.725" y2="0.9" layer="21" rot="R270"/>
+<rectangle x1="0.4" y1="-0.9" x2="0.725" y2="-0.475" layer="21" rot="R270"/>
+<rectangle x1="0" y1="-0.175" x2="0.35" y2="0.175" layer="21" rot="R270"/>
 </package>
 <package name="CHIPLED_0603">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
@@ -1107,8 +1107,8 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <wire x1="-0.2" y1="-0.35" x2="0.2" y2="-0.35" width="0.1016" layer="21"/>
 <smd name="C" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
 <smd name="A" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="0.762" size="0.8128" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.8128" layer="27" font="vector" ratio="10" rot="R180" align="bottom-center">&gt;VALUE</text>
 <rectangle x1="-0.4" y1="0.175" x2="0" y2="0.4" layer="51"/>
 <rectangle x1="-0.25" y1="0.175" x2="0" y2="0.4" layer="21"/>
 </package>
@@ -1411,6 +1411,72 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <wire x1="21.717" y1="-0.127" x2="16.5354" y2="-0.127" width="0.8128" layer="51"/>
 <circle x="23.622" y="-6.35" radius="0.381" width="0.762" layer="51"/>
 <pad name="6" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+</package>
+<package name="LED5MM_RA_1">
+<description>5mm LED, Right Angle (1)</description>
+<pad name="A" x="0" y="-1.27" drill="0.9" diameter="1.778"/>
+<pad name="C" x="0" y="1.27" drill="0.9" diameter="1.778"/>
+<text x="0" y="-2.667" size="0.8128" layer="21" font="vector" ratio="10" rot="R270" align="center">+</text>
+<wire x1="2.54" y1="2.667" x2="2.54" y2="-3.048" width="0.127" layer="51"/>
+<wire x1="3.048" y1="2.54" x2="7.62" y2="2.54" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-2.54" x2="3.048" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.127" layer="51" curve="180"/>
+<wire x1="2.54" y1="2.667" x2="3.048" y2="2.667" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-3.048" x2="2.54" y2="-3.048" width="0.127" layer="51"/>
+<wire x1="3.048" y1="2.667" x2="3.048" y2="2.54" width="0.127" layer="51"/>
+<wire x1="3.048" y1="2.54" x2="3.048" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="-3.048" width="0.127" layer="51"/>
+<rectangle x1="0" y1="1.016" x2="2.54" y2="1.524" layer="51" rot="R180"/>
+<rectangle x1="0" y1="-1.524" x2="2.54" y2="-1.016" layer="51" rot="R180"/>
+<wire x1="3.302" y1="1.524" x2="6.096" y2="1.524" width="0.127" layer="51"/>
+<wire x1="6.096" y1="1.524" x2="6.096" y2="-0.762" width="0.127" layer="51"/>
+<wire x1="6.096" y1="-0.762" x2="5.588" y2="-0.762" width="0.127" layer="51"/>
+<wire x1="5.588" y1="-0.762" x2="4.572" y2="0.254" width="0.127" layer="51"/>
+<wire x1="4.572" y1="0.254" x2="4.572" y2="0.762" width="0.127" layer="51"/>
+<wire x1="4.572" y1="0.762" x2="4.318" y2="1.016" width="0.127" layer="51"/>
+<wire x1="4.318" y1="1.016" x2="3.302" y2="1.016" width="0.127" layer="51"/>
+<wire x1="6.096" y1="-1.016" x2="6.096" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="6.096" y1="-1.524" x2="3.302" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="3.302" y1="-1.016" x2="3.81" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-1.016" x2="6.096" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-1.016" x2="4.318" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="4.318" y1="-0.254" x2="3.81" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-0.254" x2="3.81" y2="-1.016" width="0.127" layer="51"/>
+<text x="-1.524" y="0" size="1.27" layer="27" font="vector" rot="R90" align="bottom-center">&gt;VALUE</text>
+<text x="-3.302" y="0" size="1.27" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="LED5MM_RA_2">
+<description>5mm LED Right Angle (2)</description>
+<pad name="A" x="0" y="1.27" drill="0.9" diameter="1.778"/>
+<pad name="C" x="0" y="-1.27" drill="0.9" diameter="1.778"/>
+<text x="0" y="2.667" size="0.8128" layer="21" font="vector" ratio="10" rot="MR90" align="center">+</text>
+<wire x1="2.54" y1="-2.667" x2="2.54" y2="3.048" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="7.62" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="7.62" y1="2.54" x2="3.048" y2="2.54" width="0.127" layer="51"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.127" layer="51" curve="-180"/>
+<wire x1="2.54" y1="-2.667" x2="3.048" y2="-2.667" width="0.127" layer="51"/>
+<wire x1="3.048" y1="3.048" x2="2.54" y2="3.048" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-2.667" x2="3.048" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="2.54" width="0.127" layer="51"/>
+<wire x1="3.048" y1="2.54" x2="3.048" y2="3.048" width="0.127" layer="51"/>
+<rectangle x1="0" y1="-1.524" x2="2.54" y2="-1.016" layer="51" rot="R180"/>
+<rectangle x1="0" y1="1.016" x2="2.54" y2="1.524" layer="51" rot="R180"/>
+<wire x1="3.302" y1="-1.524" x2="6.096" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="6.096" y1="-1.524" x2="6.096" y2="0.762" width="0.127" layer="51"/>
+<wire x1="6.096" y1="0.762" x2="5.588" y2="0.762" width="0.127" layer="51"/>
+<wire x1="5.588" y1="0.762" x2="4.572" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="4.572" y1="-0.254" x2="4.572" y2="-0.762" width="0.127" layer="51"/>
+<wire x1="4.572" y1="-0.762" x2="4.318" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="4.318" y1="-1.016" x2="3.302" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="6.096" y1="1.016" x2="6.096" y2="1.524" width="0.127" layer="51"/>
+<wire x1="6.096" y1="1.524" x2="3.302" y2="1.524" width="0.127" layer="51"/>
+<wire x1="3.302" y1="1.016" x2="3.81" y2="1.016" width="0.127" layer="51"/>
+<wire x1="5.08" y1="1.016" x2="6.096" y2="1.016" width="0.127" layer="51"/>
+<wire x1="5.08" y1="1.016" x2="4.318" y2="0.254" width="0.127" layer="51"/>
+<wire x1="4.318" y1="0.254" x2="3.81" y2="0.254" width="0.127" layer="51"/>
+<wire x1="3.81" y1="0.254" x2="3.81" y2="1.016" width="0.127" layer="51"/>
+<text x="-1.27" y="0" size="1.27" layer="27" font="vector" rot="R90" align="bottom-center">&gt;VALUE</text>
+<text x="-3.048" y="0" size="1.27" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1809,13 +1875,13 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 
 Various packages</description>
 <gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
+<gate name="LED1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
 <device name="3MM" package="LED3MM">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1823,8 +1889,8 @@ Various packages</description>
 </device>
 <device name="5MM" package="LED5MM">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1832,8 +1898,8 @@ Various packages</description>
 </device>
 <device name="CHIPLED_0805" package="CHIPLED_0805">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1841,8 +1907,8 @@ Various packages</description>
 </device>
 <device name="CHIPLED_1206" package="CHIPLED_1206">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1850,8 +1916,8 @@ Various packages</description>
 </device>
 <device name="CHIPLED_0603" package="CHIPLED_0603">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1859,8 +1925,8 @@ Various packages</description>
 </device>
 <device name="10MM" package="LED10MM">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1868,8 +1934,8 @@ Various packages</description>
 </device>
 <device name="SML0805" package="SML0805">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1877,8 +1943,8 @@ Various packages</description>
 </device>
 <device name="SML1206" package="SML1206">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1886,8 +1952,8 @@ Various packages</description>
 </device>
 <device name="SML0603" package="SML0603">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1895,8 +1961,26 @@ Various packages</description>
 </device>
 <device name="5MMRA" package="LED5MMRA">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5MM_RA_1" package="LED5MM_RA_1">
+<connects>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5MM_RA_2" package="LED5MM_RA_2">
+<connects>
+<connect gate="LED1" pin="A" pad="A"/>
+<connect gate="LED1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
