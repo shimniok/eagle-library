@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -317,6 +317,39 @@
 <wire x1="56.61" y1="64.91" x2="53.15" y2="64.91" width="0.127" layer="51"/>
 <wire x1="56.61" y1="58.61" x2="53.15" y2="58.61" width="0.127" layer="51"/>
 <wire x1="53.15" y1="58.61" x2="53.15" y2="64.91" width="0.127" layer="51" curve="-180"/>
+</package>
+<package name="HAMMOND_1593AR">
+<description>Hammond 1593A enclosure with 2 removable end-panels</description>
+<hole x="4.318" y="3.81" drill="3.2"/>
+<hole x="64.262" y="3.81" drill="3.2"/>
+<hole x="4.318" y="63.754" drill="3.2"/>
+<hole x="64.262" y="63.754" drill="3.2"/>
+<wire x1="30.988" y1="67.564" x2="1.778" y2="67.564" width="0.127" layer="48"/>
+<wire x1="1.778" y1="67.564" x2="0" y2="65.786" width="0.127" layer="48"/>
+<wire x1="0" y1="65.786" x2="0" y2="1.778" width="0.127" layer="48"/>
+<wire x1="0" y1="1.778" x2="1.778" y2="0" width="0.127" layer="48"/>
+<wire x1="1.778" y1="0" x2="30.988" y2="0" width="0.127" layer="48"/>
+<wire x1="37.592" y1="0" x2="66.802" y2="0" width="0.127" layer="48"/>
+<wire x1="66.802" y1="0" x2="68.58" y2="1.778" width="0.127" layer="48"/>
+<wire x1="68.58" y1="1.778" x2="68.58" y2="65.786" width="0.127" layer="48"/>
+<wire x1="68.58" y1="65.786" x2="66.802" y2="67.564" width="0.127" layer="48"/>
+<wire x1="66.802" y1="67.564" x2="37.592" y2="67.564" width="0.127" layer="48"/>
+<text x="2.54" y="29.972" size="1.27" layer="48" rot="R90">PANEL SIDE</text>
+<text x="67.31" y="29.972" size="1.27" layer="48" rot="R90">PANEL SIDE</text>
+<wire x1="30.988" y1="67.564" x2="30.988" y2="63.5" width="0.127" layer="48"/>
+<wire x1="30.988" y1="63.5" x2="34.036" y2="60.452" width="0.127" layer="48" curve="90"/>
+<wire x1="34.036" y1="60.452" x2="34.544" y2="60.452" width="0.127" layer="48"/>
+<wire x1="34.544" y1="60.452" x2="37.592" y2="63.5" width="0.127" layer="48" curve="90"/>
+<wire x1="37.592" y1="63.5" x2="37.592" y2="67.564" width="0.127" layer="48"/>
+<wire x1="37.592" y1="0" x2="37.592" y2="4.064" width="0.127" layer="48"/>
+<wire x1="37.592" y1="4.064" x2="34.544" y2="7.112" width="0.127" layer="48" curve="90"/>
+<wire x1="34.544" y1="7.112" x2="34.036" y2="7.112" width="0.127" layer="48"/>
+<wire x1="34.036" y1="7.112" x2="30.988" y2="4.064" width="0.127" layer="48" curve="90"/>
+<wire x1="30.988" y1="4.064" x2="30.988" y2="0" width="0.127" layer="48"/>
+<text x="71.12" y="55.372" size="1.6764" layer="48">1593AR
+2.99"L x 2.91"W x 1.06"H
+Panel: 2.6"W x 0.79"H x ??" thickness
+Component Max Height: 0.607" w/ 1.6mm PCB</text>
 </package>
 </packages>
 <symbols>
