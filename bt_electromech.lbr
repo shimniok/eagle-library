@@ -2838,6 +2838,28 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="-1.6" y1="21" x2="1.6" y2="21" width="0.127" layer="21"/>
 <wire x1="1.6" y1="21" x2="1.6" y2="12.7" width="0.127" layer="21"/>
 </package>
+<package name="12MMTACTILE_4PIN">
+<description>12mm x 12mm tactile switch</description>
+<pad name="P1A" x="-6.35" y="-2.54" drill="1.1" rot="R90"/>
+<pad name="P2A" x="-6.35" y="2.54" drill="1.1" rot="R90"/>
+<pad name="P1B" x="6.35" y="-2.54" drill="1.1" rot="R90"/>
+<pad name="P2B" x="6.35" y="2.54" drill="1.1" rot="R90"/>
+<wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="6.35" x2="6.35" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-6.35" x2="-6.35" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-6.35" x2="6.35" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-1.27" x2="-6.35" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="3.81" x2="-6.35" y2="6.35" width="0.127" layer="21"/>
+<wire x1="6.35" y1="3.81" x2="6.35" y2="6.35" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="4.016090625" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
+<text x="0" y="6.985" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DEANS">
@@ -2951,6 +2973,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="SPST4">
+<description>SPST with 4 pins</description>
 <wire x1="-3.175" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.905" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
@@ -2959,7 +2982,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
 <text x="-3.81" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="COM@1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="NO@1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="2" rot="R180"/>
 <pin name="COM@2" x="-5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
@@ -3670,18 +3692,18 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPST4" prefix="S" uservalue="yes">
+<deviceset name="SPST4" prefix="S">
 <description>&lt;B&gt;SPST switch with 2 pins per contact&lt;/B&gt;</description>
 <gates>
-<gate name="G$1" symbol="SPST4" x="0" y="0"/>
+<gate name="S1" symbol="SPST4" x="0" y="0"/>
 </gates>
 <devices>
 <device name="B3F-10XX" package="B3F-10XX">
 <connects>
-<connect gate="G$1" pin="COM@1" pad="COM@1"/>
-<connect gate="G$1" pin="COM@2" pad="COM@2"/>
-<connect gate="G$1" pin="NO@1" pad="NO@1"/>
-<connect gate="G$1" pin="NO@2" pad="NO@2"/>
+<connect gate="S1" pin="COM@1" pad="COM@1"/>
+<connect gate="S1" pin="COM@2" pad="COM@2"/>
+<connect gate="S1" pin="NO@1" pad="NO@1"/>
+<connect gate="S1" pin="NO@2" pad="NO@2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3689,21 +3711,32 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 <device name="EVQQ2" package="EVQQ2">
 <connects>
-<connect gate="G$1" pin="COM@1" pad="A1"/>
-<connect gate="G$1" pin="COM@2" pad="A2"/>
-<connect gate="G$1" pin="NO@1" pad="B1"/>
-<connect gate="G$1" pin="NO@2" pad="B2"/>
+<connect gate="S1" pin="COM@1" pad="A1"/>
+<connect gate="S1" pin="COM@2" pad="A2"/>
+<connect gate="S1" pin="NO@1" pad="B1"/>
+<connect gate="S1" pin="NO@2" pad="B2"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="6MMTACTILE_4PIN">
+<device name="6MM" package="6MMTACTILE_4PIN">
 <connects>
-<connect gate="G$1" pin="COM@1" pad="B1"/>
-<connect gate="G$1" pin="COM@2" pad="B2"/>
-<connect gate="G$1" pin="NO@1" pad="A1"/>
-<connect gate="G$1" pin="NO@2" pad="A2"/>
+<connect gate="S1" pin="COM@1" pad="B1"/>
+<connect gate="S1" pin="COM@2" pad="B2"/>
+<connect gate="S1" pin="NO@1" pad="A1"/>
+<connect gate="S1" pin="NO@2" pad="A2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="12MM" package="12MMTACTILE_4PIN">
+<connects>
+<connect gate="S1" pin="COM@1" pad="P1A"/>
+<connect gate="S1" pin="COM@2" pad="P1B"/>
+<connect gate="S1" pin="NO@1" pad="P2A"/>
+<connect gate="S1" pin="NO@2" pad="P2B"/>
 </connects>
 <technologies>
 <technology name=""/>
