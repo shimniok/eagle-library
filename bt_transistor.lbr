@@ -113,8 +113,7 @@
 <pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
 <pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
 <pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.54" y="-3.175" size="1.016" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <text x="-0.254" y="0.127" size="0.8128" layer="21" font="vector" ratio="10">B</text>
 <text x="-1.651" y="1.016" size="0.8128" layer="21" font="vector" ratio="10">E</text>
 <text x="1.016" y="1.016" size="0.8128" layer="21" font="vector" ratio="10">C</text>
@@ -153,8 +152,7 @@
 <pad name="C" x="2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
 <pad name="E" x="-2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
 <pad name="B" x="0" y="0" drill="0.8128" shape="octagon" rot="R90"/>
-<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.54" y="-2.667" size="0.8128" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <text x="1.27" y="0.508" size="0.8128" layer="21" font="vector">C</text>
 <text x="-1.778" y="0.508" size="0.8128" layer="21" font="vector">E</text>
 <text x="-0.254" y="1.016" size="0.8128" layer="21" font="vector">B</text>
