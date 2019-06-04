@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -162,8 +162,8 @@
 <smd name="4" x="0.95" y="1.1" dx="0.5" dy="1.4" layer="1"/>
 <smd name="5" x="0" y="1.1" dx="0.5" dy="1.4" layer="1"/>
 <smd name="6" x="-0.95" y="1.1" dx="0.5" dy="1.4" layer="1"/>
-<text x="-1.524" y="-3.302" size="1.27" layer="27" font="vector" ratio="16">&gt;VALUE</text>
-<text x="-1.524" y="2.286" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-1.524" y="-2.794" size="0.8128" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="-1.524" y="2.286" size="0.8128" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
 <rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
 <rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
@@ -956,6 +956,21 @@ From transistor-power.lbr</description>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="10.668" size="1.6764" layer="104">&gt;NAME</text>
 <text x="-7.62" y="-12.446" size="1.6764" layer="104">&gt;VALUE</text>
+</symbol>
+<symbol name="TLV61220">
+<description>TLV61220 boost voltage regulator</description>
+<pin name="SW" x="-15.24" y="7.62" length="middle"/>
+<pin name="VBAT" x="-15.24" y="2.54" length="middle"/>
+<pin name="EN" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-7.62" length="middle"/>
+<pin name="FB" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="VOUT" x="15.24" y="7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="10.922" size="1.4224" layer="95" ratio="12">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.4224" layer="95" ratio="12">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2144,6 +2159,47 @@ or 2-cell alkaline or NiMH, or 1-cell Li-primary battery.
 <connect gate="U1" pin="GND" pad="3"/>
 <connect gate="U1" pin="L" pad="4"/>
 <connect gate="U1" pin="VIN" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV61220" prefix="U" uservalue="yes">
+<description>&lt;B&gt;TLV61220 Low-Input Voltage Step-Up Voltage Converter / Regulator&lt;/B&gt;
+
+&lt;P&gt;
+
+The TLV61220 device provides a power-supply solution for products powered by either a single-cell, 
+two-cell, or three-cell alkaline, NiCd or NiMH, or one-cell Li-Ion or Li-polymer battery. Possible output
+
+&lt;P&gt;Features:
+&lt;UL&gt;
+&lt;LI&gt;Up to 95% Efficiency at Typical Operating Conditions &lt;/LI&gt;
+&lt;LI&gt;5.5-μA Quiescent Current &lt;/LI&gt;
+&lt;LI&gt;Startup Into Load at 0.7-V Input Voltage currents depend on the input-to-output voltage ratio.&lt;/LI&gt;
+&lt;LI&gt;Operating Input Voltage from 0.7 V to 5.5 V&lt;/LI&gt;
+&lt;LI&gt;Pass-Through Function during Shutdown&lt;/LI&gt;
+&lt;LI&gt;Minimum Switching Current 200 mA&lt;/LI&gt;
+&lt;LI&gt;Protections include output overvoltage, overtemperature, input undervoltage lockout&lt;/LI&gt;
+&lt;LI&gt;Adjustable Output Voltage from 1.8 V to 5.5 V&lt;/LI&gt;
+&lt;LI&gt;Small 6-pin Thin SOT-23 Package&lt;/LI&gt;
+&lt;/UL&gt;
+
+Datasheet: &lt;A HREF="http://www.ti.com/lit/ds/symlink/tlv61220.pdf"&gt;TLV61220.pdf&lt;/A&gt;</description>
+<gates>
+<gate name="U1" symbol="TLV61220" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="U1" pin="EN" pad="3"/>
+<connect gate="U1" pin="FB" pad="4"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="SW" pad="1"/>
+<connect gate="U1" pin="VBAT" pad="6"/>
 <connect gate="U1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>

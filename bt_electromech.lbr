@@ -2860,6 +2860,41 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
 <text x="0" y="6.985" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="POT_0.2X0.25">
+<description>0.20 x 0.25 potentiometer</description>
+<wire x1="-0.381" y1="0.635" x2="-0.381" y2="1.651" width="0.1524" layer="21"/>
+<wire x1="-0.381" y1="1.651" x2="0.381" y2="1.651" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="1.651" x2="0.381" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="0.635" x2="1.397" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="0.635" x2="1.397" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="-0.127" x2="0.381" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="-0.127" x2="0.381" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="-1.143" x2="-0.381" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-0.381" y1="-1.143" x2="-0.381" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="-0.381" y1="-0.127" x2="-1.397" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="-0.127" x2="-1.397" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="0.635" x2="-0.381" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="3.937" x2="-0.889" y2="3.937" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="3.937" x2="0.889" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="-2.5146" y1="-1.8796" x2="2.5146" y2="-1.8796" width="0.1524" layer="51"/>
+<wire x1="3.556" y1="-3.81" x2="1.651" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="-3.81" x2="-1.651" y2="-3.81" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="-3.81" x2="-3.556" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="3.556" y1="-1.524" x2="3.556" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="3.937" x2="-0.889" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="-3.81" x2="-3.556" y2="-1.524" width="0.1524" layer="51"/>
+<wire x1="3.556" y1="-1.524" x2="3.556" y2="2.413" width="0.1524" layer="21"/>
+<circle x="0" y="0.254" radius="3.302" width="0.1524" layer="51"/>
+<circle x="0" y="0.254" radius="1.778" width="0.1524" layer="21"/>
+<pad name="W" x="0" y="3.81" drill="1.016"/>
+<pad name="A" x="-2.54" y="-2.54" drill="1.016" rot="R90"/>
+<pad name="B" x="2.54" y="-2.54" drill="1.016" rot="R90"/>
+<text x="-3.81" y="4.191" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="0" y="-4.191" size="1.016" layer="27" font="vector" ratio="10" rot="R180" align="bottom-center">&gt;VALUE</text>
+<wire x1="-3.556" y1="2.286" x2="-3.556" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="3.937" x2="3.556" y2="2.413" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="2.286" x2="-1.905" y2="3.937" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DEANS">
@@ -4343,6 +4378,16 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <connects>
 <connect gate="R1" pin="A" pad="1"/>
 <connect gate="R1" pin="B" pad="2"/>
+<connect gate="R1" pin="WIPER" pad="W"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2X2.5" package="POT_0.2X0.25">
+<connects>
+<connect gate="R1" pin="A" pad="A"/>
+<connect gate="R1" pin="B" pad="B"/>
 <connect gate="R1" pin="WIPER" pad="W"/>
 </connects>
 <technologies>
