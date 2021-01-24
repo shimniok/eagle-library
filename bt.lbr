@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2131,6 +2131,8 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 </polygon>
 <wire x1="0.0508" y1="1.7018" x2="0.0508" y2="2.032" width="0.2794" layer="25" curve="-320.797854"/>
 <wire x1="0.0762" y1="2.032" x2="0.0762" y2="1.7018" width="0.2794" layer="25" curve="-320.797854"/>
+<text x="0" y="-2.032" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">cc-by-sa</text>
+<text x="0" y="-0.635" size="0.8128" layer="21" font="vector" ratio="12" align="bottom-center">bot-thoughts.com</text>
 </package>
 <package name="RPI_40">
 <pad name="P$1" x="-1.27" y="22.86" drill="1" shape="square"/>
@@ -2380,13 +2382,63 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <rectangle x1="5.461" y1="-5.334" x2="5.969" y2="-3.8608" layer="51"/>
 <rectangle x1="6.731" y1="-5.334" x2="7.239" y2="-3.8608" layer="51"/>
 </package>
+<package name="DIL40-6">
+<wire x1="-6.35" y1="25.4" x2="-6.35" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-25.4" x2="6.35" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-25.4" x2="6.35" y2="25.4" width="0.127" layer="21"/>
+<wire x1="6.35" y1="25.4" x2="1.27" y2="25.4" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="25.4" x2="-6.35" y2="25.4" width="0.127" layer="21"/>
+<wire x1="1.27" y1="25.4" x2="-1.27" y2="25.4" width="0.127" layer="21" curve="-180"/>
+<pad name="P$1" x="-7.62" y="24.13" drill="0.8" shape="long"/>
+<pad name="P$2" x="-7.62" y="21.59" drill="0.8" shape="long"/>
+<pad name="P$3" x="-7.62" y="19.05" drill="0.8" shape="long"/>
+<pad name="P$4" x="-7.62" y="16.51" drill="0.8" shape="long"/>
+<pad name="P$5" x="-7.62" y="13.97" drill="0.8" shape="long"/>
+<pad name="P$6" x="-7.62" y="11.43" drill="0.8" shape="long"/>
+<pad name="P$7" x="-7.62" y="8.89" drill="0.8" shape="long"/>
+<pad name="P$8" x="-7.62" y="6.35" drill="0.8" shape="long"/>
+<pad name="P$9" x="-7.62" y="3.81" drill="0.8" shape="long"/>
+<pad name="P$10" x="-7.62" y="1.27" drill="0.8" shape="long"/>
+<pad name="P$11" x="-7.62" y="-1.27" drill="0.8" shape="long"/>
+<pad name="P$12" x="-7.62" y="-3.81" drill="0.8" shape="long"/>
+<pad name="P$13" x="-7.62" y="-6.35" drill="0.8" shape="long"/>
+<pad name="P$14" x="-7.62" y="-8.89" drill="0.8" shape="long"/>
+<pad name="P$15" x="-7.62" y="-11.43" drill="0.8" shape="long"/>
+<pad name="P$16" x="-7.62" y="-13.97" drill="0.8" shape="long"/>
+<pad name="P$17" x="-7.62" y="-16.51" drill="0.8" shape="long"/>
+<pad name="P$18" x="-7.62" y="-19.05" drill="0.8" shape="long"/>
+<pad name="P$19" x="-7.62" y="-21.59" drill="0.8" shape="long"/>
+<pad name="P$20" x="-7.62" y="-24.13" drill="0.8" shape="long"/>
+<pad name="P$21" x="7.62" y="-24.13" drill="0.8" shape="long"/>
+<pad name="P$22" x="7.62" y="-21.59" drill="0.8" shape="long"/>
+<pad name="P$23" x="7.62" y="-19.05" drill="0.8" shape="long"/>
+<pad name="P$24" x="7.62" y="-16.51" drill="0.8" shape="long"/>
+<pad name="P$25" x="7.62" y="-13.97" drill="0.8" shape="long"/>
+<pad name="P$26" x="7.62" y="-11.43" drill="0.8" shape="long"/>
+<pad name="P$27" x="7.62" y="-8.89" drill="0.8" shape="long"/>
+<pad name="P$28" x="7.62" y="-6.35" drill="0.8" shape="long"/>
+<text x="-6.35" y="26.67" size="1.778" layer="21">&gt;NAME</text>
+<text x="1.27" y="-5.08" size="2.54" layer="21" rot="R90">&gt;VALUE</text>
+<pad name="P$29" x="7.62" y="-3.81" drill="0.8" shape="long"/>
+<pad name="P$30" x="7.62" y="-1.27" drill="0.8" shape="long"/>
+<pad name="P$31" x="7.62" y="1.27" drill="0.8" shape="long"/>
+<pad name="P$32" x="7.62" y="3.81" drill="0.8" shape="long"/>
+<pad name="P$33" x="7.62" y="6.35" drill="0.8" shape="long"/>
+<pad name="P$34" x="7.62" y="8.89" drill="0.8" shape="long"/>
+<pad name="P$35" x="7.62" y="11.43" drill="0.8" shape="long"/>
+<pad name="P$36" x="7.62" y="13.97" drill="0.8" shape="long"/>
+<pad name="P$37" x="7.62" y="16.51" drill="0.8" shape="long"/>
+<pad name="P$38" x="7.62" y="19.05" drill="0.8" shape="long"/>
+<pad name="P$39" x="7.62" y="21.59" drill="0.8" shape="long"/>
+<pad name="P$40" x="7.62" y="24.13" drill="0.8" shape="long"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POWER2">
 <text x="1.27" y="8.89" size="1.778" layer="95">&gt;NAME</text>
 <text x="1.27" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
-<pin name="GND" x="0" y="-11.43" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="12.7" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-13.97" visible="pin" length="middle" direction="pwr" rot="R90"/>
 </symbol>
 <symbol name="PNA4613">
 <wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
@@ -4022,6 +4074,94 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <text x="0" y="6.35" size="1.778" layer="95" align="bottom-center">9V</text>
 <pin name="9V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="MC6808">
+<description>Motorola 6808 CPU</description>
+<pin name="!HALT" x="-17.78" y="15.24" visible="pin" length="middle"/>
+<pin name="MR" x="-17.78" y="12.7" visible="pin" length="middle"/>
+<pin name="!IRQ" x="-17.78" y="10.16" visible="pin" length="middle"/>
+<pin name="VMA" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="!NMI" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="BA" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="R/W" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="E" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="EXTAL" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="XTAL" x="-17.78" y="-7.62" visible="pin" length="middle"/>
+<pin name="A0" x="17.78" y="27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="A1" x="17.78" y="25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="A2" x="17.78" y="22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="A3" x="17.78" y="20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="A4" x="17.78" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="A5" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="A6" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="A7" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="A8" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="A9" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="A11" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="A10" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="A12" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="A13" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="A14" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="A15" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="D0" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="D1" x="17.78" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="D2" x="17.78" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="D3" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="D4" x="17.78" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="D5" x="17.78" y="-25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="D6" x="17.78" y="-27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="D7" x="17.78" y="-30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET" x="-17.78" y="-10.16" visible="pin" length="middle"/>
+<text x="-5.08" y="-17.78" size="1.778" layer="95">MC6808</text>
+<wire x1="-12.7" y1="30.48" x2="12.7" y2="30.48" width="0.254" layer="94"/>
+<wire x1="12.7" y1="30.48" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-33.02" x2="-12.7" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-33.02" x2="-12.7" y2="30.48" width="0.254" layer="94"/>
+<text x="-12.7" y="33.02" size="1.778" layer="95">&gt;NAME</text>
+<pin name="RE(GND)" x="-17.78" y="-30.48" visible="pin" length="middle"/>
+<pin name="GND@2" x="-17.78" y="-27.94" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@1" x="-17.78" y="-25.4" visible="pin" length="middle" direction="pwr"/>
+<pin name="VCC_SBY" x="-17.78" y="25.4" visible="pin" length="middle"/>
+<pin name="VCC" x="-17.78" y="27.94" visible="pin" length="middle"/>
+</symbol>
+<symbol name="6264">
+<description>6264 64kbit 8kx8 SRAM</description>
+<pin name="A0" x="-15.24" y="12.7" visible="pin" length="middle"/>
+<pin name="A1" x="-15.24" y="10.16" visible="pin" length="middle"/>
+<pin name="A2" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="A3" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="A4" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="A5" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="A6" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="A7" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="A9" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="A8" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="A10" x="-15.24" y="-12.7" visible="pin" length="middle"/>
+<pin name="A11" x="-15.24" y="-15.24" visible="pin" length="middle"/>
+<pin name="A12" x="-15.24" y="-17.78" visible="pin" length="middle"/>
+<pin name="D0" x="15.24" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="D1" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="D2" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="D3" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="D4" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="D5" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="D6" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="D7" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="!CS" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="!OE" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="CS2" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="!WE" x="15.24" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<text x="-10.16" y="21.59" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-10.16" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
+<text x="0" y="12.7" size="1.6764" layer="95" align="bottom-center">6264</text>
+<text x="0" y="7.62" size="1.27" layer="95" align="bottom-center">8Kx8
+SRAM</text>
+<text x="-10.16" y="-22.86" size="1.778" layer="97">&gt;VALUE</text>
+<pin name="VCC" x="-15.24" y="17.78" visible="pin" length="middle"/>
+<pin name="GND" x="15.24" y="17.78" visible="pin" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TSOP348" prefix="IC">
@@ -5282,7 +5422,110 @@ digits, and a test mode that forces all LEDs on.
 </device>
 </devices>
 </deviceset>
+<deviceset name="MC6808" prefix="U">
+<description>&lt;b&gt;Motorola MC6808 8-bit CPU&lt;/b&gt;</description>
+<gates>
+<gate name="U1" symbol="MC6808" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL40-6">
+<connects>
+<connect gate="U1" pin="!HALT" pad="P$2"/>
+<connect gate="U1" pin="!IRQ" pad="P$4"/>
+<connect gate="U1" pin="!NMI" pad="P$6"/>
+<connect gate="U1" pin="A0" pad="P$9"/>
+<connect gate="U1" pin="A1" pad="P$10"/>
+<connect gate="U1" pin="A10" pad="P$19"/>
+<connect gate="U1" pin="A11" pad="P$20"/>
+<connect gate="U1" pin="A12" pad="P$22"/>
+<connect gate="U1" pin="A13" pad="P$23"/>
+<connect gate="U1" pin="A14" pad="P$24"/>
+<connect gate="U1" pin="A15" pad="P$25"/>
+<connect gate="U1" pin="A2" pad="P$11"/>
+<connect gate="U1" pin="A3" pad="P$12"/>
+<connect gate="U1" pin="A4" pad="P$13"/>
+<connect gate="U1" pin="A5" pad="P$14"/>
+<connect gate="U1" pin="A6" pad="P$15"/>
+<connect gate="U1" pin="A7" pad="P$16"/>
+<connect gate="U1" pin="A8" pad="P$17"/>
+<connect gate="U1" pin="A9" pad="P$18"/>
+<connect gate="U1" pin="BA" pad="P$7"/>
+<connect gate="U1" pin="D0" pad="P$33"/>
+<connect gate="U1" pin="D1" pad="P$32"/>
+<connect gate="U1" pin="D2" pad="P$31"/>
+<connect gate="U1" pin="D3" pad="P$30"/>
+<connect gate="U1" pin="D4" pad="P$29"/>
+<connect gate="U1" pin="D5" pad="P$28"/>
+<connect gate="U1" pin="D6" pad="P$27"/>
+<connect gate="U1" pin="D7" pad="P$26"/>
+<connect gate="U1" pin="E" pad="P$37"/>
+<connect gate="U1" pin="EXTAL" pad="P$38"/>
+<connect gate="U1" pin="GND@1" pad="P$1"/>
+<connect gate="U1" pin="GND@2" pad="P$21"/>
+<connect gate="U1" pin="MR" pad="P$3"/>
+<connect gate="U1" pin="R/W" pad="P$34"/>
+<connect gate="U1" pin="RE(GND)" pad="P$36"/>
+<connect gate="U1" pin="RESET" pad="P$40"/>
+<connect gate="U1" pin="VCC" pad="P$8"/>
+<connect gate="U1" pin="VCC_SBY" pad="P$35"/>
+<connect gate="U1" pin="VMA" pad="P$5"/>
+<connect gate="U1" pin="XTAL" pad="P$39"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6264" prefix="U" uservalue="yes">
+<description>&lt;b&gt;6264 SRAM, 8kx8 (64kbit)&lt;/b&gt;</description>
+<gates>
+<gate name="U1" symbol="6264" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL28-6">
+<connects>
+<connect gate="U1" pin="!CS" pad="P$20"/>
+<connect gate="U1" pin="!OE" pad="P$22"/>
+<connect gate="U1" pin="!WE" pad="P$27"/>
+<connect gate="U1" pin="A0" pad="P$10"/>
+<connect gate="U1" pin="A1" pad="P$9"/>
+<connect gate="U1" pin="A10" pad="P$21"/>
+<connect gate="U1" pin="A11" pad="P$23"/>
+<connect gate="U1" pin="A12" pad="P$2"/>
+<connect gate="U1" pin="A2" pad="P$8"/>
+<connect gate="U1" pin="A3" pad="P$7"/>
+<connect gate="U1" pin="A4" pad="P$6"/>
+<connect gate="U1" pin="A5" pad="P$5"/>
+<connect gate="U1" pin="A6" pad="P$4"/>
+<connect gate="U1" pin="A7" pad="P$3"/>
+<connect gate="U1" pin="A8" pad="P$25"/>
+<connect gate="U1" pin="A9" pad="P$24"/>
+<connect gate="U1" pin="CS2" pad="P$26"/>
+<connect gate="U1" pin="D0" pad="P$11"/>
+<connect gate="U1" pin="D1" pad="P$12"/>
+<connect gate="U1" pin="D2" pad="P$13"/>
+<connect gate="U1" pin="D3" pad="P$15"/>
+<connect gate="U1" pin="D4" pad="P$16"/>
+<connect gate="U1" pin="D5" pad="P$17"/>
+<connect gate="U1" pin="D6" pad="P$18"/>
+<connect gate="U1" pin="D7" pad="P$19"/>
+<connect gate="U1" pin="GND" pad="P$14"/>
+<connect gate="U1" pin="VCC" pad="P$28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
