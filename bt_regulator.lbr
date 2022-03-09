@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -971,6 +971,21 @@ From transistor-power.lbr</description>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <text x="-10.16" y="10.922" size="1.4224" layer="95" ratio="12">&gt;NAME</text>
 <text x="-10.16" y="-12.7" size="1.4224" layer="95" ratio="12">&gt;VALUE</text>
+</symbol>
+<symbol name="LM2665">
+<description>LM2665 - Switched Capacitor Voltage Converter</description>
+<pin name="V+" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="C+" x="-12.7" y="0" visible="pin" length="middle"/>
+<pin name="C-" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="GND" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SD" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT" x="12.7" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.128" size="1.9304" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.9304" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2201,6 +2216,73 @@ Datasheet: &lt;A HREF="http://www.ti.com/lit/ds/symlink/tlv61220.pdf"&gt;TLV6122
 <connect gate="U1" pin="SW" pad="1"/>
 <connect gate="U1" pin="VBAT" pad="6"/>
 <connect gate="U1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM2665" prefix="U">
+<description>&lt;b&gt;LM2665 - Switched Capacitor Voltage Converter&lt;/b&gt;
+
+&lt;p&gt;The LM2665 CMOS charge-pump voltage converter
+operates as a voltage doubler for an input voltage in
+the range of 2.5 V to 5.5 V. Two low-cost capacitors
+and a diode (needed during start-up) are used in this
+circuit to provide up to 40 mA of output current. The
+LM2665 can also work as a voltage divider to split a
+voltage in the range of 1.8 V to 11 V in half.
+
+&lt;p&gt;The LM2665 operates at 160-kHz oscillator frequency
+to reduce output resistance and voltage ripple. With
+an operating current of only 650 μA (operating
+efficiency greater than 90% with most loads) and
+1-μA typical shutdown current, the LM2665 provides
+ideal performance for battery powered systems.</description>
+<gates>
+<gate name="U1" symbol="LM2665" x="-2.54" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="U1" pin="C+" pad="6"/>
+<connect gate="U1" pin="C-" pad="3"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="OUT" pad="5"/>
+<connect gate="U1" pin="SD" pad="4"/>
+<connect gate="U1" pin="V+" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC5317" prefix="U" uservalue="yes">
+<description>&lt;b&gt;MIC5317 150 mA LDO Voltage Regulator&lt;/b&gt;
+
+&lt;p&gt;The MIC5317 is a high performance 150 mA low
+dropout regulator that offers high power supply
+rejection (PSRR) in an ultra-small 1 mm x 1 mm
+package for stringent space requirements and
+demanding performance. The MIC5317 operates from
+an input voltage from 2.5V to 6.0V and is capable of
+providing the output voltages of 1.0V to 3.6V making it
+ideal for USB port or 6V AC adapter applications.
+
+&lt;p&gt;&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/22070a.pdf"&gt;Datasheet.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="U1" symbol="V-REG-5-EN-FIX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="U1" pin="EN" pad="3"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="IN" pad="1"/>
+<connect gate="U1" pin="NC" pad="4"/>
+<connect gate="U1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
