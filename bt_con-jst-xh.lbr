@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -159,27 +159,27 @@ Source: http://www.jst.com .. eZH.pdf</description>
 &lt;p&gt;JST 2.54mm connector. Folded beam contact, box-shaped shrouded header, header with a boss, interchangeability, conformance to the HA terminal&lt;/p&gt;
 
 &lt;p&gt;Datasheet: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"&gt; eXH.pdf&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-11.34" y1="3.4" x2="11.34" y2="3.4" width="0.127" layer="21"/>
-<wire x1="11.34" y1="3.4" x2="11.34" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="11.34" y1="-2.35" x2="-11.34" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="-11.34" y1="-2.35" x2="-11.34" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-10.64" y1="2.7" x2="10.64" y2="2.7" width="0.127" layer="21"/>
-<wire x1="10.64" y1="2.7" x2="10.64" y2="1.27" width="0.127" layer="21"/>
-<wire x1="10.64" y1="1.27" x2="10.64" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="10.64" y1="-1.65" x2="-10.64" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="-10.64" y1="-1.65" x2="-10.64" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-10.64" y1="1.27" x2="-10.64" y2="2.7" width="0.127" layer="21"/>
-<wire x1="-10.64" y1="1.27" x2="10.64" y2="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="8.89" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="6.35" y="0" drill="0.8"/>
-<pad name="P$3" x="3.81" y="0" drill="0.8"/>
-<pad name="P$4" x="1.27" y="0" drill="0.8"/>
-<pad name="P$5" x="-1.27" y="0" drill="0.8"/>
-<pad name="P$6" x="-3.81" y="0" drill="0.8"/>
-<pad name="P$7" x="-6.35" y="0" drill="0.8"/>
-<pad name="P$8" x="-8.89" y="0" drill="0.8"/>
-<text x="-8.89" y="3.81" size="1.27" layer="21">&gt;NAME</text>
-<text x="-8.89" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
+<wire x1="-11.15" y1="3.4" x2="11.15" y2="3.4" width="0.127" layer="21"/>
+<wire x1="11.15" y1="3.4" x2="11.15" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="11.15" y1="-2.35" x2="-11.15" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-11.15" y1="-2.35" x2="-11.15" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-10.45" y1="2.7" x2="10.45" y2="2.7" width="0.127" layer="21"/>
+<wire x1="10.45" y1="2.7" x2="10.45" y2="1.27" width="0.127" layer="21"/>
+<wire x1="10.45" y1="1.27" x2="10.45" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="10.45" y1="-1.65" x2="-10.45" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-10.45" y1="-1.65" x2="-10.45" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-10.45" y1="1.27" x2="-10.45" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-10.45" y1="1.27" x2="10.45" y2="1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="8.75" y="0" drill="1" shape="square"/>
+<pad name="P$2" x="6.25" y="0" drill="1"/>
+<pad name="P$3" x="3.75" y="0" drill="1"/>
+<pad name="P$4" x="1.25" y="0" drill="1"/>
+<pad name="P$5" x="-1.25" y="0" drill="1"/>
+<pad name="P$6" x="-3.75" y="0" drill="1"/>
+<pad name="P$7" x="-6.25" y="0" drill="1"/>
+<pad name="P$8" x="-8.75" y="0" drill="1"/>
+<text x="0" y="3.81" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="21" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="B4B-XH">
 <description>&lt;b&gt;JST XH Connector&lt;/b&gt;
@@ -187,23 +187,23 @@ Source: http://www.jst.com .. eZH.pdf</description>
 &lt;p&gt;JST 2.54mm connector. Folded beam contact, box-shaped shrouded header, header with a boss, interchangeability, conformance to the HA terminal&lt;/p&gt;
 
 &lt;p&gt;Datasheet: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"&gt; eXH.pdf&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-6.26" y1="3.4" x2="6.26" y2="3.4" width="0.127" layer="21"/>
-<wire x1="6.26" y1="3.4" x2="6.26" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="6.26" y1="-2.35" x2="-6.26" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="-6.26" y1="-2.35" x2="-6.26" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-5.56" y1="2.7" x2="5.56" y2="2.7" width="0.127" layer="21"/>
-<wire x1="5.56" y1="2.7" x2="5.56" y2="1.27" width="0.127" layer="21"/>
-<wire x1="5.56" y1="1.27" x2="5.56" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="5.56" y1="-1.65" x2="-5.56" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="-5.56" y1="-1.65" x2="-5.56" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-5.56" y1="1.27" x2="-5.56" y2="2.7" width="0.127" layer="21"/>
-<wire x1="-5.56" y1="1.27" x2="5.56" y2="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="3.81" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="1.27" y="0" drill="0.8"/>
-<pad name="P$3" x="-1.27" y="0" drill="0.8"/>
-<pad name="P$4" x="-3.81" y="0" drill="0.8"/>
-<text x="-3.81" y="3.81" size="1.27" layer="21">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
+<wire x1="-6.15" y1="3.4" x2="6.15" y2="3.4" width="0.127" layer="21"/>
+<wire x1="6.15" y1="3.4" x2="6.15" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="6.15" y1="-2.35" x2="-6.15" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-6.15" y1="-2.35" x2="-6.15" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-5.46" y1="2.7" x2="5.46" y2="2.7" width="0.127" layer="21"/>
+<wire x1="5.46" y1="2.7" x2="5.46" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.46" y1="1.27" x2="5.46" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="5.46" y1="-1.65" x2="-5.46" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-5.46" y1="-1.65" x2="-5.46" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.46" y1="1.27" x2="-5.46" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-5.46" y1="1.27" x2="5.46" y2="1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="3.75" y="0" drill="1" shape="square"/>
+<pad name="P$2" x="1.25" y="0" drill="1"/>
+<pad name="P$3" x="-1.25" y="0" drill="1"/>
+<pad name="P$4" x="-3.75" y="0" drill="1"/>
+<text x="0" y="3.81" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="21" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="B6B-XH">
 <description>&lt;b&gt;JST XH Connector&lt;/b&gt;
@@ -211,25 +211,25 @@ Source: http://www.jst.com .. eZH.pdf</description>
 &lt;p&gt;JST 2.54mm connector. Folded beam contact, box-shaped shrouded header, header with a boss, interchangeability, conformance to the HA terminal&lt;/p&gt;
 
 &lt;p&gt;Datasheet: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"&gt; eXH.pdf&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-8.8" y1="3.4" x2="8.8" y2="3.4" width="0.127" layer="21"/>
-<wire x1="8.8" y1="3.4" x2="8.8" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="8.8" y1="-2.35" x2="-8.8" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="-8.8" y1="-2.35" x2="-8.8" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-8.1" y1="2.7" x2="8.1" y2="2.7" width="0.127" layer="21"/>
-<wire x1="8.1" y1="2.7" x2="8.1" y2="1.27" width="0.127" layer="21"/>
-<wire x1="8.1" y1="1.27" x2="8.1" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="8.1" y1="-1.65" x2="-8.1" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="-8.1" y1="-1.65" x2="-8.1" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-8.1" y1="1.27" x2="-8.1" y2="2.7" width="0.127" layer="21"/>
-<wire x1="-8.1" y1="1.27" x2="8.1" y2="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="6.35" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="3.81" y="0" drill="0.8"/>
-<pad name="P$3" x="1.27" y="0" drill="0.8"/>
-<pad name="P$4" x="-1.27" y="0" drill="0.8"/>
-<pad name="P$5" x="-3.81" y="0" drill="0.8"/>
-<pad name="P$6" x="-6.35" y="0" drill="0.8"/>
-<text x="-6.35" y="3.81" size="1.27" layer="21">&gt;NAME</text>
-<text x="-6.35" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
+<wire x1="-8.65" y1="3.4" x2="8.65" y2="3.4" width="0.127" layer="21"/>
+<wire x1="8.65" y1="3.4" x2="8.65" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="8.65" y1="-2.35" x2="-8.65" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-8.65" y1="-2.35" x2="-8.65" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-7.95" y1="2.7" x2="7.95" y2="2.7" width="0.127" layer="21"/>
+<wire x1="7.95" y1="2.7" x2="7.95" y2="1.27" width="0.127" layer="21"/>
+<wire x1="7.95" y1="1.27" x2="7.95" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="7.95" y1="-1.65" x2="-7.95" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-7.95" y1="-1.65" x2="-7.95" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-7.95" y1="1.27" x2="-7.95" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-7.95" y1="1.27" x2="7.95" y2="1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="6.25" y="0" drill="1" shape="square"/>
+<pad name="P$2" x="3.75" y="0" drill="1"/>
+<pad name="P$3" x="1.25" y="0" drill="1"/>
+<pad name="P$4" x="-1.25" y="0" drill="1"/>
+<pad name="P$5" x="-3.75" y="0" drill="1"/>
+<pad name="P$6" x="-6.25" y="0" drill="1"/>
+<text x="0" y="3.81" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="21" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="B3B-XH">
 <description>&lt;b&gt;JST XH Connector&lt;/b&gt;
@@ -237,22 +237,22 @@ Source: http://www.jst.com .. eZH.pdf</description>
 &lt;p&gt;JST 2.54mm connector. Folded beam contact, box-shaped shrouded header, header with a boss, interchangeability, conformance to the HA terminal&lt;/p&gt;
 
 &lt;p&gt;Datasheet: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"&gt; eXH.pdf&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-4.99" y1="3.4" x2="4.99" y2="3.4" width="0.127" layer="21"/>
-<wire x1="4.99" y1="3.4" x2="4.99" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="4.99" y1="-2.35" x2="-4.99" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="-4.99" y1="-2.35" x2="-4.99" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-4.29" y1="2.7" x2="4.29" y2="2.7" width="0.127" layer="21"/>
-<wire x1="4.29" y1="2.7" x2="4.29" y2="1.27" width="0.127" layer="21"/>
-<wire x1="4.29" y1="1.27" x2="4.29" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="4.29" y1="-1.65" x2="-4.29" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="-4.29" y1="-1.65" x2="-4.29" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-4.29" y1="1.27" x2="-4.29" y2="2.7" width="0.127" layer="21"/>
-<wire x1="-4.29" y1="1.27" x2="4.29" y2="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="2.54" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="0" y="0" drill="0.8"/>
-<pad name="P$3" x="-2.54" y="0" drill="0.8"/>
-<text x="-2.54" y="3.81" size="1.27" layer="21">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
+<wire x1="-4.9" y1="3.4" x2="4.9" y2="3.4" width="0.127" layer="21"/>
+<wire x1="4.9" y1="3.4" x2="4.9" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-2.35" x2="-4.9" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-2.35" x2="-4.9" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="2.7" x2="4.2" y2="2.7" width="0.127" layer="21"/>
+<wire x1="4.2" y1="2.7" x2="4.2" y2="1.27" width="0.127" layer="21"/>
+<wire x1="4.2" y1="1.27" x2="4.2" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="4.2" y1="-1.65" x2="-4.2" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-1.65" x2="-4.2" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="1.27" x2="-4.2" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="1.27" x2="4.2" y2="1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="2.5" y="0" drill="1" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1"/>
+<pad name="P$3" x="-2.5" y="0" drill="1"/>
+<text x="0" y="3.81" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="21" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="B5B-XH">
 <description>&lt;b&gt;JST XH Connector&lt;/b&gt;
@@ -260,24 +260,51 @@ Source: http://www.jst.com .. eZH.pdf</description>
 &lt;p&gt;JST 2.54mm connector. Folded beam contact, box-shaped shrouded header, header with a boss, interchangeability, conformance to the HA terminal&lt;/p&gt;
 
 &lt;p&gt;Datasheet: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"&gt; eXH.pdf&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-7.53" y1="3.4" x2="7.53" y2="3.4" width="0.127" layer="21"/>
-<wire x1="7.53" y1="3.4" x2="7.53" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="7.53" y1="-2.35" x2="-7.53" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="-7.53" y1="-2.35" x2="-7.53" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-6.83" y1="2.7" x2="6.83" y2="2.7" width="0.127" layer="21"/>
-<wire x1="6.83" y1="2.7" x2="6.83" y2="1.27" width="0.127" layer="21"/>
-<wire x1="6.83" y1="1.27" x2="6.83" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="6.83" y1="-1.65" x2="-6.83" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="-6.83" y1="-1.65" x2="-6.83" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-6.83" y1="1.27" x2="-6.83" y2="2.7" width="0.127" layer="21"/>
-<wire x1="-6.83" y1="1.27" x2="6.83" y2="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="5.08" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="2.54" y="0" drill="0.8"/>
-<pad name="P$3" x="0" y="0" drill="0.8"/>
-<pad name="P$4" x="-2.54" y="0" drill="0.8"/>
-<pad name="P$5" x="-5.08" y="0" drill="0.8"/>
-<text x="-5.08" y="3.81" size="1.27" layer="21">&gt;NAME</text>
-<text x="-5.08" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
+<wire x1="-7.4" y1="3.4" x2="7.4" y2="3.4" width="0.127" layer="21"/>
+<wire x1="7.4" y1="3.4" x2="7.4" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="7.4" y1="-2.35" x2="-7.4" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-7.4" y1="-2.35" x2="-7.4" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-6.7" y1="2.7" x2="6.7" y2="2.7" width="0.127" layer="21"/>
+<wire x1="6.7" y1="2.7" x2="6.7" y2="1.27" width="0.127" layer="21"/>
+<wire x1="6.7" y1="1.27" x2="6.7" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="6.7" y1="-1.65" x2="-6.7" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-6.7" y1="-1.65" x2="-6.7" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-6.7" y1="1.27" x2="-6.7" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-6.7" y1="1.27" x2="6.7" y2="1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="5" y="0" drill="1" shape="square"/>
+<pad name="P$2" x="2.5" y="0" drill="1"/>
+<pad name="P$3" x="0" y="0" drill="1"/>
+<pad name="P$4" x="-2.5" y="0" drill="1"/>
+<pad name="P$5" x="-5" y="0" drill="1"/>
+<text x="0" y="3.81" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="21" align="bottom-center">&gt;VALUE</text>
+</package>
+<package name="B7B-XH">
+<description>&lt;b&gt;JST XH Connector&lt;/b&gt;
+
+&lt;p&gt;JST 2.54mm connector. Folded beam contact, box-shaped shrouded header, header with a boss, interchangeability, conformance to the HA terminal&lt;/p&gt;
+
+&lt;p&gt;Datasheet: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"&gt; eXH.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-9.95" y1="3.4" x2="9.95" y2="3.4" width="0.127" layer="21"/>
+<wire x1="9.95" y1="3.4" x2="9.95" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="9.95" y1="-2.35" x2="-9.95" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-9.95" y1="-2.35" x2="-9.95" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-9.25" y1="2.7" x2="9.25" y2="2.7" width="0.127" layer="21"/>
+<wire x1="9.25" y1="2.7" x2="9.25" y2="1.27" width="0.127" layer="21"/>
+<wire x1="9.25" y1="1.27" x2="9.25" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="9.25" y1="-1.65" x2="-9.25" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-9.25" y1="-1.65" x2="-9.25" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-9.25" y1="1.27" x2="-9.25" y2="2.7" width="0.127" layer="21"/>
+<wire x1="-9.25" y1="1.27" x2="9.25" y2="1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="7.5" y="0" drill="1" shape="square"/>
+<pad name="P$2" x="5" y="0" drill="1"/>
+<pad name="P$3" x="2.5" y="0" drill="1"/>
+<pad name="P$4" x="0" y="0" drill="1"/>
+<pad name="P$5" x="-2.5" y="0" drill="1"/>
+<pad name="P$6" x="-5" y="0" drill="1"/>
+<text x="0" y="3.81" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="21" align="bottom-center">&gt;VALUE</text>
+<pad name="P$7" x="-7.5" y="0" drill="1"/>
 </package>
 </packages>
 <symbols>
@@ -342,7 +369,16 @@ Source: http://www.jst.com .. eZH.pdf</description>
 <gate name="-7" symbol="P-N" x="0" y="22.86" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="B7B-XH">
+<connects>
+<connect gate="-1" pin="1" pad="P$1"/>
+<connect gate="-2" pin="1" pad="P$2"/>
+<connect gate="-3" pin="1" pad="P$3"/>
+<connect gate="-4" pin="1" pad="P$4"/>
+<connect gate="-5" pin="1" pad="P$5"/>
+<connect gate="-6" pin="1" pad="P$6"/>
+<connect gate="-7" pin="1" pad="P$7"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
