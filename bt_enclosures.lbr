@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -32,20 +32,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -76,8 +76,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="tsilk" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="bsilk" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="tsilk" color="14" fill="1" visible="no" active="yes"/>
+<layer number="122" name="bsilk" color="6" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -350,6 +350,45 @@
 2.99"L x 2.91"W x 1.06"H
 Panel: 2.6"W x 0.79"H x ??" thickness
 Component Max Height: 0.607" w/ 1.6mm PCB</text>
+</package>
+<package name="SERPAC_221I">
+<description>Serpac 22i PCB Outline</description>
+<hole x="4.445" y="4.445" drill="2.8"/>
+<hole x="51.435" y="4.445" drill="2.8"/>
+<wire x1="0" y1="0" x2="55.88" y2="0" width="0" layer="20"/>
+<wire x1="55.88" y1="0" x2="55.88" y2="41.529" width="0" layer="20"/>
+<wire x1="55.88" y1="50.165" x2="55.88" y2="61.468" width="0" layer="20"/>
+<wire x1="55.88" y1="61.468" x2="0" y2="61.468" width="0" layer="20"/>
+<wire x1="0" y1="61.468" x2="0" y2="50.165" width="0" layer="20"/>
+<hole x="4.445" y="57.023" drill="2.8"/>
+<hole x="51.435" y="57.023" drill="2.8"/>
+<wire x1="0" y1="41.529" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="4.572" y1="50.165" x2="4.318" y2="50.165" width="0" layer="20"/>
+<wire x1="4.318" y1="50.165" x2="0" y2="50.165" width="0" layer="20"/>
+<wire x1="4.572" y1="41.529" x2="0" y2="41.529" width="0" layer="20"/>
+<wire x1="4.318" y1="50.165" x2="4.572" y2="41.529" width="0" layer="20" curve="-180"/>
+<wire x1="51.308" y1="50.165" x2="51.562" y2="50.165" width="0" layer="20"/>
+<wire x1="51.562" y1="50.165" x2="55.88" y2="50.165" width="0" layer="20"/>
+<wire x1="51.308" y1="41.529" x2="55.88" y2="41.529" width="0" layer="20"/>
+<wire x1="51.562" y1="50.165" x2="51.308" y2="41.529" width="0" layer="20" curve="180"/>
+<text x="0.762" y="0.381" size="1.27" layer="49">SERPAC 221i</text>
+</package>
+<package name="HAMMOND_1593P">
+<description>HAMMOND 1593P small PCB</description>
+<hole x="9" y="7.75" drill="3.2"/>
+<hole x="37" y="7.75" drill="3.2"/>
+<hole x="9" y="35.75" drill="3.2"/>
+<hole x="37" y="35.75" drill="3.2"/>
+<wire x1="0" y1="0" x2="46" y2="0" width="0" layer="20"/>
+<wire x1="46" y1="0" x2="46" y2="43.5" width="0" layer="20"/>
+<wire x1="46" y1="43.5" x2="0" y2="43.5" width="0" layer="20"/>
+<wire x1="0" y1="43.5" x2="0" y2="0" width="0" layer="20"/>
+<text x="45.7" y="3.15" size="1.27" layer="49" rot="R90">FRONT</text>
+<text x="16.4" y="0.35" size="1.27" layer="49">HAMMOND 1593P</text>
+<text x="15" y="21" size="1.27" layer="49">holes on 28mm square</text>
+<text x="45.8" y="18.6" size="1.27" layer="21" rot="R90">43.5mm</text>
+<text x="25.8" y="43.2" size="1.27" layer="21" rot="R180">46mm</text>
+<text x="19.8" y="19" size="1.27" layer="21">3.2mm dia</text>
 </package>
 </packages>
 <symbols>
