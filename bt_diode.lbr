@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -479,6 +479,23 @@ diameter 3.5 mm, horizontal, grid 12.7 mm</description>
 <wire x1="-0.254" y1="0" x2="-0.254" y2="-0.5842" width="0.1524" layer="21"/>
 <wire x1="-0.254" y1="0.5842" x2="0" y2="0.5842" width="0.1524" layer="21"/>
 </package>
+<package name="SOT-563">
+<description>&lt;b&gt;SOT-563&lt;/b&gt;
+
+&lt;p&gt;&lt;a href="https://blog.mbedded.ninja/pcb-design/component-packages/sot-563-component-package/"&gt;Source&lt;/a&gt;</description>
+<smd name="1" x="-0.675" y="0.5" dx="0.29" dy="0.45" layer="1" rot="R90"/>
+<smd name="2" x="-0.675" y="0" dx="0.29" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="-0.675" y="-0.5" dx="0.29" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="0.675" y="-0.5" dx="0.29" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="0.675" y="0" dx="0.29" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="0.675" y="0.5" dx="0.29" dy="0.45" layer="1" rot="R90"/>
+<polygon width="0.127" layer="21">
+<vertex x="-0.3" y="0.6"/>
+<vertex x="-0.3" y="0.4"/>
+<vertex x="-0.1" y="0.6"/>
+</polygon>
+<text x="0" y="0.762" size="0.6096" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SCHOTTKY">
@@ -896,6 +913,43 @@ many other industrial/consumer applications.&lt;p&gt;
 <connects>
 <connect gate="D1" pin="A" pad="A"/>
 <connect gate="D1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BAT54V" prefix="D">
+<description>&lt;b&gt;BAT54V - SCHOTTKY BARRIER DIODE ARRAY&lt;/b&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Low Forward Voltage Drop&lt;/li&gt;
+&lt;li&gt;Fast Switching&lt;/li&gt;
+&lt;li&gt;Ultra-Small Surface Mount Package&lt;/li&gt;
+&lt;li&gt;PN Junction Guard Ring for Transient and ESD Protection&lt;/li&gt;
+&lt;li&gt;Totally Lead-Free &amp; Fully RoHS Compliant (Notes 1 &amp; 2)&lt;/li&gt;
+&lt;li&gt;Halogen and Antimony Free. "Green” Device (Note 3)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href="https://www.diodes.com/assets/Datasheets/ds30560.pdf"&gt;datasheet.pdf&lt;/a&gt;
+
+&lt;p&gt;V&lt;sub&gt;RRM&lt;/sub&gt; = V&lt;sub&gt;RWM&lt;/sub&gt; = V&lt;sub&gt;R&lt;/sub&gt; = 30V
+&lt;p&gt;I&lt;sub&gt;F&lt;/sub&gt; = 200mA
+&lt;p&gt;I&lt;sub&gt;FRM&lt;/sub&gt; = 300mA
+&lt;p&gt;I&lt;sub&gt;FSM&lt;/sub&gt; = 600mA (@ t &amp;lt; 1.0s)
+&lt;p&gt;P&lt;sub&gt;D&lt;/sub&gt; = 150mW</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="10.16"/>
+<gate name="G$2" symbol="SCHOTTKY" x="0" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="SOT-563">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="6"/>
+<connect gate="G$2" pin="A" pad="3"/>
+<connect gate="G$2" pin="C" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
