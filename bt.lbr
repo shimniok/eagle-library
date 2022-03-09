@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -764,31 +764,6 @@ http://cds.linear.com/docs/Datasheet/1963fc.pdf</description>
 <wire x1="8.89" y1="1.651" x2="8.89" y2="8.255" width="0.127" layer="21"/>
 <hole x="-9.3345" y="4.826" drill="2.2"/>
 <hole x="9.3345" y="4.826" drill="2.2"/>
-</package>
-<package name="BTLOGOL">
-<description>&lt;b&gt;Bot Thoughts logo&lt;/b&gt;</description>
-<wire x1="2.54" y1="-2.286" x2="2.54" y2="0.1946" width="0.3048" layer="21"/>
-<wire x1="2.54" y1="0.1946" x2="-0.3134" y2="3.683" width="0.3048" layer="21" curve="90"/>
-<wire x1="-0.3134" y1="3.683" x2="-3.302" y2="-0.0676" width="0.3048" layer="21" curve="90"/>
-<wire x1="-3.302" y1="-0.0676" x2="-3.302" y2="-2.286" width="0.3048" layer="21"/>
-<wire x1="-3.302" y1="-2.286" x2="2.54" y2="-2.286" width="0.3048" layer="21"/>
-<wire x1="-1.524" y1="-0.254" x2="1.651" y2="-0.762" width="0.3048" layer="21"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="-1.397" width="0.3048" layer="21"/>
-<wire x1="1.651" y1="-1.397" x2="-1.016" y2="-1.397" width="0.3048" layer="21"/>
-<wire x1="-1.016" y1="-1.397" x2="-1.524" y2="-0.254" width="0.3048" layer="21"/>
-<wire x1="-4.953" y1="4.953" x2="-1.651" y2="7.239" width="0.3048" layer="21" curve="121.03633"/>
-<wire x1="-1.651" y1="7.239" x2="2.54" y2="6.731" width="0.3048" layer="21" curve="121.03633"/>
-<wire x1="-5.842" y1="1.27" x2="-4.953" y2="4.953" width="0.3048" layer="21" curve="121.03633"/>
-<wire x1="2.54" y1="6.731" x2="4.699" y2="3.683" width="0.3048" layer="21" curve="121.070523"/>
-<wire x1="4.699" y1="3.683" x2="4.953" y2="0.508" width="0.3048" layer="21" curve="121.0418"/>
-<wire x1="-3.937" y1="-1.143" x2="-5.842" y2="1.27" width="0.3048" layer="21" curve="121.043528"/>
-<wire x1="4.953" y1="0.508" x2="3.048" y2="-1.27" width="0.3048" layer="21" curve="121.054565"/>
-<wire x1="-0.254" y1="3.683" x2="-0.254" y2="4.191" width="0.3048" layer="21"/>
-<circle x="-1.143" y="1.524" radius="0.1778" width="0.3048" layer="21"/>
-<circle x="0.762" y="1.143" radius="0.1778" width="0.3048" layer="21"/>
-<circle x="-0.762" y="1.143" radius="1.016" width="0.3048" layer="21"/>
-<circle x="1.016" y="0.889" radius="0.762" width="0.3048" layer="21"/>
-<circle x="-0.254" y="4.572" radius="0.3048" width="0.6096" layer="21"/>
 </package>
 <package name="OSH1">
 <description>&lt;b&gt;Open Source Hardware Logo #1&lt;/b&gt;</description>
@@ -2084,6 +2059,54 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <vertex x="-9.5504" y="-0.2794"/>
 </polygon>
 </package>
+<package name="BTLOGOS">
+<description>Bot Thoughts Logo</description>
+<circle layer="25" radius="0.21336000000000002" width="0.16763999999999998" x="-0.19117125" y="1.086185625" />
+<polygon layer="25" width="0.1524">
+<vertex x="0.930585" y="0.23779875" />
+<vertex x="1.050915" y="0.159999375" />
+<vertex x="1.379240625" y="0.488325" />
+<vertex curve="19.000023" x="1.125924375" y="0.8299668749999999" />
+<vertex x="1.260886875" y="1.183663125" />
+<vertex x="1.707920625" y="1.2613593749999998" />
+<vertex x="1.707920625" y="1.740920625" />
+<vertex curve="19.000023" x="1.260886875" y="1.788136875" />
+<vertex x="1.125924375" y="2.126593125" />
+<vertex x="1.394480625" y="2.4987150000000002" />
+<vertex x="1.050915" y="2.827040625" />
+<vertex curve="19.000023" x="0.6940331249999999" y="2.573724375" />
+<vertex x="0.35557687499999996" y="2.723926875" />
+<vertex x="0.293120625" y="3.1557206250000003" />
+<vertex x="-0.186440625" y="3.1557206250000003" />
+<vertex curve="19.000023" x="-0.248896875" y="2.693446875" />
+<vertex x="-0.572113125" y="2.5584843749999995" />
+<vertex x="-0.974715" y="2.827040625" />
+<vertex x="-1.2878006249999998" y="2.5139549999999997" />
+<vertex curve="19.000023" x="-1.019244375" y="2.141833125" />
+<vertex x="-1.169446875" y="1.8033768749999999" />
+<vertex x="-1.616480625" y="1.756160625" />
+<vertex x="-1.616480625" y="1.2613593749999998" />
+<vertex curve="19.000023" x="-1.184686875" y="1.198903125" />
+<vertex x="-1.034484375" y="0.845206875" />
+<vertex x="-1.3030406250000002" y="0.5035649999999999" />
+<vertex x="-0.9594749999999999" y="0.159999375" />
+<vertex x="-0.823905" y="0.26827874999999995" />
+<vertex curve="-85" x="-0.823905" y="1.4477999999999998" />
+<vertex curve="-300" x="-0.09144000000000001" y="2.33172" />
+<vertex x="0.21336000000000002" y="2.33172" />
+<vertex curve="-85" x="0.21336000000000002" y="2.31648" />
+<vertex x="0.930585" y="1.4477999999999998" />
+</polygon>
+<circle layer="25" radius="0.21336000000000002" width="0.16763999999999998" x="0.25078875" y="1.086185625" />
+<polygon layer="25" width="0.0762">
+<vertex x="-0.32004" y="0.59436" />
+<vertex x="0.28956" y="0.59436" />
+<vertex x="0.13716" y="0.39624" />
+<vertex x="-0.19812" y="0.39624" />
+</polygon>
+<wire curve="-320.797854" layer="25" width="0.16763999999999998" x1="0.030479999999999997" x2="0.030479999999999997" y1="1.02108" y2="1.2192" />
+<wire curve="-320.797854" layer="25" width="0.16763999999999998" x1="0.045720000000000004" x2="0.045720000000000004" y1="1.2192" y2="1.02108" />
+</package>
 <package name="BTLOGOM">
 <description>Bot Thoughts Logo</description>
 <circle x="-0.31861875" y="1.810309375" radius="0.3556" width="0.2794" layer="25"/>
@@ -2131,8 +2154,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 </polygon>
 <wire x1="0.0508" y1="1.7018" x2="0.0508" y2="2.032" width="0.2794" layer="25" curve="-320.797854"/>
 <wire x1="0.0762" y1="2.032" x2="0.0762" y2="1.7018" width="0.2794" layer="25" curve="-320.797854"/>
-<text x="0" y="-2.032" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">cc-by-sa</text>
-<text x="0" y="-0.635" size="0.8128" layer="21" font="vector" ratio="12" align="bottom-center">bot-thoughts.com</text>
 </package>
 <package name="RPI_40">
 <pad name="P$1" x="-1.27" y="22.86" drill="1" shape="square"/>
@@ -4405,12 +4426,12 @@ with LED, Marquardt</description>
 <gate name="G$1" symbol="BTLOGO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-LOGO-LG" package="BTLOGOL">
+<device name="-LOGO-MD" package="BTLOGOM">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-LOGO-MD" package="BTLOGOM">
+<device name="-LOGO-SM" package="BTLOGOS">
 <technologies>
 <technology name=""/>
 </technologies>
