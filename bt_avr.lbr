@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -958,6 +958,32 @@
 <pin name="VBAT" x="-35.56" y="7.62" length="middle"/>
 <pin name="LSW" x="-35.56" y="0" length="middle"/>
 </symbol>
+<symbol name="ATTINY1624">
+<description>&lt;b&gt;ATtiny1624&lt;/b&gt;
+
+&lt;p&gt;The ATtiny1624 microcontrollers of the tinyAVR ® 2 family use the AVR ® CPU with hardware multiplier, running at up to 20 MHz, with 16 KB Flash, 2 KB of SRAM, and 256B of EEPROM available in a 14-pin package. The family uses the latest technologies from Microchip with a flexible and low-power architecture, including Event System, advanced digital peripherals, and accurate analog features such as a 12-bit differential ADC with Programmable Gain Amplifier (PGA).
+
+&lt;p&gt;&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1624-26-27-DataSheet-DS40002234A.pdf"&gt;datasheet.pdf&lt;/a&gt;</description>
+<pin name="VDD" x="-20.32" y="0" length="middle" direction="pwr"/>
+<pin name="GND" x="-20.32" y="-12.7" length="middle" direction="pwr"/>
+<pin name="(RESET/UDPI)PA0" x="-20.32" y="12.7" length="middle"/>
+<pin name="PA1" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="PA2" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="(EXTCLK)PA3" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="PA4" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="PA5" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="PA6" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="PA7" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="PB0" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="PB1" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="(TOSC2)PB2" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="(TOSC1)PB3" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<text x="-15.24" y="16.51" size="1.778" layer="95">ATtiny1624</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATMEGA168-PU" prefix="IC">
@@ -1481,6 +1507,39 @@ serial interface (USI), programmable watchdog timer with internal oscillator, in
 <connect gate="U1" pin="LSW" pad="11"/>
 <connect gate="U1" pin="VBAT" pad="12"/>
 <connect gate="U1" pin="VCC" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATTINY1624" prefix="U">
+<description>&lt;b&gt;ATtiny1624&lt;/b&gt;
+
+&lt;p&gt;The ATtiny1624 microcontrollers of the tinyAVR ® 2 family use the AVR ® CPU with hardware multiplier, running at up to 20 MHz, with 16 KB Flash, 2 KB of SRAM, and 256B of EEPROM available in a 14-pin package. The family uses the latest technologies from Microchip with a flexible and low-power architecture, including Event System, advanced digital peripherals, and accurate analog features such as a 12-bit differential ADC with Programmable Gain Amplifier (PGA).
+
+&lt;p&gt;&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny1624-26-27-DataSheet-DS40002234A.pdf"&gt;datasheet.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ATTINY1624" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SSU" package="SOIC14N">
+<connects>
+<connect gate="G$1" pin="(EXTCLK)PA3" pad="13"/>
+<connect gate="G$1" pin="(RESET/UDPI)PA0" pad="10"/>
+<connect gate="G$1" pin="(TOSC1)PB3" pad="6"/>
+<connect gate="G$1" pin="(TOSC2)PB2" pad="7"/>
+<connect gate="G$1" pin="GND" pad="14"/>
+<connect gate="G$1" pin="PA1" pad="11"/>
+<connect gate="G$1" pin="PA2" pad="12"/>
+<connect gate="G$1" pin="PA4" pad="2"/>
+<connect gate="G$1" pin="PA5" pad="3"/>
+<connect gate="G$1" pin="PA6" pad="4"/>
+<connect gate="G$1" pin="PA7" pad="5"/>
+<connect gate="G$1" pin="PB0" pad="9"/>
+<connect gate="G$1" pin="PB1" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
