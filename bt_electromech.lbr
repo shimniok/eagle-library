@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -4303,14 +4303,16 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <technology name=""/>
 </technologies>
 </device>
-<device name="-C" package="USB-C-PWR">
+<device name="-MICROB-5" package="USB-MICROB-5">
 <connects>
-<connect gate="G$1" pin="GND" pad="A12 B12"/>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="SHIELD1" pad="SHIELD1"/>
 <connect gate="G$1" pin="SHIELD2" pad="SHIELD2"/>
 <connect gate="G$1" pin="SHIELD3" pad="SHIELD3"/>
 <connect gate="G$1" pin="SHIELD4" pad="SHIELD4"/>
-<connect gate="G$1" pin="VBUS" pad="A9 B9"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
 <technology name=""/>
