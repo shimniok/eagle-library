@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3338,8 +3338,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pin name="GND" x="-2.54" y="-2.54" visible="pad" length="short" direction="sup"/>
 <text x="0" y="6.731" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-8.636" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="SHIELD" x="-2.54" y="-5.08" visible="pad" length="short"/>
+<pin name="SHIELD" x="-2.54" y="-5.08" visible="off" length="short"/>
 <wire x1="0" y1="-6.35" x2="5.08" y2="-6.35" width="0.254" layer="94"/>
+<text x="-0.508" y="-4.572" size="1.4224" layer="95" align="bottom-right">SHIELD</text>
 </symbol>
 <symbol name="302_DIAL">
 <pin name="W" x="12.7" y="-7.62" visible="off" length="middle" rot="R180"/>
@@ -4260,21 +4261,20 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB" prefix="JP">
+<deviceset name="USB" prefix="J">
 <description>&lt;b&gt;USB Connectors&lt;/b&gt;
-&lt;p&gt;USB-MINI-B is fully proven&lt;/p&gt;
-&lt;P&gt;USB-MICRO-B is tested.&lt;/p&gt;
-&lt;P&gt;USB-C is untested.&lt;/p&gt;</description>
+&lt;p&gt;USB Micro B, Mini B, and Mini B PTH (type 5)&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="USB" x="0" y="0"/>
+<gate name="J1" symbol="USB" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-MINIB" package="USB-MINIB">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+<connect gate="J1" pin="D+" pad="D+"/>
+<connect gate="J1" pin="D-" pad="D-"/>
+<connect gate="J1" pin="GND" pad="GND"/>
+<connect gate="J1" pin="SHIELD" pad="MTN1 MTN2 MTN3 MTN4"/>
+<connect gate="J1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4284,10 +4284,11 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 <device name="-MICROB" package="USB-MICROB">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+<connect gate="J1" pin="D+" pad="D+"/>
+<connect gate="J1" pin="D-" pad="D-"/>
+<connect gate="J1" pin="GND" pad="GND"/>
+<connect gate="J1" pin="SHIELD" pad="MNT3 MNT4 MT1 MT2 MT3 MT4"/>
+<connect gate="J1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4295,10 +4296,11 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </device>
 <device name="-MICROB-5" package="USB-MICROB-5">
 <connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+<connect gate="J1" pin="D+" pad="D+"/>
+<connect gate="J1" pin="D-" pad="D-"/>
+<connect gate="J1" pin="GND" pad="GND"/>
+<connect gate="J1" pin="SHIELD" pad="MNT3 MNT4 SHIELD1 SHIELD2 SHIELD3 SHIELD4"/>
+<connect gate="J1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
 <technology name=""/>
