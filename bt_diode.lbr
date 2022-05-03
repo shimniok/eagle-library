@@ -200,6 +200,7 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="SOD-323">
+<description>SOD-323 Diode Package</description>
 <wire x1="-0.9" y1="0.75" x2="-0.3" y2="0.75" width="0.2032" layer="21"/>
 <wire x1="-0.3" y1="0.75" x2="0.9" y2="0.75" width="0.2032" layer="21"/>
 <wire x1="-0.9" y1="-0.75" x2="-0.3" y2="-0.75" width="0.2032" layer="21"/>
