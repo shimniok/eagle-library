@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -776,9 +776,9 @@
 <pad name="1" x="0" y="2.54" drill="1.016" diameter="1.6764" shape="octagon" rot="R270"/>
 <pad name="2" x="0" y="0" drill="1.016" diameter="1.6764" shape="octagon" rot="R270"/>
 <pad name="3" x="0" y="-2.54" drill="1.016" diameter="1.6764" shape="octagon" rot="R270"/>
-<text x="1.905" y="2.54" size="1.016" layer="21" font="vector" ratio="10" align="center-left">VDD</text>
-<text x="1.905" y="0" size="1.016" layer="21" font="vector" ratio="10" align="center-left">GND</text>
-<text x="1.905" y="-2.54" size="1.016" layer="21" font="vector" ratio="10" align="center-left">UPDI</text>
+<text x="-1.397" y="2.54" size="1.016" layer="21" font="vector" ratio="10" align="center-right">VDD</text>
+<text x="-1.397" y="0" size="1.016" layer="21" font="vector" ratio="10" align="center-right">GND</text>
+<text x="-1.397" y="-2.54" size="1.016" layer="21" font="vector" ratio="10" align="center-right">UPDI</text>
 <wire x1="-0.635" y1="3.81" x2="0.635" y2="3.81" width="0.127" layer="21"/>
 <wire x1="0.635" y1="3.81" x2="1.27" y2="3.175" width="0.127" layer="21"/>
 <wire x1="1.27" y1="3.175" x2="1.27" y2="1.905" width="0.127" layer="21"/>
@@ -801,7 +801,7 @@
 <wire x1="1.27" y1="-0.635" x2="1.27" y2="0.635" width="0.127" layer="21"/>
 <wire x1="1.27" y1="0.635" x2="0.635" y2="1.27" width="0.127" layer="21"/>
 <wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<text x="0" y="4.445" size="0.8128" layer="21" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="4.191" size="0.8128" layer="21" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="UDPI_2X3">
 <description>&lt;b&gt;Standard UPDI 2x3 interface&lt;/b&gt;
@@ -1193,12 +1193,12 @@
 </device>
 <device name="_SMD" package="2X3_SMD">
 <connects>
-<connect gate="A" pin="!RESET" pad="3"/>
-<connect gate="A" pin="GND" pad="4"/>
+<connect gate="A" pin="!RESET" pad="5"/>
+<connect gate="A" pin="GND" pad="6"/>
 <connect gate="A" pin="MISO" pad="1"/>
-<connect gate="A" pin="MOSI" pad="5"/>
-<connect gate="A" pin="SCK" pad="2"/>
-<connect gate="A" pin="VCC" pad="6"/>
+<connect gate="A" pin="MOSI" pad="4"/>
+<connect gate="A" pin="SCK" pad="3"/>
+<connect gate="A" pin="VCC" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
