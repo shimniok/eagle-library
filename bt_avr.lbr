@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1089,6 +1089,23 @@
 <text x="-5.08" y="-7.366" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <text x="-3.81" y="5.08" size="1.6764" layer="94">UPDI</text>
 </symbol>
+<symbol name="ATTINY212/412">
+<description>ATtiny412</description>
+<pin name="VDD" x="-20.32" y="0" length="middle" direction="pwr"/>
+<pin name="GND" x="-20.32" y="-7.62" length="middle" direction="pwr"/>
+<pin name="(RESET/UDPI)PA0" x="-20.32" y="7.62" length="middle"/>
+<pin name="PA1" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="PA2" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="(EXTCLK)PA3" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="PA6" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA7" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<text x="-15.24" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATMEGA168-PU" prefix="IC">
@@ -1676,6 +1693,35 @@ serial interface (USI), programmable watchdog timer with internal oscillator, in
 <connect gate="J1" pin="DATA" pad="1"/>
 <connect gate="J1" pin="GND" pad="6"/>
 <connect gate="J1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATTINY212/412" uservalue="yes">
+<description>&lt;b&gt;ATtiny412/212&lt;/b&gt;
+&lt;p&gt;The ATtiny212/412 are members of the tinyAVR ® 1-series of microcontrollers, using the AVR ® processor
+with hardware multiplier, running at up to 20 MHz, with 2/4 KB Flash, 128/256 bytes of SRAM, and 64/128
+bytes of EEPROM in an 8-pin package. The tinyAVR ® 1-series uses the latest technologies with a
+flexible, low-power architecture including Event System and SleepWalking, accurate analog features, and
+Core Independent Peripherals.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny212-412-DataSheet-DS40001911B.pdf"&gt;ATtiny212-412-DataSheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="ATTINY212/412" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8N">
+<connects>
+<connect gate="U1" pin="(EXTCLK)PA3" pad="7"/>
+<connect gate="U1" pin="(RESET/UDPI)PA0" pad="6"/>
+<connect gate="U1" pin="GND" pad="8"/>
+<connect gate="U1" pin="PA1" pad="4"/>
+<connect gate="U1" pin="PA2" pad="5"/>
+<connect gate="U1" pin="PA6" pad="2"/>
+<connect gate="U1" pin="PA7" pad="3"/>
+<connect gate="U1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
