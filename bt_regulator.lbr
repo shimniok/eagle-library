@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -986,6 +986,42 @@ From transistor-power.lbr</description>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <text x="-7.62" y="8.128" size="1.9304" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.9304" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="BQ25713/B">
+<description>&lt;b&gt;25713/713B I2C Narrow VDC Buck-Boost Battery Charge Controller With System
+Power Monitor and Processor Hot Monitor&lt;/b&gt;</description>
+<pin name="ACP" x="20.32" y="0" length="middle"/>
+<pin name="ACN" x="20.32" y="2.54" length="middle"/>
+<pin name="HIDRV1" x="20.32" y="7.62" length="middle"/>
+<pin name="LODRV1" x="20.32" y="10.16" length="middle"/>
+<pin name="HIDRV2" x="60.96" y="7.62" length="middle" rot="R180"/>
+<pin name="LODRV2" x="60.96" y="10.16" length="middle" rot="R180"/>
+<pin name="SW1" x="20.32" y="12.7" length="middle"/>
+<pin name="SW2" x="60.96" y="12.7" length="middle" rot="R180"/>
+<pin name="VSYS" x="60.96" y="5.08" length="middle" rot="R180"/>
+<pin name="!BATDRV" x="60.96" y="2.54" length="middle" rot="R180"/>
+<pin name="VBUS" x="20.32" y="5.08" length="middle"/>
+<pin name="SRP" x="60.96" y="0" length="middle" rot="R180"/>
+<pin name="SRN" x="60.96" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="20.32" y="-17.78" length="middle"/>
+<pin name="SCL" x="20.32" y="-20.32" length="middle"/>
+<pin name="CHRG_OK" x="-17.78" y="15.24" length="middle"/>
+<pin name="OTG/VAP" x="-17.78" y="12.7" length="middle"/>
+<pin name="ILIM_HIZ" x="60.96" y="-22.86" length="middle" rot="R180"/>
+<pin name="VDDA" x="-17.78" y="7.62" length="middle"/>
+<pin name="IADPT" x="20.32" y="-7.62" length="middle"/>
+<pin name="IBAT" x="20.32" y="-5.08" length="middle"/>
+<pin name="PSYS" x="20.32" y="-10.16" length="middle"/>
+<pin name="!PROCHOT" x="20.32" y="-12.7" length="middle"/>
+<pin name="CMPIN" x="-17.78" y="-10.16" length="middle"/>
+<pin name="CMPOUT" x="-17.78" y="-12.7" length="middle"/>
+<pin name="COMP1" x="-17.78" y="-15.24" length="middle"/>
+<pin name="COMP2" x="-17.78" y="-17.78" length="middle"/>
+<pin name="CELL_BATPRESZ" x="-17.78" y="-20.32" length="middle"/>
+<pin name="PGND" x="20.32" y="-27.94" length="middle"/>
+<pin name="REGN" x="-17.78" y="-45.72" length="middle"/>
+<pin name="BTST2" x="60.96" y="-10.16" length="middle" rot="R180"/>
+<pin name="BTST1" x="60.96" y="-7.62" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
