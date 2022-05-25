@@ -300,7 +300,7 @@
 <wire x1="-1.6" y1="-1.1" x2="-1.9" y2="-0.6" width="0.127" layer="21"/>
 </package>
 <package name="6PIN_TARGET">
-<description>6-pin target connector for serial, ftdi, pl2303, etc.</description>
+<description>6-pin target connector for serial, ftdi, pl2303, etc., left edge of board</description>
 <pad name="1" x="0" y="6.35" drill="1.016" diameter="1.6764" shape="square"/>
 <pad name="2" x="0" y="3.81" drill="1.016" diameter="1.6764" shape="octagon"/>
 <pad name="3" x="0" y="1.27" drill="1.016" diameter="1.6764" shape="octagon"/>
@@ -352,7 +352,7 @@
 <text x="2.54" y="6.35" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="bottom-center">DTR</text>
 <text x="2.54" y="3.81" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="bottom-center">RXI</text>
 <text x="2.54" y="1.27" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="bottom-center">TXO</text>
-<text x="2.54" y="-1.27" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="bottom-center">5V</text>
+<text x="2.54" y="-1.27" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="bottom-center">VCC</text>
 <text x="2.54" y="-3.81" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="bottom-center">CTS</text>
 <text x="2.54" y="-6.35" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="bottom-center">GND</text>
 </package>
@@ -780,6 +780,52 @@ TTL, and ECL logic families.
 <connect gate="J1" pin="RXI" pad="2"/>
 <connect gate="J1" pin="TXO" pad="3"/>
 <connect gate="J1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_RIGHT" package="6PIN_TARGET_R">
+<connects>
+<connect gate="J1" pin="CTS" pad="5"/>
+<connect gate="J1" pin="DTR" pad="1"/>
+<connect gate="J1" pin="GND" pad="6"/>
+<connect gate="J1" pin="RXI" pad="2"/>
+<connect gate="J1" pin="TXO" pad="3"/>
+<connect gate="J1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CH340G" prefix="U">
+<description>&lt;b&gt;CH340G USB to UART Bridge Controller&lt;/b&gt;
+&lt;p&gt;CH340 is a USB converter chip, which converts USB to serial UART interface or to printer interface. In UART mode, CH340 provides common MODEM interface signals, to expand UART interface of computer or upgrade common serial communication devices to USB directly. For more information about converting USB to printer interface, please refer to the datasheet. 
+&lt;p&gt;Datasheet: &lt;a href="http://wch-ic.com/products/CH340.html"&gt;CH340.pdf&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="CH340G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC16N">
+<connects>
+<connect gate="U1" pin="!CTS" pad="9"/>
+<connect gate="U1" pin="!DCD" pad="12"/>
+<connect gate="U1" pin="!DSR" pad="10"/>
+<connect gate="U1" pin="!DTR" pad="13"/>
+<connect gate="U1" pin="!RI" pad="11"/>
+<connect gate="U1" pin="!RTS" pad="14"/>
+<connect gate="U1" pin="GND" pad="1"/>
+<connect gate="U1" pin="RS232" pad="15"/>
+<connect gate="U1" pin="RXI" pad="3"/>
+<connect gate="U1" pin="TXO" pad="2"/>
+<connect gate="U1" pin="UD+" pad="5"/>
+<connect gate="U1" pin="UD-" pad="6"/>
+<connect gate="U1" pin="V3" pad="4"/>
+<connect gate="U1" pin="VCC" pad="16"/>
+<connect gate="U1" pin="XI" pad="7"/>
+<connect gate="U1" pin="XO" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
