@@ -681,8 +681,8 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <vertex x="0" y="-0.762"/>
 <vertex x="-1.524" y="-0.762"/>
 </polygon>
-<text x="-3.4798" y="-4.1402" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.683" y="2.794" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.794" size="1.016" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center">&gt;NAME</text>
+<text x="0" y="2.794" size="1.016" layer="27" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
 <wire x1="-0.0254" y1="0.762" x2="1.524" y2="0.762" width="0.127" layer="51"/>
 <wire x1="1.524" y1="0.762" x2="1.524" y2="-0.762" width="0.127" layer="51"/>
 <wire x1="1.524" y1="-0.762" x2="0" y2="-0.762" width="0.127" layer="51"/>
