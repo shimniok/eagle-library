@@ -517,6 +517,16 @@ diameter 3.5 mm, horizontal, grid 12.7 mm</description>
 <wire x1="10" y1="10" x2="10" y2="6" width="0.127" layer="21"/>
 <wire x1="-9" y1="-7" x2="-9" y2="-3" width="0.127" layer="21"/>
 </package>
+<package name="6SMD-5">
+<description>6SMD package, 5 pin</description>
+<smd name="P$1" x="-0.65" y="-0.8" dx="0.8" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="-0.8" dx="0.8" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$3" x="0.65" y="-0.8" dx="0.8" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$4" x="0.65" y="0.8" dx="0.8" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$5" x="-0.65" y="0.8" dx="0.8" dy="0.45" layer="1" rot="R90"/>
+<text x="-1.2" y="0" size="0.4064" layer="25" font="vector" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.2" y="0" size="0.4064" layer="27" font="vector" rot="R270" align="bottom-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SCHOTTKY">
@@ -991,6 +1001,27 @@ many other industrial/consumer applications.&lt;p&gt;
 <connect gate="G$1" pin="C" pad="6"/>
 <connect gate="G$2" pin="A" pad="3"/>
 <connect gate="G$2" pin="C" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CVJ10F30" prefix="U">
+<description>&lt;b&gt;Toshiba CVJ10F30 dual Schottky Barrier Diode&lt;/b&gt;
+&lt;p&gt;&lt;a href="https://toshiba.semicon-storage.com/info/CVJ10F30_datasheet_en_20140407.pdf?did=13914&amp;prodName=CVJ10F30"&gt;datasheet.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="D1" symbol="SCHOTTKY" x="0" y="7.62"/>
+<gate name="D2" symbol="SCHOTTKY" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="6SMD-5">
+<connects>
+<connect gate="D1" pin="A" pad="P$1"/>
+<connect gate="D1" pin="C" pad="P$5"/>
+<connect gate="D2" pin="A" pad="P$3"/>
+<connect gate="D2" pin="C" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
