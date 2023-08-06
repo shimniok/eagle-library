@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -716,7 +716,7 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </package>
 <package name="PAD_12GA">
 <description>12 gauge wire pad</description>
-<pad name="P$1" x="0" y="0" drill="2.8"/>
+<pad name="P$1" x="0" y="0" drill="2.8" diameter="4.572"/>
 <text x="2.286" y="0" size="1.27" layer="27" font="vector" ratio="10" align="center-left">&gt;VALUE</text>
 </package>
 <package name="PAD_14GA">
