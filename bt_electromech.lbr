@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -660,7 +660,7 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <text x="-3.683" y="2.794" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="DPDT_JS202011CQN">
-<description>C&amp;K JS202011CQN</description>
+<description>C&amp;K JS202011CQN DPDT 3.6mm x 9mm slide switch</description>
 <pad name="4" x="-2.5" y="1.65" drill="1"/>
 <pad name="5" x="0" y="1.651" drill="1"/>
 <pad name="6" x="2.5" y="1.65" drill="1"/>
@@ -3143,6 +3143,31 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <smd name="G3" x="0" y="1.28" dx="0.2" dy="1" layer="1"/>
 <smd name="G4" x="0" y="-1.82" dx="0.2" dy="1" layer="1"/>
 </package>
+<package name="SPDT_3.5X8.5">
+<description>SPDT ON-ON 3.5x8.5mm slide switch</description>
+<pad name="1" x="-2.5" y="0" drill="0.8"/>
+<pad name="2" x="0" y="0" drill="0.8"/>
+<pad name="3" x="2.5" y="0" drill="0.8"/>
+<wire x1="-4.25" y1="1.75" x2="-3.556" y2="1.75" width="0.127" layer="21"/>
+<wire x1="3.556" y1="1.75" x2="4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="1.75" x2="4.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-1.75" x2="3.556" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="-1.75" x2="-4.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-1.75" x2="-4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="1.75" x2="3.556" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-3.556" y1="-1.75" x2="3.556" y2="-1.75" width="0.127" layer="51"/>
+<polygon width="0.127" layer="51">
+<vertex x="-1.8" y="0.82"/>
+<vertex x="0" y="0.82"/>
+<vertex x="0" y="-0.82"/>
+<vertex x="-1.8" y="-0.82"/>
+</polygon>
+<text x="0" y="-2" size="1.016" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center">&gt;NAME</text>
+<text x="0" y="2" size="1.016" layer="27" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
+<wire x1="-0.0254" y1="0.82" x2="1.8" y2="0.82" width="0.127" layer="51"/>
+<wire x1="1.8" y1="0.82" x2="1.8" y2="-0.82" width="0.127" layer="51"/>
+<wire x1="1.8" y1="-0.82" x2="0" y2="-0.82" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DEANS">
@@ -3898,6 +3923,16 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 <connect gate="S1" pin="O1" pad="O1"/>
 <connect gate="S1" pin="O2" pad="O2"/>
 <connect gate="S1" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_3.5X8.5" package="SPDT_3.5X8.5">
+<connects>
+<connect gate="S1" pin="O1" pad="1"/>
+<connect gate="S1" pin="O2" pad="3"/>
+<connect gate="S1" pin="P" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
