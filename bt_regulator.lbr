@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -269,8 +269,8 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-3.175" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-1.905" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-2.794" y="0" size="1.016" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="2.794" y="0" size="1.016" layer="27" font="vector" ratio="10" rot="R90" align="top-center">&gt;VALUE</text>
 <rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
 <rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
 <rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
@@ -1039,6 +1039,27 @@ Power Monitor and Processor Hot Monitor&lt;/b&gt;</description>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <text x="-10.16" y="11.176" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="MAX889">
+<description>MAX889 Charge Pump, Inverting</description>
+<pin name="!SHDN" x="-17.78" y="10.16" length="middle"/>
+<pin name="CAP+" x="-17.78" y="2.54" length="middle"/>
+<pin name="CAP-" x="-17.78" y="-10.16" length="middle"/>
+<pin name="AGND" x="2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="GND" x="-2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="FB" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="OUT" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="IN" x="0" y="17.78" length="middle" rot="R270"/>
+<text x="0" y="2.54" size="1.4224" layer="94" align="bottom-center">MAX889</text>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<text x="-12.7" y="13.716" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="-2.54" size="1.016" layer="94">R=0.5
+S=1.0 MHz
+T=2.0</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2430,7 +2451,42 @@ limiting, making them remarkably rugged. In most applications, no external compo
 </device>
 </devices>
 </deviceset>
+<deviceset name="MAX889" prefix="U">
+<description>&lt;b&gt;MAX889: High-Frequency, Regulated, 200mA, Inverting Charge Pump&lt;/b&gt;
+&lt;p&gt;General Description
+The MAX889 inverting charge pump delivers a regulated
+negative output voltage at loads of up to 200mA. The
+device operates with inputs from 2.7V to 5.5V to produce
+an adjustable, regulated output from -2.5V to -VIN.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://rocelec.widen.net/view/pdf/yrymcy78qe/MAXMS14295-1.pdf?t.download=true&amp;u=5oefqw"&gt;datasheet.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="U1" symbol="MAX889" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="U1" pin="!SHDN" pad="6"/>
+<connect gate="U1" pin="AGND" pad="8"/>
+<connect gate="U1" pin="CAP+" pad="2"/>
+<connect gate="U1" pin="CAP-" pad="4"/>
+<connect gate="U1" pin="FB" pad="7"/>
+<connect gate="U1" pin="GND" pad="3"/>
+<connect gate="U1" pin="IN" pad="1"/>
+<connect gate="U1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
