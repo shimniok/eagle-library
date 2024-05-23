@@ -1084,7 +1084,7 @@ T=2.0</text>
 <description>MAX635, MAX636, MAX637 Inverting Switching Regulator</description>
 <pin name="VFB" x="-20.32" y="7.62" length="middle"/>
 <pin name="VREF" x="-20.32" y="2.54" length="middle"/>
-<pin name="+VS" x="0" y="15.24" length="middle" direction="pwr" rot="R270"/>
+<pin name="+VS" x="0" y="15.24" length="middle" direction="sup" rot="R270"/>
 <pin name="LBI" x="-20.32" y="-7.62" length="middle"/>
 <pin name="GND" x="0" y="-15.24" length="middle" direction="sup" rot="R90"/>
 <pin name="-VOUT" x="20.32" y="7.62" length="middle" direction="sup" rot="R180"/>
@@ -1772,15 +1772,14 @@ and safe area protection.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/lm1117.pdf"&gt;datasheet.pdf&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="U1" symbol="V-REG-3-FIX-HS" x="0" y="0"/>
+<gate name="U1" symbol="V-REG-3-FIX" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-SOT223" package="SOT-223-3">
 <connects>
 <connect gate="U1" pin="GND" pad="1"/>
-<connect gate="U1" pin="HEATSINK" pad="4"/>
 <connect gate="U1" pin="VIN" pad="3"/>
-<connect gate="U1" pin="VOUT" pad="2"/>
+<connect gate="U1" pin="VOUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1789,9 +1788,8 @@ and safe area protection.&lt;/p&gt;
 <device name="-TO22OH" package="TO220L1">
 <connects>
 <connect gate="U1" pin="GND" pad="1"/>
-<connect gate="U1" pin="HEATSINK" pad="4"/>
 <connect gate="U1" pin="VIN" pad="3"/>
-<connect gate="U1" pin="VOUT" pad="2"/>
+<connect gate="U1" pin="VOUT" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
