@@ -4767,7 +4767,9 @@ Distributor: &lt;a href ="https://www.buerklin.com/default.asp?event=ShowArtikel
 </devices>
 </deviceset>
 <deviceset name="TRIM-" prefix="VR" uservalue="yes">
-<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;</description>
+<description>&lt;b&gt;POTENTIOMETER (TRIM, TRIMPOT, POT)&lt;/b&gt;
+
+3-pin trim potentiometer in various packages</description>
 <gates>
 <gate name="R1" symbol="POT_US-" x="0" y="0"/>
 </gates>
