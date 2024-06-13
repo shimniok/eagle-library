@@ -3221,7 +3221,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <text x="-4.775" y="-2.76" size="1.016" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
 </package>
 <package name="35WR">
-<description>TTE 35W Potentiometer</description>
+<description>TTE 35WR Potentiometer</description>
 <smd name="1" x="-1" y="-1.6" dx="1.2" dy="1.2" layer="1"/>
 <smd name="3" x="1" y="-1.6" dx="1.2" dy="1.2" layer="1"/>
 <smd name="2" x="0" y="1.65" dx="1.5" dy="1.6" layer="1" rot="R90"/>
